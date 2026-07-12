@@ -132,6 +132,9 @@ describe('Landing Page', () => {
       const { exists } = testBed;
 
       expect(exists('autoOpsPromotionCallout')).toBe(true);
+      expect(testBed.find('cyberstancConnectClusterButton').prop('href')).toBe(
+        'https://cyberstanc.com'
+      );
     });
 
     test('Hides AutoOps callout when in cloud environment', async () => {

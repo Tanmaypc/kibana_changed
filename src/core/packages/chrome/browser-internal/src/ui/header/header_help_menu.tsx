@@ -65,12 +65,6 @@ const buildDefaultContentLinks = ({
     }),
     href: docLinks.links.kibana.feedback,
   },
-  {
-    title: i18n.translate('core.ui.chrome.headerGlobalNav.helpMenuOpenGitHubIssueTitle', {
-      defaultMessage: 'Open an issue in GitHub',
-    }),
-    href: docLinks.links.kibana.createGithubIssue,
-  },
 ];
 
 interface Props {

@@ -12,11 +12,11 @@ import { css } from '@emotion/react';
 
 import { EuiPageBody, useEuiTheme, EuiFlexItem, EuiFlexGroup } from '@elastic/eui';
 import { CardsNavigation } from '@kbn/management-cards-navigation';
-import { AutoOpsPromotionCallout } from '@kbn/autoops-promotion-callout';
 
 import { useAppContext } from '../management_app/management_context';
 import { ClassicEmptyPrompt } from './classic_empty_prompt';
 import { SolutionEmptyPrompt } from './solution_empty_prompt';
+import { CyberstancAutoOpsPromotionCallout } from './cyberstanc_autoops_promotion_callout';
 
 interface ManagementLandingPageProps {
   onAppMounted: (id: string) => void;
@@ -78,7 +78,7 @@ export const ManagementLandingPage = ({
                 max-width: 600px;
               `}
             >
-              <AutoOpsPromotionCallout style={{ margin: `0 ${euiTheme.size.l}` }} />
+              <CyberstancAutoOpsPromotionCallout style={{ margin: `0 ${euiTheme.size.l}` }} />
             </div>
           )}
           <ClassicEmptyPrompt kibanaVersion={kibanaVersion} />

@@ -4,7 +4,7 @@
  * 2.0; you may not use this file except in compliance with the Elastic License
  * 2.0.
  */
-import React, { memo, useCallback, useEffect, useMemo, useState } from 'react';
+import React, { memo, useMemo } from 'react';
 import { FormattedMessage } from '@kbn/i18n-react';
 import type { EuiDescriptionListProps } from '@elastic/eui';
 import {
@@ -14,10 +14,7 @@ import {
   EuiTextColor,
   EuiDescriptionList,
   EuiNotificationBadge,
-  EuiLink,
-  EuiPortal,
 } from '@elastic/eui';
-import { i18n } from '@kbn/i18n';
 
 import { euiStyled } from '@kbn/kibana-react-plugin/common';
 
@@ -33,14 +30,8 @@ import type {
   RegistryPolicyIntegrationTemplate,
 } from '../../../../../types';
 import { entries } from '../../../../../types';
-import { useConfig, useGetCategoriesQuery, useStartServices } from '../../../../../hooks';
+import { useConfig, useGetCategoriesQuery } from '../../../../../hooks';
 import { AssetTitleMap, DisplayedAssetsFromPackageInfo, ServiceTitleMap } from '../../../constants';
-
-import { ChangelogModal } from '../settings/changelog_modal';
-import { useChangelog } from '../hooks';
-
-import { NoticeModal } from './notice_modal';
-import { LicenseModal } from './license_modal';
 
 const ReplacementCard = withSuspense(LazyReplacementCard);
 
@@ -67,14 +58,8 @@ const Replacements = euiStyled(EuiFlexItem)`
 `;
 
 export const Details: React.FC<Props> = memo(({ packageInfo, integrationInfo }) => {
-  const { notifications } = useStartServices();
   const config = useConfig();
   const { data: categoriesData, isLoading: isLoadingCategories } = useGetCategoriesQuery();
-  const {
-    changelog,
-    isLoading: isChangelogLoading,
-    error: changelogError,
-  } = useChangelog(packageInfo.name, packageInfo.version);
 
   const mergedCategories: Array<string | undefined> = useMemo(() => {
     let allCategories: Array<string | undefined> = [];
@@ -99,21 +84,6 @@ export const Details: React.FC<Props> = memo(({ packageInfo, integrationInfo }) 
     }
     return [];
   }, [categoriesData, isLoadingCategories, mergedCategories]);
-
-  const [isNoticeModalOpen, setIsNoticeModalOpen] = useState(false);
-  const toggleNoticeModal = useCallback(() => {
-    setIsNoticeModalOpen((currentState) => !currentState);
-  }, []);
-
-  const [isLicenseModalOpen, setIsLicenseModalOpen] = useState(false);
-  const toggleLicenseModal = useCallback(() => {
-    setIsLicenseModalOpen((currentState) => !currentState);
-  }, []);
-
-  const [isChangelogModalOpen, setIsChangelogModalOpen] = useState(false);
-  const toggleChangelogModal = useCallback(() => {
-    setIsChangelogModalOpen((currentState) => !currentState);
-  }, []);
 
   const listItems = useMemo(() => {
     // Base details: version and categories
@@ -283,108 +253,20 @@ export const Details: React.FC<Props> = memo(({ packageInfo, integrationInfo }) 
       });
     }
 
-    // License details
-    if (packageInfo.licensePath || packageInfo.source?.license || packageInfo.notice) {
-      items.push({
-        title: (
-          <EuiTextColor color="subdued">
-            <FormattedMessage id="xpack.fleet.epm.licenseLabel" defaultMessage="License" />
-          </EuiTextColor>
-        ),
-        description: (
-          <>
-            {packageInfo.licensePath ? (
-              <p>
-                <EuiLink onClick={toggleLicenseModal}>
-                  {packageInfo.source?.license || 'LICENSE.txt'}
-                </EuiLink>
-              </p>
-            ) : (
-              <p>{packageInfo.source?.license || '-'}</p>
-            )}
-            {packageInfo.notice && (
-              <p>
-                <EuiLink onClick={toggleNoticeModal}>NOTICE.txt</EuiLink>
-              </p>
-            )}
-          </>
-        ),
-      });
-    }
-
-    items.push({
-      title: (
-        <EuiTextColor color="subdued">
-          <FormattedMessage id="xpack.fleet.epm.changelogLabel" defaultMessage="Changelog" />
-        </EuiTextColor>
-      ),
-      description: (
-        <>
-          <p>
-            {changelog.length > 0 ? (
-              <EuiLink onClick={toggleChangelogModal}>View Changelog</EuiLink>
-            ) : (
-              '-'
-            )}
-          </p>
-        </>
-      ),
-    });
-
     return items;
   }, [
-    changelog,
     packageCategories,
     packageInfo.assets,
     packageInfo.conditions?.elastic?.subscription,
     packageInfo.data_streams,
     packageInfo.license,
-    packageInfo.licensePath,
-    packageInfo.notice,
-    packageInfo.source?.license,
     packageInfo.owner.type,
     packageInfo.version,
     config?.hideDashboards,
-    toggleLicenseModal,
-    toggleNoticeModal,
-    toggleChangelogModal,
   ]);
-
-  useEffect(() => {
-    if (changelogError) {
-      notifications.toasts.addError(changelogError, {
-        title: i18n.translate('xpack.fleet.epm.errorLoadingChangelog', {
-          defaultMessage: 'Error loading changelog information',
-        }),
-      });
-    }
-  }, [changelogError, notifications.toasts]);
 
   return (
     <>
-      <EuiPortal>
-        {isNoticeModalOpen && packageInfo.notice && (
-          <NoticeModal noticePath={packageInfo.notice} onClose={toggleNoticeModal} />
-        )}
-      </EuiPortal>
-      <EuiPortal>
-        {isLicenseModalOpen && packageInfo.licensePath && (
-          <LicenseModal
-            licenseName={packageInfo.source?.license}
-            licensePath={packageInfo.licensePath}
-            onClose={toggleLicenseModal}
-          />
-        )}
-      </EuiPortal>
-      <EuiPortal>
-        {isChangelogModalOpen && (
-          <ChangelogModal
-            changelog={changelog}
-            isLoading={isChangelogLoading}
-            onClose={toggleChangelogModal}
-          />
-        )}
-      </EuiPortal>
       <EuiFlexGroup direction="column" gutterSize="m">
         <EuiFlexItem>
           <EuiText>

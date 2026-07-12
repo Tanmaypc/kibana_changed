@@ -50,12 +50,7 @@ describe('HeaderHelpMenu', () => {
     const buttons = component.find('EuiButtonEmpty');
     const buttonTexts = buttons.map((button) => button.text()).filter((text) => text.trim() !== '');
 
-    expect(buttonTexts).toEqual([
-      'Kibana documentation',
-      'Ask Elastic',
-      'Give feedback',
-      'Open an issue in GitHub',
-    ]);
+    expect(buttonTexts).toEqual(['Cyberstanc documentation', 'Ask Cyberstanc', 'Give feedback']);
   });
 
   test("it doesn't render the version details when the prop isServerless is true", () => {
@@ -95,8 +90,8 @@ describe('HeaderHelpMenu', () => {
     expect(component.find('EuiButtonEmpty').length).toBe(1); // only the toggle view on/off button
     component.find('EuiButtonEmpty').simulate('click');
 
-    // 2 custom global link + 4 default links + the toggle button
-    expect(component.find('EuiButtonEmpty').length).toBe(7);
+    // 2 custom global links + 3 default links + the toggle button
+    expect(component.find('EuiButtonEmpty').length).toBe(6);
 
     expect(component.find('[data-test-subj="my-test-custom-link"]').exists()).toBeTruthy();
 
