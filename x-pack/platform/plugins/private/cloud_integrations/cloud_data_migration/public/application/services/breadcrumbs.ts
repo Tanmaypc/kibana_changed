@@ -22,7 +22,7 @@ interface Breadcrumbs {
 const breadcrumbs: Breadcrumbs = {
   home: {
     text: i18n.translate('xpack.cloudDataMigration.breadcrumb.label', {
-      defaultMessage: 'Migrate to Elastic Cloud',
+      defaultMessage: 'Migrate to Cyberstanc Cloud',
     }),
   },
 };

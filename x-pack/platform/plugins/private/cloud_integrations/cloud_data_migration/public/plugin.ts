@@ -51,7 +51,7 @@ export class CloudDataMigrationPlugin
         target: '_blank',
         href: 'https://cyberstanc.com',
         content: i18n.translate('xpack.cloudDataMigration.helpMenuMoveDataTitle', {
-          defaultMessage: 'Move data to Elastic Cloud',
+          defaultMessage: 'Move data to Cyberstanc Cloud',
         }),
         'data-test-subj': 'migrate_data_to_cloud__help_menu_link',
         priority: 200,

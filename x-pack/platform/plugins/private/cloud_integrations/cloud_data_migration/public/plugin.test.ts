@@ -50,4 +50,25 @@ describe('Cloud Data Migration Plugin', () => {
       });
     });
   });
+
+  describe('#start', () => {
+    it('registers the Cyberstanc Cloud migration help link for self-managed deployments', () => {
+      const coreStart = coreMock.createStart();
+      const plugin = new CloudDataMigrationPlugin();
+
+      plugin.start(coreStart, {
+        cloud: { ...cloudMock.createStart(), isCloudEnabled: false },
+      });
+
+      expect(coreStart.chrome.registerGlobalHelpExtensionMenuLink).toHaveBeenCalledWith({
+        linkType: 'custom',
+        target: '_blank',
+        href: 'https://cyberstanc.com',
+        content: 'Move data to Cyberstanc Cloud',
+        'data-test-subj': 'migrate_data_to_cloud__help_menu_link',
+        priority: 200,
+        external: true,
+      });
+    });
+  });
 });

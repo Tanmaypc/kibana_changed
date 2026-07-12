@@ -70,7 +70,7 @@ export const CloudDataMigrationApp = ({ http, breadcrumbService }: CloudDataMigr
             <h1>
               <FormattedMessage
                 id="xpack.cloudDataMigration.migrateToCloudTitle"
-                defaultMessage="Be faster and more efficient with Elastic Cloud"
+                defaultMessage="Be faster and more efficient with Cyberstanc Cloud"
               />
             </h1>
           </EuiTitle>
@@ -84,7 +84,7 @@ export const CloudDataMigrationApp = ({ http, breadcrumbService }: CloudDataMigr
                 <EuiText css={styles.listItemCss} size="s" color="subdued">
                   <FormattedMessage
                     id="xpack.cloudDataMigration.deployInSeconds.text"
-                    defaultMessage="Deploy and scale a secure Elastic Stack in minutes"
+                    defaultMessage="Deploy and scale a secure Cyberstanc Stack in minutes"
                   />
                 </EuiText>
               }
@@ -139,7 +139,7 @@ export const CloudDataMigrationApp = ({ http, breadcrumbService }: CloudDataMigr
             >
               <FormattedMessage
                 id="xpack.cloudDataMigration.readInstructionsButtonLabel"
-                defaultMessage="Move to Elastic Cloud"
+                defaultMessage="Move to Cyberstanc Cloud"
               />
             </EuiButton>
           </div>
