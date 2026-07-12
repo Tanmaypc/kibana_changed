@@ -69,7 +69,7 @@ describe('Endpoints page', { tags: ['@ess', '@serverless'] }, () => {
 
   it('Shows endpoint on the list', () => {
     loadPage(APP_ENDPOINTS_PATH);
-    cy.contains('Hosts running Elastic Defend').should('exist');
+    cy.contains('Hosts running Scrutiny EDR').should('exist');
     cy.getByTestSubj(AGENT_HOSTNAME_CELL)
       .contains(createdHost.hostname)
       .should('have.text', createdHost.hostname);

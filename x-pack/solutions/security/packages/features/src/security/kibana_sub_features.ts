@@ -37,7 +37,7 @@ export const endpointListSubFeature = (): SubFeatureConfig => ({
     'securitySolutionPackages.features.featureRegistry.subFeatures.endpointList.description',
     {
       defaultMessage:
-        'Displays all hosts running Elastic Defend and their relevant integration details.',
+        'Displays all hosts running Scrutiny EDR and their relevant integration details.',
     }
   ),
   privilegeGroups: [

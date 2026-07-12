@@ -36,7 +36,7 @@ describe('Endpoints page', { tags: ['@ess', '@serverless', '@brokenInServerless'
 
   it('Loads the endpoints page', () => {
     loadPage(APP_ENDPOINTS_PATH);
-    cy.contains('Hosts running Elastic Defend').should('exist');
+    cy.contains('Hosts running Scrutiny EDR').should('exist');
   });
 
   describe('Sorting', () => {

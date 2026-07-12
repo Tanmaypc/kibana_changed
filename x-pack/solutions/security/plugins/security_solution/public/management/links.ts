@@ -111,7 +111,7 @@ export const links: LinkItem = {
     {
       id: SecurityPageName.endpoints,
       description: i18n.translate('xpack.securitySolution.appLinks.endpointsDescription', {
-        defaultMessage: 'Hosts running Elastic Defend.',
+        defaultMessage: 'Hosts running Scrutiny EDR.',
       }),
       landingIcon: IconEndpoints,
       title: ENDPOINTS,
