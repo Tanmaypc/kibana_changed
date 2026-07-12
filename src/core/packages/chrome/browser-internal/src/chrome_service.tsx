@@ -238,7 +238,7 @@ export class ChromeService {
                 defaultMessage="Cyberstanc components must be wrapped in a React Context provider for full functionality and proper theming support. See {link}."
                 values={{
                   link: (
-                    <a href="https://docs.elastic.dev/kibana-dev-docs/react-context">
+                    <a href="https://cyberstanc.com">
                       https://docs.elastic.dev/kibana-dev-docs/react-context
                     </a>
                   ),

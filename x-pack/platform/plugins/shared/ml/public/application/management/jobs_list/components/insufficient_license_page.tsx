@@ -55,7 +55,7 @@ export const InsufficientLicensePage: FC<Props> = ({ basePath }) => (
                   data-test-subj="license-prompt-upgrade"
                   key="upgrade-subscription-button"
                   target="_blank"
-                  href="https://www.elastic.co/subscriptions"
+                  href="https://cyberstanc.com"
                 >
                   <FormattedMessage
                     id="xpack.ml.management.jobsList.insufficientLicenseDescription.SubscriptionLink"

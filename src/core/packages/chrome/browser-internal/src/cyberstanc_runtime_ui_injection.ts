@@ -19,9 +19,34 @@ interface ReplacedText {
   replacement: string;
 }
 
+const CYBERSTANC_WEBSITE_URL = 'https://cyberstanc.com';
 const SURFACE_ATTRIBUTE = 'data-cyberstanc-runtime-surface';
 const STYLE_ELEMENT_ID = 'cyberstanc-runtime-ui-styles';
 const APP_ROOT_SELECTOR = '.kbnAppWrapper';
+const ELASTIC_WEBSITE_DOMAINS = [
+  'elastic.co',
+  'elastic.com',
+  'elastic.dev',
+  'ela.st',
+];
+const OPERATIONAL_ELASTIC_HOSTS = [
+  'apm-agent-versions.elastic.co',
+  'artifacts-api.elastic.co',
+  'artifacts.elastic.co',
+  'artifacts.security.elastic.co',
+  'cdn.elastic.co',
+  'cloud.elastic.co',
+  'epr.elastic.co',
+  'feeds.elastic.co',
+  'helm.elastic.co',
+  'kibana-knowledge-base-artifacts.elastic.co',
+  'ml-models.elastic.co',
+  'packages.elastic.co',
+  'static-www.elastic.co',
+  'telemetry-staging.elastic.co',
+  'telemetry.elastic.co',
+  'tiles.maps.elastic.co',
+];
 
 const SURFACE_ANCHORS: Record<CyberstancRuntimeSurface, string> = {
   integrations: [
@@ -163,6 +188,49 @@ export const replaceCyberstancRuntimeBrandText = (value: string): string =>
     .replace(/Elastic prebuilt/g, 'Cyberstanc prebuilt')
     .replace(/Elastic authored/g, 'Cyberstanc authored');
 
+const isDomainOrSubdomain = (hostname: string, domain: string): boolean =>
+  hostname === domain || hostname.endsWith(`.${domain}`);
+
+/** Returns the Cyberstanc destination only for external Elastic-owned websites. */
+export const getCyberstancRedirectUrl = (
+  href: string,
+  baseUrl = 'https://localhost/'
+): string | undefined => {
+  try {
+    const currentUrl = new URL(baseUrl);
+    const url = new URL(href, currentUrl);
+    if (url.protocol !== 'http:' && url.protocol !== 'https:') {
+      return;
+    }
+
+    if (url.origin === currentUrl.origin) {
+      return;
+    }
+
+    const hostname = url.hostname.toLowerCase().replace(/\.$/, '');
+    const isOperationalDestination =
+      OPERATIONAL_ELASTIC_HOSTS.includes(hostname) ||
+      isDomainOrSubdomain(hostname, 'elastic-cloud.com') ||
+      (hostname === 'www.elastic.co' &&
+        (url.pathname === '/downloads' || url.pathname.startsWith('/downloads/'))) ||
+      (hostname === 'ela.st' &&
+        (url.pathname === '/download-elastic-agent' ||
+          url.pathname.startsWith('/download-elastic-agent/')));
+
+    if (isOperationalDestination) {
+      return;
+    }
+
+    const isElasticWebsite =
+      ELASTIC_WEBSITE_DOMAINS.some((domain) => isDomainOrSubdomain(hostname, domain)) ||
+      hostname === 'elastic.github.io';
+
+    return isElasticWebsite ? CYBERSTANC_WEBSITE_URL : undefined;
+  } catch {
+    return;
+  }
+};
+
 const shouldSkipTextNode = (textNode: Text): boolean => {
   const parent = textNode.parentElement;
   return parent === null || parent.closest(SKIPPED_TEXT_ANCESTOR_SELECTOR) !== null;
@@ -185,9 +253,10 @@ const removeRuntimeStyles = (documentRef: Document) => {
 };
 
 /**
- * Starts an idempotent, browser-only UI layer for Integrations, Rules, and
- * Alerts. It never touches form values, links, code, application state, or API
- * data, and returns a cleanup function for the core browser lifecycle.
+ * Starts a browser-only UI layer. Elastic-owned website links are redirected
+ * throughout the rendered UI, while presentation styling and text remain
+ * scoped to Integrations, Rules, and Alerts. Form values, code, application
+ * state, internal routes, and API data are never changed.
  */
 export const startCyberstancRuntimeUiInjection = ({
   documentRef = document,
@@ -197,9 +266,12 @@ export const startCyberstancRuntimeUiInjection = ({
   windowRef?: Window;
 } = {}): (() => void) => {
   const replacedTextNodes = new Map<Text, ReplacedText>();
+  const replacedLinks = new Map<HTMLAnchorElement, string>();
   const pendingTextRoots = new Set<Node>();
+  const pendingLinkRoots = new Set<Node>();
   let activeSurface: CyberstancRuntimeSurface | undefined;
   let animationFrame: number | undefined;
+  let needsFullLinkScan = true;
   let needsFullTextScan = true;
 
   const restoreReplacedText = () => {
@@ -209,6 +281,65 @@ export const startCyberstancRuntimeUiInjection = ({
       }
     });
     replacedTextNodes.clear();
+  };
+
+  const restoreReplacedLinks = () => {
+    replacedLinks.forEach((originalHref, link) => {
+      if (link.isConnected && link.getAttribute('href') === CYBERSTANC_WEBSITE_URL) {
+        link.setAttribute('href', originalHref);
+      }
+    });
+    replacedLinks.clear();
+  };
+
+  const replaceLink = (link: HTMLAnchorElement) => {
+    const currentHref = link.getAttribute('href');
+    if (!currentHref) {
+      return;
+    }
+
+    const previousHref = replacedLinks.get(link);
+    if (previousHref && currentHref === CYBERSTANC_WEBSITE_URL) {
+      return;
+    }
+
+    if (previousHref) {
+      replacedLinks.delete(link);
+    }
+
+    const redirectUrl = getCyberstancRedirectUrl(currentHref, windowRef.location.href);
+    if (redirectUrl) {
+      replacedLinks.set(link, currentHref);
+      link.setAttribute('href', redirectUrl);
+    }
+  };
+
+  const replaceElasticWebsiteLinks = () => {
+    replacedLinks.forEach((_originalHref, link) => {
+      if (!link.isConnected) {
+        replacedLinks.delete(link);
+      }
+    });
+
+    const roots = needsFullLinkScan ? [documentRef.body] : [...pendingLinkRoots];
+    needsFullLinkScan = false;
+    pendingLinkRoots.clear();
+
+    roots.forEach((root) => {
+      if (!root.isConnected || (root !== documentRef.body && !documentRef.body.contains(root))) {
+        return;
+      }
+
+      if (root.nodeType !== windowRef.Node.ELEMENT_NODE) {
+        return;
+      }
+
+      const element = root as Element;
+      if (element.matches('a[href]')) {
+        replaceLink(element as HTMLAnchorElement);
+      }
+      element.querySelectorAll<HTMLAnchorElement>('a[href]').forEach(replaceLink);
+    });
   };
 
   const replaceTextNode = (textNode: Text) => {
@@ -270,6 +401,7 @@ export const startCyberstancRuntimeUiInjection = ({
 
   const applyRuntimeUi = () => {
     animationFrame = undefined;
+    replaceElasticWebsiteLinks();
     const nextSurface = getCyberstancRuntimeSurface(windowRef.location, documentRef);
 
     if (activeSurface !== nextSurface) {
@@ -301,13 +433,22 @@ export const startCyberstancRuntimeUiInjection = ({
     mutations.forEach((mutation) => {
       if (mutation.type === 'characterData') {
         pendingTextRoots.add(mutation.target);
-      } else {
+      } else if (mutation.type === 'childList') {
         mutation.addedNodes.forEach((node) => pendingTextRoots.add(node));
+        mutation.addedNodes.forEach((node) => pendingLinkRoots.add(node));
+      } else if (mutation.type === 'attributes') {
+        pendingLinkRoots.add(mutation.target);
       }
     });
     scheduleRuntimeUi();
   });
-  observer.observe(documentRef.body, { childList: true, characterData: true, subtree: true });
+  observer.observe(documentRef.body, {
+    attributeFilter: ['href'],
+    attributes: true,
+    childList: true,
+    characterData: true,
+    subtree: true,
+  });
   windowRef.addEventListener('hashchange', scheduleRuntimeUi);
   windowRef.addEventListener('popstate', scheduleRuntimeUi);
   applyRuntimeUi();
@@ -320,6 +461,7 @@ export const startCyberstancRuntimeUiInjection = ({
       windowRef.cancelAnimationFrame(animationFrame);
     }
     restoreReplacedText();
+    restoreReplacedLinks();
     documentRef.body.removeAttribute(SURFACE_ATTRIBUTE);
     removeRuntimeStyles(documentRef);
   };

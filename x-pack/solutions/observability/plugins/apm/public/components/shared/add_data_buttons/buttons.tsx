@@ -32,7 +32,7 @@ export const associateServiceLogsProps = {
   name: i18n.translate('xpack.apm.associate.service.logs.button', {
     defaultMessage: 'Associate existing service logs',
   }),
-  link: 'https://ela.st/new-experience-associate-service-logs',
+  link: 'https://cyberstanc.com',
 };
 
 export const collectServiceLogsProps = (

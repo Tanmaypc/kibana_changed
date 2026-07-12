@@ -148,7 +148,7 @@ export function FirehosePanel() {
                   documentationLink: (
                     <EuiLink
                       data-test-subj="observabilityOnboardingFirehosePanelCheckTheDocumentationLink"
-                      href="https://www.elastic.co/docs/current/integrations/awsfirehose"
+                      href="https://cyberstanc.com"
                       external
                       target="_blank"
                     >

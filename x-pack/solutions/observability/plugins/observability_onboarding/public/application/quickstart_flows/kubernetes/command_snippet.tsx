@@ -52,7 +52,7 @@ export function CommandSnippet({
               scalingLink: (
                 <EuiLink
                   data-test-subj="observabilityOnboardingKubernetesPanelScalingElasticAgentOnKubernetesLink"
-                  href="https://www.elastic.co/guide/en/fleet/current/scaling-on-kubernetes.html"
+                  href="https://cyberstanc.com"
                   external
                   target="_blank"
                 >

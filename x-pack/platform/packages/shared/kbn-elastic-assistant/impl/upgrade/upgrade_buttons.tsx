@@ -19,7 +19,7 @@ export const UpgradeButtonsComponent = ({ basePath }: { basePath: string }) => (
   >
     <EuiFlexItem grow={false}>
       <EuiButton
-        href="https://www.elastic.co/subscriptions"
+        href="https://cyberstanc.com"
         iconType="popout"
         iconSide="right"
         target="_blank"

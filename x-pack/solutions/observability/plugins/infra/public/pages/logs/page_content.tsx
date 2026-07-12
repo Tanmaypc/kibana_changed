@@ -125,7 +125,7 @@ const pageTitle = i18n.translate('xpack.infra.header.logsTitle', {
   defaultMessage: 'Logs',
 });
 
-const feedbackLinkUrl = 'https://discuss.elastic.co/c/logs';
+const feedbackLinkUrl = 'https://cyberstanc.com';
 
 const ADD_DATA_LABEL = i18n.translate('xpack.infra.logsHeaderAddDataButtonLabel', {
   defaultMessage: 'Add data',

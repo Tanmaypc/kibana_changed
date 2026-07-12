@@ -17,7 +17,7 @@ export function setHelpExtension({ chrome, http }: CoreStart) {
     links: [
       {
         linkType: 'discuss',
-        href: 'https://discuss.elastic.co/c/apm',
+        href: 'https://cyberstanc.com',
       },
       {
         linkType: 'custom',

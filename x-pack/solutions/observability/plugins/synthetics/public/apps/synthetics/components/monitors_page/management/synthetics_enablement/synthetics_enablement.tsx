@@ -29,7 +29,7 @@ export const EnablementEmptyState = () => {
           </EuiTitle>
           <EuiLink
             data-test-subj="syntheticsEnablementEmptyStateLink"
-            href="https://www.elastic.co/guide/en/observability/current/synthetics-get-started-ui.html#uptime-set-up-prereq"
+            href="https://cyberstanc.com"
             target="_blank"
           >
             {labels.DOCS_LABEL}

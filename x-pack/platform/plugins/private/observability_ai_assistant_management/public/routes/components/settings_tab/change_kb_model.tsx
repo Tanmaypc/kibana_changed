@@ -287,7 +287,7 @@ export function ChangeKbModel({
                 }
               )}{' '}
               <EuiLink
-                href="https://www.elastic.co/docs/explore-analyze/ai-assistant#observability-ai-assistant-requirements"
+                href="https://cyberstanc.com"
                 target="_blank"
               >
                 {i18n.translate(

@@ -228,7 +228,7 @@ const CnvmIndexTimeout = () => (
           defaultMessage="Scanning workloads is taking longer than expected. Please check {docs}"
           values={{
             docs: (
-              <EuiLink href="https://ela.st/cnvm-faq" target="_blank">
+              <EuiLink href="https://cyberstanc.com" target="_blank">
                 <FormattedMessage
                   id="xpack.csp.noVulnerabilitiesStates.indexTimeout.indexTimeoutDocLink"
                   defaultMessage="CNVM FAQ"

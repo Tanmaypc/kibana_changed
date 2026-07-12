@@ -33,7 +33,7 @@ const SCHEMA_NOT_AVAILABLE = i18n.translate('xpack.infra.schemaSelector.notAvail
   defaultMessage: 'Selected schema is not available for this query.',
 });
 
-const SCHEMA_DOCUMENTATION_LINK = 'https://ela.st/docs-otel-schema-selector-hosts';
+const SCHEMA_DOCUMENTATION_LINK = 'https://cyberstanc.com';
 
 const PrependLabel = () => {
   const [isPopoverOpen, setIsPopoverOpen] = useState(false);

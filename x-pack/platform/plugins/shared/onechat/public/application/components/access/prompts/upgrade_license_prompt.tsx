@@ -19,7 +19,7 @@ import { FormattedMessage } from '@kbn/i18n-react';
 import { PromptLayout } from './prompt_layout';
 import { useOnechatServices } from '../../../hooks/use_onechat_service';
 
-const SUBSCRIPTIONS_LINK = 'https://www.elastic.co/subscriptions';
+const SUBSCRIPTIONS_LINK = 'https://cyberstanc.com';
 
 const UpgradeLicenseActions: React.FC<{}> = () => {
   const { navigationService } = useOnechatServices();

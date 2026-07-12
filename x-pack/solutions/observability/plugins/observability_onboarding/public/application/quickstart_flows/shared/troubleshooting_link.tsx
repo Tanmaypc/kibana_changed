@@ -16,7 +16,7 @@ export function TroubleshootingLink() {
         data-test-subj="observabilityOnboardingTroubleshootingLinkTroubleshootingButton"
         iconType="question"
         color="primary"
-        href="https://www.elastic.co/guide/en/observability/current/logs-troubleshooting.html"
+        href="https://cyberstanc.com"
         target="_blank"
       >
         {i18n.translate('xpack.observability_onboarding.installElasticAgent.troubleshooting', {

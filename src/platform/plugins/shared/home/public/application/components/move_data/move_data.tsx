@@ -27,7 +27,7 @@ interface Props {
 }
 
 export const MoveData: FC<Props> = ({ addBasePath }) => {
-  const migrateDataUrl = 'https://ela.st/cloud-migration';
+  const migrateDataUrl = 'https://cyberstanc.com';
   const buttonLabel = (
     <FormattedMessage
       id="home.addData.moveYourDataButtonLabel"

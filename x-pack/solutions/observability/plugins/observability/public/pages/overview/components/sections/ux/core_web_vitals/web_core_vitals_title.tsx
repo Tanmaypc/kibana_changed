@@ -30,8 +30,8 @@ const BROWSER_CORE_WEB_VITALS = i18n.translate(
   }
 );
 
-const CORE_VITALS_URL = 'https://ela.st/vtls';
-const CORE_VITALS_BROWSER_URL = 'https://ela.st/ch-vtls';
+const CORE_VITALS_URL = 'https://cyberstanc.com';
+const CORE_VITALS_BROWSER_URL = 'https://cyberstanc.com';
 
 export function WebCoreVitalsTitle({
   loading,

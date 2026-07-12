@@ -147,7 +147,7 @@ export const ReadinessTasksTable: React.FC = () => {
         action: () => handleLogTask({ task_id: 'lets-get-started', status: 'completed' }),
         actionButtonLabel: 'Complete Task',
         illustration: illustration_aerospace,
-        learnMoreLink: 'https://www.elastic.co/security-readiness',
+        learnMoreLink: 'https://cyberstanc.com',
       },
       'enable-endpoint-visibility': {
         action: () => handleLogTask({ task_id: 'enable-endpoint-visibility', status: 'completed' }),

@@ -15,7 +15,7 @@ import { KibanaEnvironmentContext } from '../../../../context/kibana_environment
 import { useApmPluginContext } from '../../../../context/apm_plugin/use_apm_plugin_context';
 import { getStorageExplorerFeedbackHref } from '../../../app/storage_explorer/get_storage_explorer_links';
 
-const APM_FEEDBACK_LINK = 'https://ela.st/services-feedback';
+const APM_FEEDBACK_LINK = 'https://cyberstanc.com';
 
 export function GiveFeedbackHeaderLink() {
   const { config } = useApmPluginContext();

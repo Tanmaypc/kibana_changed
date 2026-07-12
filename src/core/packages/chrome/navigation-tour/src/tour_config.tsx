@@ -14,7 +14,7 @@ import { EuiLink, EuiText } from '@elastic/eui';
 import { DATA_MANAGEMENT_NAV_ID } from '@kbn/deeplinks-management';
 import type { TourStep } from './types';
 
-const newNavBlogPost = 'https://ela.st/new-nav';
+const newNavBlogPost = 'https://cyberstanc.com';
 
 export const tourSteps: TourStep[] = [
   {

@@ -10,7 +10,7 @@ import { i18n } from '@kbn/i18n';
 import React from 'react';
 import { useKibana } from '../../hooks/use_kibana';
 
-const STREAMS_FEEDBACK_URL = 'https://ela.st/feedback-streams-ui';
+const STREAMS_FEEDBACK_URL = 'https://cyberstanc.com';
 
 export function FeedbackButton() {
   const {

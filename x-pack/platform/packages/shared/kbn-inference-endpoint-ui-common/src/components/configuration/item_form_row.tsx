@@ -61,7 +61,7 @@ export const ItemFormRow: React.FC<ItemFormRowProps> = ({
       <>
         {description}{' '}
         <EuiLink
-          href="https://www.elastic.co/docs/explore-analyze/elastic-inference/inference-api#default-enpoints"
+          href="https://cyberstanc.com"
           external
           target="_blank"
         >

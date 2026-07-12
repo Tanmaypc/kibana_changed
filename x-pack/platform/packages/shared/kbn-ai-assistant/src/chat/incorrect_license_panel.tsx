@@ -54,7 +54,7 @@ export function IncorrectLicensePanel() {
               <EuiButton
                 data-test-subj="observabilityAiAssistantIncorrectLicensePanelSubscriptionPlansButton"
                 fill
-                href="https://www.elastic.co/subscriptions"
+                href="https://cyberstanc.com"
                 target="_blank"
               >
                 {i18n.translate('xpack.aiAssistant.incorrectLicense.subscriptionPlansButton', {

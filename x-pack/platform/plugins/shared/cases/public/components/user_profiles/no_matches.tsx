@@ -40,7 +40,7 @@ const NoMatchesComponent: React.FC = () => {
             {i18n.MODIFY_SEARCH}
             <br />
             <EuiLink
-              href="https://www.elastic.co/guide/en/security/current/case-permissions.html"
+              href="https://cyberstanc.com"
               target="_blank"
             >
               {i18n.LEARN_PRIVILEGES_GRANT_ACCESS}

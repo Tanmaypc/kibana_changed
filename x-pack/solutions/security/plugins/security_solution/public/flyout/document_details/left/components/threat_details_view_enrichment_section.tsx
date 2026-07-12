@@ -120,7 +120,7 @@ export const EnrichmentSection = memo(
               values={{
                 link: (
                   <EuiLink
-                    href="https://www.elastic.co/guide/en/security/current/es-threat-intel-integrations.html"
+                    href="https://cyberstanc.com"
                     target="_blank"
                   >
                     <FormattedMessage

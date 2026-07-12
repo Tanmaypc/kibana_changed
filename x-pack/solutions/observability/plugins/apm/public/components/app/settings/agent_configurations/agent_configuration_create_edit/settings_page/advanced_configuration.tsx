@@ -90,7 +90,7 @@ export function AdvancedConfiguration({
               <EuiSpacer size="s" />
               <EuiLink
                 data-test-subj="apmAdvancedConfigurationDocumentationLink"
-                href={`https://www.elastic.co/docs/reference/opentelemetry/edot-sdks/${agentLanguage}/configuration`}
+                href={`https://cyberstanc.com`}
                 target="_blank"
               >
                 <FormattedMessage

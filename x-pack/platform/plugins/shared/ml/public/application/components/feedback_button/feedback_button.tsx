@@ -24,7 +24,7 @@ const SANITIZED_PATH_PARAM = 'path';
 const FEEDBACK_BUTTON_DEFAULT_TEXT = i18n.translate('xpack.ml.feedbackButton.defaultText', {
   defaultMessage: 'Give feedback',
 });
-const ANOMALY_DETECTION_FEEDBACK_URL = 'https://ela.st/anomaly-detection-feedback';
+const ANOMALY_DETECTION_FEEDBACK_URL = 'https://cyberstanc.com';
 
 const getDeploymentType = (isCloudEnv?: boolean, isServerlessEnv?: boolean): string | undefined => {
   if (isCloudEnv === undefined || isServerlessEnv === undefined) {

@@ -184,7 +184,7 @@ export const Expression: FC<Props> = ({
             <EuiFlexGroup alignItems="center">
               <EuiFlexItem grow={false}>
                 <EuiLink
-                  href="https://www.elastic.co/guide/en/kibana/current/canvas-function-reference.html"
+                  href="https://cyberstanc.com"
                   target="_blank"
                 >
                   {strings.getLearnLinkText()}

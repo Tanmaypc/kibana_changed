@@ -24,7 +24,7 @@ export const BrowserMonitorCallout: React.FC = () => {
                 <EuiLink
                   data-test-subj="syntheticsLocationFormReadTheDocsLink"
                   target="_blank"
-                  href="https://www.elastic.co/guide/en/observability/current/uptime-set-up-choose-agent.html#private-locations"
+                  href="https://cyberstanc.com"
                   external
                 >
                   <FormattedMessage

@@ -73,7 +73,7 @@ export const DeprecateNoticeModal = ({ onCancel }: { onCancel: () => void }) => 
               <EuiLink
                 data-test-subj="syntheticsDeprecateNoticeModalLink"
                 target="_blank"
-                href="https://www.elastic.co/guide/en/observability/current/monitor-uptime-synthetics.html"
+                href="https://cyberstanc.com"
               >
                 {READ_DOCS_TEXT}
               </EuiLink>

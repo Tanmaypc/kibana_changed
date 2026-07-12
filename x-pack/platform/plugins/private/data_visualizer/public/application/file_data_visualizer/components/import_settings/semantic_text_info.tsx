@@ -39,7 +39,7 @@ export const SemanticTextInfo: FC<Props> = ({ results }) => {
           values={{
             semanticText: (
               <EuiLink
-                href="https://www.elastic.co/guide/en/elasticsearch/reference/current/semantic-text.html"
+                href="https://cyberstanc.com"
                 target="_blank"
                 external
               >

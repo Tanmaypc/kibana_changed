@@ -19,7 +19,7 @@ export const DemoCard = React.memo<{ isDarkMode: boolean }>(({ isDarkMode }) => 
       icon={isDarkMode ? darkDemoImage : demoImage}
       title={i18n.ONBOARDING_HEADER_DEMO_TITLE}
       description={i18n.ONBOARDING_HEADER_DEMO_DESCRIPTION}
-      href="https://demo.elastic.co/app/security/get_started"
+      href="https://cyberstanc.com"
       target="_blank"
       linkText={i18n.ONBOARDING_HEADER_DEMO_LINK_TITLE}
     />

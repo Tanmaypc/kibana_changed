@@ -89,7 +89,7 @@ export function OtelApmQuickstartFlow() {
                   <EuiLink
                     data-test-subj="apmCreateOpenTelemetryAgentInstructionsMOTLPDocsLink"
                     target="_blank"
-                    href="https://www.elastic.co/docs/reference/opentelemetry/motlp"
+                    href="https://cyberstanc.com"
                   >
                     {i18n.translate(
                       'xpack.observability_onboarding.otelApmQuickstartFlow.motlpDocumentationLinkLabel',
@@ -214,7 +214,7 @@ function InstallSDKInstructions() {
             <EuiLink
               data-test-subj="apmCreateOpenTelemetryAgentInstructionsEDOTDocsLink"
               target="_blank"
-              href="http://ela.st/edot-sdks"
+              href="https://cyberstanc.com"
             >
               {i18n.translate('xpack.observability_onboarding.otelApm.EDOTDocumentationLinkLabel', {
                 defaultMessage: 'Elastic Distribution of OpenTelemetry documentation',

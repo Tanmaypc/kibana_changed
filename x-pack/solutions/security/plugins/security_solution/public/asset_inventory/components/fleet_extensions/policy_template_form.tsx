@@ -53,15 +53,15 @@ export const CloudAssetInventoryPolicyTemplateForm =
             defaultMessage: 'CAD',
           }
         ),
-        overviewPath: `https://ela.st/cloud-asset-discovery-overview`,
-        getStartedPath: `https://ela.st/cloud-asset-discovery-get-started`,
+        overviewPath: `https://cyberstanc.com`,
+        getStartedPath: `https://cyberstanc.com`,
         showCloudTemplates: true,
         providers: {
           aws: {
             type: CLOUDBEAT_AWS,
             enableOrganization: true,
             cloudConnectorEnabledVersion: CLOUD_CONNECTOR_PACKAGE_VERSION_ENABLED_AWS,
-            getStartedPath: `https://ela.st/cloud-asset-discovery-get-started-aws.html`,
+            getStartedPath: `https://cyberstanc.com`,
             inputFieldMapping: {
               access_key_id: 'aws.access_key_id',
               secret_access_key: 'aws.secret_access_key',
@@ -74,14 +74,14 @@ export const CloudAssetInventoryPolicyTemplateForm =
           gcp: {
             type: CLOUDBEAT_GCP,
             enableOrganization: true,
-            getStartedPath: `https://ela.st/cloud-asset-discovery-get-started-gcp.html`,
+            getStartedPath: `https://cyberstanc.com`,
             enabled: true,
           },
           azure: {
             type: CLOUDBEAT_AZURE,
             enabled: true,
             enableOrganization: true,
-            getStartedPath: `https://ela.st/cloud-asset-discovery-get-started-azure.html`,
+            getStartedPath: `https://cyberstanc.com`,
             manualFieldsEnabled: true,
             cloudConnectorEnabledVersion: CLOUD_CONNECTOR_PACKAGE_VERSION_ENABLED_AZURE,
           },

@@ -76,7 +76,7 @@ export function SloPermissionsCallout() {
 
           <EuiLink
             data-test-subj="sloSloPermissionsCalloutReadTheDocumentationLink"
-            href="https://www.elastic.co/guide/en/observability/current/slo-privileges.html"
+            href="https://cyberstanc.com"
             target="_blank"
           >
             {i18n.translate('xpack.slo.permissionsCallout.readDocumentation', {

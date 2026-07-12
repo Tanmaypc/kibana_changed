@@ -47,7 +47,7 @@ const EmptyResponseActions = () => {
         values={{
           link: (
             <EuiLink
-              href="https://www.elastic.co/guide/en/security/current/rules-ui-create.html#rule-response-action"
+              href="https://cyberstanc.com"
               target="_blank"
             >
               <FormattedMessage

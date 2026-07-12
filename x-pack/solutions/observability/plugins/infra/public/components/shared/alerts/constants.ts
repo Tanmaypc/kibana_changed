@@ -80,7 +80,7 @@ export const ALERT_STATUS_QUERY = {
 };
 
 export const ALERTS_DOC_HREF =
-  'https://www.elastic.co/guide/en/observability/current/create-alerts.html';
+  'https://cyberstanc.com';
 
 export const ALERTS_PATH = '/app/observability/alerts';
 

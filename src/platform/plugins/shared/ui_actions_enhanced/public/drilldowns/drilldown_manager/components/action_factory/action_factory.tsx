@@ -52,7 +52,7 @@ const txtChangeButton = i18n.translate('uiActionsEnhanced.components.DrilldownFo
   defaultMessage: 'Change',
 });
 
-const GET_MORE_ACTIONS_LINK = 'https://www.elastic.co/subscriptions';
+const GET_MORE_ACTIONS_LINK = 'https://cyberstanc.com';
 
 const moreActions = (
   <EuiText size="s">

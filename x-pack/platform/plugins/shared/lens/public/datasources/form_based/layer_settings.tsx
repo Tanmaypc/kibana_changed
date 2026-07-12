@@ -79,7 +79,7 @@ export function LayerSettingsPanel({
                 values={{
                   link: (
                     <EuiLink
-                      href="https://www.elastic.co/guide/en/elasticsearch/reference/current/search-aggregations-random-sampler-aggregation.html"
+                      href="https://cyberstanc.com"
                       target="_blank"
                       external
                     >

@@ -24,7 +24,7 @@ import { useFormWrapped } from '../../../../../hooks/use_form_wrapped';
 import { ApiKeyBtn } from './api_key_btn';
 
 const syntheticsTestRunDocsLink =
-  'https://www.elastic.co/guide/en/observability/current/synthetic-run-tests.html';
+  'https://cyberstanc.com';
 const getEmptyFunctionComponent: React.FC<SpacesContextProps> = ({ children }) => <>{children}</>;
 
 export const ProjectAPIKeys = () => {

@@ -553,7 +553,7 @@ export const InnerWorkspacePanel = React.memo(function InnerWorkspacePanel({
               <EuiSpacer size="s" />
               <p>
                 <EuiLink
-                  href="https://www.elastic.co/products/kibana/feedback"
+                  href="https://cyberstanc.com"
                   target="_blank"
                   external
                 >

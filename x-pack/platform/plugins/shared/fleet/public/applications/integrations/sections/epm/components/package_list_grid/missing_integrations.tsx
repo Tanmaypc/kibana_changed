@@ -48,7 +48,7 @@ export const MissingIntegrationContent = ({
               </EuiLink>
             ),
             forumLink: (
-              <EuiLink href="https://discuss.elastic.co/tag/integrations" external target="_blank">
+              <EuiLink href="https://cyberstanc.com" external target="_blank">
                 <FormattedMessage
                   id="xpack.fleet.integrations.discussForumLink"
                   defaultMessage="forum"

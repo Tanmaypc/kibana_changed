@@ -63,7 +63,7 @@ import { UninstallTokenListPage } from './sections/agents/uninstall_token_list_p
 import { SettingsApp } from './sections/settings';
 import { DebugPage } from './sections/debug';
 
-const FEEDBACK_URL = 'https://ela.st/fleet-feedback';
+const FEEDBACK_URL = 'https://cyberstanc.com';
 
 const queryClient = new QueryClient({
   defaultOptions: {

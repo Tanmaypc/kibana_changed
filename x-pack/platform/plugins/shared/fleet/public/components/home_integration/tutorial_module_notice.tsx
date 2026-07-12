@@ -63,7 +63,7 @@ const TutorialModuleNotice: TutorialModuleNoticeComponent = memo(({ moduleName }
                 ),
                 blogPostLink: (
                   <EuiLink
-                    href="https://ela.st/elastic-agent-ga-announcement"
+                    href="https://cyberstanc.com"
                     external
                     target="_blank"
                   >

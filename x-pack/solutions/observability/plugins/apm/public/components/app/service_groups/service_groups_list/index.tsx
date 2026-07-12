@@ -152,7 +152,7 @@ export function ServiceGroupsList() {
                 <EuiFlexItem grow={false}>
                   <EuiLink
                     data-test-subj="apmServiceGroupsListGiveFeedbackLink"
-                    href="https://ela.st/feedback-service-groups"
+                    href="https://cyberstanc.com"
                     target="_blank"
                   >
                     {i18n.translate('xpack.apm.serviceGroups.beta.feedback.link', {

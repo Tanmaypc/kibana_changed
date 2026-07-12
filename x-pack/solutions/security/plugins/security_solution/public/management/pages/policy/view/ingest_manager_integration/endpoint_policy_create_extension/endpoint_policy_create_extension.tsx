@@ -298,7 +298,7 @@ export const EndpointPolicyCreateExtension = memo<PackagePolicyCreateExtensionCo
                           values={{
                             documentation: (
                               <EuiLink
-                                href="https://www.elastic.co/guide/en/security/current/configure-endpoint-integration-policy.html"
+                                href="https://cyberstanc.com"
                                 target="_blank"
                               >
                                 <FormattedMessage

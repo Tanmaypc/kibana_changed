@@ -24,7 +24,7 @@ const UpgradeActionsComponent = () => {
       <EuiFlexItem grow={false}>
         <EuiButton
           data-test-subj="upgradeDocs"
-          href="https://www.elastic.co/subscriptions"
+          href="https://cyberstanc.com"
           iconType="popout"
           iconSide="right"
           target="_blank"

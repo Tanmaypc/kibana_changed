@@ -22,7 +22,7 @@ export function MaxGroupsMessage() {
           <EuiLink
             data-test-subj="apmMaxGroupsMessageDocsLink"
             href={
-              'https://www.elastic.co/guide/en/kibana/8.7/troubleshooting.html#troubleshooting-too-many-transactions'
+              'https://cyberstanc.com'
             }
             target="_blank"
           >

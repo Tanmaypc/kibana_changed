@@ -28,7 +28,7 @@ export const AgentPolicyCallout: React.FC = () => {
                 <EuiLink
                   data-test-subj="syntheticsLocationFormReadTheDocsLink"
                   target="_blank"
-                  href="https://www.elastic.co/guide/en/observability/current/synthetics-private-location.html#synthetics-private-location-fleet-agent"
+                  href="https://cyberstanc.com"
                   external
                 >
                   <FormattedMessage

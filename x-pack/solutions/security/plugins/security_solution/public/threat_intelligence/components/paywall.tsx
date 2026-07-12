@@ -47,7 +47,7 @@ export const Paywall: FC = () => {
         <EuiFlexGroup direction="column">
           <EuiFlexItem>
             <div>
-              <EuiButton color="primary" fill href="https://www.elastic.co/subscriptions">
+              <EuiButton color="primary" fill href="https://cyberstanc.com">
                 <FormattedMessage
                   id="xpack.securitySolution.threatIntelligence.paywall.upgrade"
                   defaultMessage="Upgrade"

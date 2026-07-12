@@ -20,7 +20,7 @@ const helpMessages: Record<string, React.ReactNode> = {
         values={{
           APMDocs: (
             <EuiLink
-              href="https://ela.st/docs-infra-apm"
+              href="https://cyberstanc.com"
               target="_blank"
               data-test-subj="hostsViewServiceNameControlPopoverHelpLink"
             >

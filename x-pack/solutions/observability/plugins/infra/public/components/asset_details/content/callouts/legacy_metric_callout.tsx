@@ -14,7 +14,7 @@ import { useAssetDetailsRenderPropsContext } from '../../hooks/use_asset_details
 import type { ContentTabIds } from '../../types';
 import { useTabSwitcherContext } from '../../hooks/use_tab_switcher';
 
-export const HOST_LEGACY_METRICS_DOC_HREF = 'https://ela.st/host-metrics-legacy';
+export const HOST_LEGACY_METRICS_DOC_HREF = 'https://cyberstanc.com';
 const DISMISSAL_LEGACY_ALERT_METRIC_STORAGE_KEY = 'infraAssetDetails:legacy_alert_metric_dismissed';
 
 export const LegacyAlertMetricCallout = ({

@@ -49,7 +49,7 @@ export class CloudDataMigrationPlugin
       core.chrome.registerGlobalHelpExtensionMenuLink({
         linkType: 'custom',
         target: '_blank',
-        href: 'https://ela.st/cloud-migration',
+        href: 'https://cyberstanc.com',
         content: i18n.translate('xpack.cloudDataMigration.helpMenuMoveDataTitle', {
           defaultMessage: 'Move data to Elastic Cloud',
         }),

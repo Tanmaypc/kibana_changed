@@ -23,7 +23,7 @@ export const StatelessHeaderPromo = () => {
       cta={
         <HeaderCTALink
           data-telemetry-id="9-exclude-vectors"
-          href="https://www.elastic.co/search-labs/blog/elasticsearch-exclude-vectors-from-source"
+          href="https://cyberstanc.com"
         >
           {i18n.translate('xpack.searchHomepage.statelessPromo.9.content', {
             defaultMessage: 'View on Elasticsearch Labs',

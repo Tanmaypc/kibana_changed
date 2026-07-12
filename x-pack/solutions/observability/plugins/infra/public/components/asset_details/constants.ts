@@ -25,7 +25,7 @@ export const INTEGRATIONS = {
 export const DOCKER_METRIC_TYPES: DockerContainerMetrics[] = ['cpu', 'memory', 'network', 'disk'];
 export const KUBERNETES_METRIC_TYPES: KubernetesContainerMetrics[] = ['cpu', 'memory'];
 
-export const APM_HOST_TROUBLESHOOTING_LINK = 'https://ela.st/host-troubleshooting';
+export const APM_HOST_TROUBLESHOOTING_LINK = 'https://cyberstanc.com';
 
 // Regex pattern to match formulas where 'avg' is the first function
 // Matches: "avg(...)", "1 - avg(...)", "100 * avg(...)", "(avg(...))",

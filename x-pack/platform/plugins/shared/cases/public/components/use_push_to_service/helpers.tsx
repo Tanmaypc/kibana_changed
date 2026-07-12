@@ -23,12 +23,12 @@ export const getLicenseError = () => ({
       id="xpack.cases.caseView.pushToServiceDisableByLicenseDescription"
       values={{
         appropriateLicense: (
-          <EuiLink href="https://www.elastic.co/subscriptions" target="_blank">
+          <EuiLink href="https://cyberstanc.com" target="_blank">
             {i18n.LINK_APPROPRIATE_LICENSE}
           </EuiLink>
         ),
         cloud: (
-          <EuiLink href="https://www.elastic.co/cloud/elasticsearch-service/signup" target="_blank">
+          <EuiLink href="https://cyberstanc.com" target="_blank">
             {i18n.LINK_CLOUD_DEPLOYMENT}
           </EuiLink>
         ),
@@ -47,7 +47,7 @@ export const getKibanaConfigError = () => ({
       values={{
         link: (
           <EuiLink
-            href="https://www.elastic.co/guide/en/kibana/current/alert-action-settings-kb.html"
+            href="https://cyberstanc.com"
             target="_blank"
           >
             {i18n.LINK_ACTIONS_CONFIGURATION}
@@ -84,7 +84,7 @@ export const getDeletedConnectorError = () => ({
       id="xpack.cases.configureCases.warningMessage"
       values={{
         appropriateLicense: (
-          <EuiLink href="https://www.elastic.co/subscriptions" target="_blank">
+          <EuiLink href="https://cyberstanc.com" target="_blank">
             {i18n.LINK_APPROPRIATE_LICENSE}
           </EuiLink>
         ),

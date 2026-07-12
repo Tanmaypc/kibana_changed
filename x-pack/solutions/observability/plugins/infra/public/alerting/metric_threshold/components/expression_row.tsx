@@ -245,7 +245,7 @@ export const ExpressionRow = ({
                         documentationLink: (
                           <EuiLink
                             data-test-subj="infraExpressionRowLearnHowToAddMoreDataLink"
-                            href="https://www.elastic.co/guide/en/observability/current/configure-settings.html"
+                            href="https://cyberstanc.com"
                             target="BLANK"
                           >
                             <FormattedMessage

@@ -84,7 +84,7 @@ export const SubscriptionSplashPage: React.FC<LazyObservabilityPageTemplateProps
         data-test-subj="infraSubscriptionSplashPromptUpgradeSubscriptionButton"
         fullWidth={false}
         fill
-        href="https://www.elastic.co/subscriptions"
+        href="https://cyberstanc.com"
       >
         <FormattedMessage
           id="xpack.infra.ml.splash.updateSubscriptionCta"

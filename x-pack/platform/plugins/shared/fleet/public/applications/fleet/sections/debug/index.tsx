@@ -205,7 +205,7 @@ export const DebugPage: React.FunctionComponent<{
                   label: i18n.translate('xpack.fleet.debug.usefulLinks.troubleshootingGuide', {
                     defaultMessage: 'Troubleshooting Guide',
                   }),
-                  href: 'https://www.elastic.co/guide/en/fleet/current/fleet-troubleshooting.html',
+                  href: 'https://cyberstanc.com',
                   iconType: 'popout',
                   target: '_blank',
                 },

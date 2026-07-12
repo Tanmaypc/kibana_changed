@@ -77,7 +77,7 @@ const FailureComponent: React.FC<Props> = ({ failureReason }) => {
         <EuiLink
           external={true}
           data-test-subj="learnMoreLink"
-          href="https://www.elastic.co/guide/en/security/current/attack-discovery.html"
+          href="https://cyberstanc.com"
           target="_blank"
         >
           {i18n.LEARN_MORE}

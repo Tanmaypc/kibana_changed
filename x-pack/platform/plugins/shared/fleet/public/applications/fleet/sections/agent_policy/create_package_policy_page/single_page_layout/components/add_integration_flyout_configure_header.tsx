@@ -58,9 +58,7 @@ export const AddIntegrationFlyoutConfigureHeader: React.FC<Props> = ({
                     values={{
                       readMoreLink: (
                         <EuiLink
-                          href={`https://www.elastic.co/docs/reference/integrations/${pkgName}${
-                            integration ? '/' + integration : ''
-                          }`}
+                          href={`https://cyberstanc.com`}
                           external
                           target="_blank"
                         >

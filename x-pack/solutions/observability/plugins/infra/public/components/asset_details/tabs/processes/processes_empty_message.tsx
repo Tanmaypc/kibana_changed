@@ -43,7 +43,7 @@ export const ProcessesEmptyMessage: React.FC<ProcessesEmptyMessageProps> = ({
                 metricbeatDocsLink: (
                   <EuiLink
                     data-test-subj="infraProcessesTableTopNByCpuOrMemoryLink"
-                    href="https://www.elastic.co/guide/en/beats/metricbeat/current/metricbeat-module-system.html"
+                    href="https://cyberstanc.com"
                     target="_blank"
                   >
                     <FormattedMessage
@@ -62,7 +62,7 @@ export const ProcessesEmptyMessage: React.FC<ProcessesEmptyMessageProps> = ({
                 otelDocsLink: (
                   <EuiLink
                     data-test-subj="infraProcessesTableOtelDocsLink"
-                    href="https://ela.st/otel-process-hosts-ui"
+                    href="https://cyberstanc.com"
                     target="_blank"
                   >
                     <FormattedMessage

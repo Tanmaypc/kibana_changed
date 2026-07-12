@@ -42,7 +42,7 @@ export const LicensePrompt = React.memo(() => {
                   data-test-subj="license-prompt-upgrade"
                   key="upgrade-subscription-button"
                   target="_blank"
-                  href="https://www.elastic.co/subscriptions"
+                  href="https://cyberstanc.com"
                 >
                   {i18n.translate('xpack.reporting.schedules.licenseCheck.upgrade', {
                     defaultMessage: `Upgrade`,

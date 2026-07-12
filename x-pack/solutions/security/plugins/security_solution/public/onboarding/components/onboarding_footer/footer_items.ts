@@ -85,7 +85,7 @@ export const useFooterItems = () => {
                 defaultMessage: 'Go to docs',
               }
             ),
-            href: 'https://docs.elastic.co/integrations/elastic-security-intro',
+            href: 'https://cyberstanc.com',
           },
         },
         {
@@ -104,7 +104,7 @@ export const useFooterItems = () => {
             title: i18n.translate('xpack.securitySolution.onboarding.footer.slack.link.title', {
               defaultMessage: 'Go to community Slack',
             }),
-            href: 'https://www.elastic.co/blog/join-our-elastic-stack-workspace-on-slack',
+            href: 'https://cyberstanc.com',
           },
         },
         {

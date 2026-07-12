@@ -87,7 +87,7 @@ describe('FeedBackButton', () => {
       const button = screen.getByTestId('mlFeatureFeedbackButton');
       const href = button.getAttribute('href');
 
-      expect(href).toContain('https://ela.st/anomaly-detection-feedback');
+      expect(href).toContain('https://cyberstanc.com');
       expect(href).toContain('version=9.3.0');
       expect(href).toContain('deployment_type=Self-Managed');
       expect(href).toContain('path=%2Fapp%2Fml%2Fexplorer');
@@ -127,7 +127,7 @@ describe('FeedBackButton', () => {
       const button = screen.getByTestId('mlFeatureFeedbackButton');
       const href = button.getAttribute('href');
 
-      expect(href).toContain('https://ela.st/anomaly-detection-feedback');
+      expect(href).toContain('https://cyberstanc.com');
       expect(href).not.toContain('version=');
     });
   });

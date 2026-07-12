@@ -51,7 +51,7 @@ interface Props {
 
 type Tab = 'jobs' | 'anomalies';
 
-export const INFRA_ML_FLYOUT_FEEDBACK_LINK = 'https://ela.st/infra-anomaly-feedback';
+export const INFRA_ML_FLYOUT_FEEDBACK_LINK = 'https://cyberstanc.com';
 
 export const FlyoutHome = (props: Props) => {
   const [tab, setTab] = useState<Tab>('jobs');

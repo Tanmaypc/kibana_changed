@@ -169,7 +169,7 @@ export function JavaRuntimeAttachment({ newPolicy, onChange }: Props) {
           values={{
             docLink: (
               <a
-                href="https://www.elastic.co/guide/en/apm/agent/java/current/setup-attach-cli.html"
+                href="https://cyberstanc.com"
                 target="_blank"
               >
                 {i18n.translate(

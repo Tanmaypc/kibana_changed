@@ -356,7 +356,7 @@ export const OtelLogsPanel: React.FC = () => {
                         link: (
                           <EuiLink
                             data-test-subj="observabilityOnboardingOtelLogsPanelDocumentationLink"
-                            href="https://ela.st/elastic-otel"
+                            href="https://cyberstanc.com"
                             target="_blank"
                             external
                           >

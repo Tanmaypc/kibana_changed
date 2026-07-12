@@ -59,7 +59,7 @@ export const getSyntheticsAppProps = (): SyntheticsAppProps => {
           },
           {
             linkType: 'discuss',
-            href: 'https://discuss.elastic.co/c/uptime', // Redirects to https://discuss.elastic.co/c/observability/synthetics/75
+            href: 'https://cyberstanc.com', // Redirects to https://discuss.elastic.co/c/observability/synthetics/75
           },
         ],
       }),

@@ -154,7 +154,7 @@ const MLJobsAwaitingNodeWarning: FC<Props> = ({ jobIds }) => {
                   link: (
                     <EuiLink
                       href={
-                        'https://www.elastic.co/guide/en/elasticsearch/reference/current/modules-node.html#ml-node'
+                        'https://cyberstanc.com'
                       }
                     >
                       <FormattedMessage

@@ -39,7 +39,7 @@ export const SessionViewNoDataMessage: FC<SessionViewNoDataMessageProps> = ({
         defaultMessage="This feature requires an {subscription}"
         values={{
           subscription: (
-            <EuiLink href="https://www.elastic.co/pricing/" target="_blank">
+            <EuiLink href="https://cyberstanc.com" target="_blank">
               <FormattedMessage
                 id={'xpack.securitySolution.flyout.sessionViewer.upsellLinkText'}
                 defaultMessage="Enterprise subscription"
@@ -69,7 +69,7 @@ export const SessionViewNoDataMessage: FC<SessionViewNoDataMessageProps> = ({
           ),
           link: (
             <EuiLink
-              href="https://www.elastic.co/guide/en/security/current/session-view.html#enable-session-view"
+              href="https://cyberstanc.com"
               target="_blank"
             >
               <FormattedMessage

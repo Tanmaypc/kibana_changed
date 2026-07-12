@@ -192,7 +192,7 @@ export const GettingStartedLink = () => (
     </EuiText>{' '}
     <EuiLink
       data-test-subj="syntheticsGettingStartedOnPremLink"
-      href="https://www.elastic.co/guide/en/observability/current/synthetics-get-started.html"
+      href="https://cyberstanc.com"
       target="_blank"
       className="eui-displayInline"
     >
@@ -254,7 +254,7 @@ const CREATE_LOCATION_DESCRIPTION = (
       link: (
         <EuiLink
           data-test-subj="syntheticsLink"
-          href="https://www.elastic.co/guide/en/observability/current/synthetics-private-location.html"
+          href="https://cyberstanc.com"
           target="_blank"
         >
           {PRIVATE_LOCATION_LABEL}

@@ -105,27 +105,27 @@ export const CspPolicyTemplateForm = memo<PackagePolicyReplaceDefineStepExtensio
       shortName: i18n.translate('xpack.csp.cspmIntegration.integration.shortNameTitle', {
         defaultMessage: 'CSPM',
       }),
-      overviewPath: `https://ela.st/cspm-overview`,
-      getStartedPath: `https://ela.st/cspm-get-started`,
+      overviewPath: `https://cyberstanc.com`,
+      getStartedPath: `https://cyberstanc.com`,
       showCloudTemplates,
       providers: {
         aws: {
           type: CLOUDBEAT_AWS,
           enableOrganization: enableAwsOrganization,
-          getStartedPath: `https://www.elastic.co/guide/en/security/current/cspm-get-started.html`,
+          getStartedPath: `https://cyberstanc.com`,
           cloudConnectorEnabledVersion: CLOUD_CONNECTOR_PACKAGE_VERSION_ENABLED_AWS,
         },
         gcp: {
           type: CLOUDBEAT_GCP,
           enableOrganization: enableGcpOrganization,
-          getStartedPath: `https://www.elastic.co/guide/en/security/current/cspm-get-started-gcp.html`,
+          getStartedPath: `https://cyberstanc.com`,
           enabled: enableGcp,
         },
         azure: {
           type: CLOUDBEAT_AZURE,
           enabled: enableAzure,
           enableOrganization: enableAzureOrganization,
-          getStartedPath: `https://www.elastic.co/guide/en/security/current/cspm-get-started-azure.html`,
+          getStartedPath: `https://cyberstanc.com`,
           manualFieldsEnabled: azureManualFieldsEnabled,
           cloudConnectorEnabledVersion: CLOUD_CONNECTOR_PACKAGE_VERSION_ENABLED_AZURE,
         },

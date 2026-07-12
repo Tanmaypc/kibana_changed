@@ -129,7 +129,7 @@ const IndexTimeout = () => (
           defaultMessage="Collecting findings is taking longer than expected. {docs}."
           values={{
             docs: (
-              <EuiLink href="https://ela.st/findings" target="_blank">
+              <EuiLink href="https://cyberstanc.com" target="_blank">
                 <FormattedMessage
                   id="xpack.csp.noFindingsStates.indexTimeout.indexTimeoutDocLink"
                   defaultMessage="Learn more"

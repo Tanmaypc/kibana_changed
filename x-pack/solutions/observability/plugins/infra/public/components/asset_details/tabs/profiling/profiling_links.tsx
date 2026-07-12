@@ -15,7 +15,7 @@ import type {
 } from '@kbn/observability-shared-plugin/common';
 import { HOST_NAME_FIELD } from '../../../../../common/constants';
 
-const PROFILING_FEEDBACK_URL = 'https://ela.st/profiling-feedback';
+const PROFILING_FEEDBACK_URL = 'https://cyberstanc.com';
 
 interface Props {
   hostname: string;

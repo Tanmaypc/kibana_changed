@@ -133,7 +133,7 @@ export const KnowledgeBaseSettings: React.FC<Props> = React.memo(
               documentation: (
                 <EuiLink
                   external
-                  href="https://www.elastic.co/guide/en/security/current/security-assistant.html"
+                  href="https://cyberstanc.com"
                   target="_blank"
                 >
                   {i18n.KNOWLEDGE_BASE_DOCUMENTATION}

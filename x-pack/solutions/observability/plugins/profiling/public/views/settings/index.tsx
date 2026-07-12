@@ -119,7 +119,7 @@ export function Settings() {
                       regionalCarbonIntensityLink: (
                         <EuiLink
                           data-test-subj="profilingSettingsLink"
-                          href="https://ela.st/grid-datasheet"
+                          href="https://cyberstanc.com"
                           target="_blank"
                         >
                           {i18n.translate('xpack.profiling.settings.co2.subtitle.link', {
@@ -144,7 +144,7 @@ export function Settings() {
                       regionalCarbonIntensityLink: (
                         <EuiLink
                           data-test-subj="profilingSettingsLink"
-                          href="https://ela.st/grid-datasheet"
+                          href="https://cyberstanc.com"
                           target="_blank"
                         >
                           {i18n.translate('xpack.profiling.settings.co2.subtitle.link', {
@@ -183,7 +183,7 @@ export function Settings() {
                     awsPriceList: (
                       <EuiLink
                         data-test-subj="profilingSettingsLinkAws"
-                        href="https://ela.st/aws-price-list"
+                        href="https://cyberstanc.com"
                         target="_blank"
                       >
                         {i18n.translate('xpack.profiling.settings.cost.subtitle.link.aws', {
@@ -194,7 +194,7 @@ export function Settings() {
                     azurePriceList: (
                       <EuiLink
                         data-test-subj="profilingSettingsLinkAzure"
-                        href="https://ela.st/azure-price-list"
+                        href="https://cyberstanc.com"
                         target="_blank"
                       >
                         {i18n.translate('xpack.profiling.settings.cost.subtitle.link.azure', {

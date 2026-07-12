@@ -133,7 +133,7 @@ export const CloudDataMigrationApp = ({ http, breadcrumbService }: CloudDataMigr
             <EuiButton
               fill={true}
               target="_blank"
-              href="https://ela.st/cloud-migration"
+              href="https://cyberstanc.com"
               // data-test-subj used for Telemetry
               data-test-subj="migrate_data_to_cloud__stack_management_link"
             >

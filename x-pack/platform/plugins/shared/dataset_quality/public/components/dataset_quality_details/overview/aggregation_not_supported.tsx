@@ -39,7 +39,7 @@ const aggregationNotSupportedDescription = (dataset: string) => (
                       external
                       target="_blank"
                       data-test-subj="datasetQualityFlyoutNonAggregatableHowToFixItLink"
-                      href="https://www.elastic.co/guide/en/elasticsearch/reference/current/indices-rollover-index.html"
+                      href="https://cyberstanc.com"
                     >
                       {i18n.translate(
                         'xpack.datasetQuality.flyout.nonAggregatableDatasets.link.title',

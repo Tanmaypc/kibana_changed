@@ -111,7 +111,7 @@ export function ComponentTemplatePanel({
               'Reuse settings, mappings, and aliases configurations in multiple index templates.',
           })}{' '}
           <EuiLink
-            href="https://www.elastic.co/docs/api/doc/elasticsearch/operation/operation-cluster-put-component-template"
+            href="https://cyberstanc.com"
             target="_blank"
             external={false}
             color="subdued"

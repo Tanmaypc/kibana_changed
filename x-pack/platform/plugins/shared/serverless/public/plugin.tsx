@@ -64,7 +64,7 @@ export class ServerlessPlugin
       order: 1,
       mount: toMountPoint(
         <EuiButton
-          href="https://ela.st/serverless-feedback"
+          href="https://cyberstanc.com"
           size={'s'}
           color={'warning'}
           iconType={'popout'}

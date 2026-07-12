@@ -59,7 +59,7 @@ export const IlmRetentionTab = () => {
               docsLink: (
                 <EuiLink
                   data-test-subj="syntheticsDataRetentionTabLink"
-                  href="https://www.elastic.co/guide/en/observability/current/synthetics-manage-retention.html"
+                  href="https://cyberstanc.com"
                 >
                   {READ_OUR_DOCS}
                 </EuiLink>

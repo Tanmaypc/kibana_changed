@@ -47,7 +47,7 @@ export const InvestigationGuide: React.FC = () => {
           values={{
             documentation: (
               <EuiLink
-                href="https://www.elastic.co/guide/en/security/current/rules-ui-management.html#edit-rules-settings"
+                href="https://cyberstanc.com"
                 target="_blank"
               >
                 <FormattedMessage

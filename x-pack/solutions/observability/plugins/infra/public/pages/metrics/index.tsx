@@ -45,8 +45,8 @@ import { useKibanaEnvironmentContext } from '../../hooks/use_kibana';
 const ADD_DATA_LABEL = i18n.translate('xpack.infra.metricsHeaderAddDataButtonLabel', {
   defaultMessage: 'Add data',
 });
-const HOSTS_FEEDBACK_LINK = 'https://ela.st/host-feedback';
-const METRICS_EXPLORER_FEEDBACK_URL = 'https://ela.st/survey-infra-metricsexplorer';
+const HOSTS_FEEDBACK_LINK = 'https://cyberstanc.com';
+const METRICS_EXPLORER_FEEDBACK_URL = 'https://cyberstanc.com';
 
 const MetricsExplorerPage = dynamic(() =>
   import('./metrics_explorer').then((mod) => ({ default: mod.MetricsExplorerPage }))
@@ -84,7 +84,7 @@ export const InfrastructurePage = () => {
           <ReloadRequestTimeProvider>
             <InfraMLCapabilitiesProvider>
               <HelpCenterContent
-                feedbackLink="https://discuss.elastic.co/c/metrics"
+                feedbackLink="https://cyberstanc.com"
                 appName={i18n.translate('xpack.infra.header.infrastructureHelpAppName', {
                   defaultMessage: 'Metrics',
                 })}

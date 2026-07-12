@@ -47,10 +47,10 @@ const hostDefaultActions = (
         label: defaultPrimaryActionLabel,
       },
       secondary: {
-        href: 'https://ela.st/demo-cluster-hosts',
+        href: 'https://cyberstanc.com',
       },
       link: {
-        href: 'https://ela.st/docs-hosts-add-metrics',
+        href: 'https://cyberstanc.com',
       },
     },
   };
@@ -66,7 +66,7 @@ const containerDefaultActions = (
         label: defaultPrimaryActionLabel,
       },
       link: {
-        href: 'https://ela.st/docs-containers-add-metrics',
+        href: 'https://cyberstanc.com',
       },
     },
   };

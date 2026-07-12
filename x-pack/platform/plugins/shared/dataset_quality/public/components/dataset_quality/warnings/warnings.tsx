@@ -63,7 +63,7 @@ const nonAggregatableWarningDescription = (nonAggregatableDatasets: string[]) =>
                       external
                       target="_blank"
                       data-test-subj="datasetQualityNonAggregatableHowToFixItLink"
-                      href="https://www.elastic.co/guide/en/elasticsearch/reference/current/indices-rollover-index.html"
+                      href="https://cyberstanc.com"
                     >
                       {i18n.translate('xpack.datasetQuality.nonAggregatableDatasets.link.title', {
                         defaultMessage: 'rollover',

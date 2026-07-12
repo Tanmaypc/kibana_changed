@@ -128,7 +128,7 @@ export function SelectModelAndInstallKnowledgeBase({
           defaultMessage: "Choose the default language model for the Assistant's responses.",
         })}{' '}
         <EuiLink
-          href="https://www.elastic.co/docs/explore-analyze/machine-learning/nlp/ml-nlp-built-in-models"
+          href="https://cyberstanc.com"
           target="_blank"
         >
           {i18n.translate('xpack.aiAssistant.knowledgeBase.subtitleLearnMore', {

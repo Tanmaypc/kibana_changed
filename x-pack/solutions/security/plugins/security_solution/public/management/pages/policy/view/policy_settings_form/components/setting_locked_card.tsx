@@ -91,7 +91,7 @@ export const SettingLockedCard = React.memo<SettingLockedCardProps>(
                       licenseType: licenseDisplayName,
                       cloudDeploymentLink: (
                         <EuiLink
-                          href="https://www.elastic.co/cloud/"
+                          href="https://cyberstanc.com"
                           target="_blank"
                           data-test-subj={getTestId('cloudLink')}
                         >

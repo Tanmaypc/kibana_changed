@@ -155,7 +155,7 @@ export const OtelKubernetesPanel: React.FC = () => {
                       ),
                       doc: (
                         <EuiLink
-                          href="https://ela.st/8-16-otel-cert-manager"
+                          href="https://cyberstanc.com"
                           target="_blank"
                           data-test-subj="observabilityOnboardingOtelKubernetesPanelCertManagerDocsLink"
                         >
@@ -363,7 +363,7 @@ kubectl describe pod <myapp-pod-name> -n my-namespace`}
                           values={{
                             link: (
                               <EuiLink
-                                href="https://ela.st/8-16-otel-apm-instrumentation"
+                                href="https://cyberstanc.com"
                                 data-test-subj="observabilityOnboardingOtelKubernetesPanelReferToTheDocumentationLink"
                                 target="_blank"
                               >

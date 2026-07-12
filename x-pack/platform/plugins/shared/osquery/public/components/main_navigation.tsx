@@ -62,7 +62,7 @@ export const MainNavigation = () => {
           <EuiFlexGroup gutterSize="s" direction="row">
             <EuiFlexItem>
               <EuiButtonEmpty
-                href="https://ela.st/osquery-feedback"
+                href="https://cyberstanc.com"
                 target="_blank"
                 aria-label={feedbackButtonLabel}
                 iconType="popout"

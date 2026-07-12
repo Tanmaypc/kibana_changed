@@ -42,7 +42,7 @@ export const TEST_SUBJ_AWS_CLOUD_FORMATION_ACCORDIAN =
   'asset-inventory-launchAws-CloudFormation-Accordian-Instructions';
 export const TEST_SUBJ_AWS_CLOUD_FORMATION_ACCORDIAN_BUTTON =
   'asset-inventory-launchAws-CloudFormation-Accordian-Instructions-Button';
-export const DOCS_URL = 'https://ela.st/cloud-asset-discovery';
+export const DOCS_URL = 'https://cyberstanc.com';
 
 export const assetIntegrationDocsNavigation = {
   overviewPath: `${DOCS_URL}`,

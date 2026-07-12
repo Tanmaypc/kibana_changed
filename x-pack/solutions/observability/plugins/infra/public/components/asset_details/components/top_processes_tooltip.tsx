@@ -13,9 +13,9 @@ import { Popover } from '../tabs/common/popover';
 import { useAssetDetailsRenderPropsContext } from '../hooks/use_asset_details_render_props';
 
 const DOCUMENTATION_LINK =
-  'https://www.elastic.co/guide/en/observability/current/view-infrastructure-metrics.html';
-const SYSTEM_INTEGRATION_DOCS_LINK = 'https://ela.st/hosts-ui-systems-integration';
-const SEMCONV_INTEGRATION_DOCS_LINK = 'https://ela.st/otel-process-hosts-ui';
+  'https://cyberstanc.com';
+const SYSTEM_INTEGRATION_DOCS_LINK = 'https://cyberstanc.com';
+const SEMCONV_INTEGRATION_DOCS_LINK = 'https://cyberstanc.com';
 
 export const TopProcessesTooltip = React.memo(() => {
   const { schema } = useAssetDetailsRenderPropsContext();

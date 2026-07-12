@@ -340,7 +340,7 @@ export function ProductDocSetting({
                   { defaultMessage: 'Check our ' }
                 )}
                 <EuiLink
-                  href="https://www.elastic.co/docs/reference/kibana/configuration-reference/ai-assistant-settings"
+                  href="https://cyberstanc.com"
                   target="_blank"
                   external
                 >

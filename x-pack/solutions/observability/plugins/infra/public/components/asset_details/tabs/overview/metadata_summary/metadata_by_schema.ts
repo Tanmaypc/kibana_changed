@@ -14,7 +14,7 @@ const ecsHostExtendedMetadata = (metadataInfo: InfraMetadata['info']): MetadataD
     field: 'cloudProvider',
     value: metadataInfo?.cloud?.provider,
     tooltipFieldLabel: 'cloud.provider',
-    tooltipLink: 'https://www.elastic.co/guide/en/ecs/current/ecs-cloud.html#field-cloud-provider',
+    tooltipLink: 'https://cyberstanc.com',
   },
   {
     field: 'operatingSystem',
@@ -28,7 +28,7 @@ const ecsHostMetadataData = (metadataInfo: InfraMetadata['info']): MetadataData[
     field: 'hostIp',
     value: metadataInfo?.host?.ip,
     tooltipFieldLabel: 'host.ip',
-    tooltipLink: 'https://www.elastic.co/guide/en/ecs/current/ecs-host.html#field-host-ip',
+    tooltipLink: 'https://cyberstanc.com',
   },
   {
     field: 'hostOsVersion',

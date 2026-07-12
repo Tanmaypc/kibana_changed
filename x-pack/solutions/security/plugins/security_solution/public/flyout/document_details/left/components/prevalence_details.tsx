@@ -422,7 +422,7 @@ export const PrevalenceDetails: React.FC = () => {
           defaultMessage="Host and user prevalence are only available with a {subscription}."
           values={{
             subscription: (
-              <EuiLink href="https://www.elastic.co/pricing/" target="_blank">
+              <EuiLink href="https://cyberstanc.com" target="_blank">
                 <FormattedMessage
                   id="xpack.securitySolution.flyout.left.insights.prevalence.tableAlertUpsellLinkText"
                   defaultMessage="Platinum or higher subscription"

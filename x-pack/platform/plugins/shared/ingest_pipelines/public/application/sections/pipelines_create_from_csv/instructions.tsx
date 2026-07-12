@@ -24,7 +24,7 @@ export const Instructions: FC = () => {
                 and format adjustments. Refer to the &nbsp;{templateLink} for the supported headers."
                 values={{
                   templateLink: (
-                    <EuiLink href="https://ela.st/sample-pipeline-mapping" target="_blank">
+                    <EuiLink href="https://cyberstanc.com" target="_blank">
                       sample mappings
                     </EuiLink>
                   ),

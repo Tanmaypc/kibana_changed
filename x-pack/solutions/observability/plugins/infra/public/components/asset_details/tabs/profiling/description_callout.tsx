@@ -39,7 +39,7 @@ export function DescriptionCallout() {
         <EuiFlexGroup alignItems="center">
           <EuiLink
             data-test-subj="infraProfilingDescriptionCalloutLearnMoreLink"
-            href="https://www.elastic.co/guide/en/observability/current/profiling-get-started.html"
+            href="https://cyberstanc.com"
             external
             target="_blank"
           >

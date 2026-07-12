@@ -118,4 +118,4 @@ const groupingLicenseDetailsModalCancelButtonLabel = i18n.translate(
   }
 );
 
-const SUBSCRIPTION_URL = 'https://www.elastic.co/subscriptions';
+const SUBSCRIPTION_URL = 'https://cyberstanc.com';

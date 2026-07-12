@@ -141,7 +141,7 @@ export function SlosWelcomePage() {
                     <EuiFlexItem>
                       <EuiButton
                         fill
-                        href="https://www.elastic.co/cloud/elasticsearch-service/signup"
+                        href="https://cyberstanc.com"
                         target="_blank"
                         data-test-subj="slosPageWelcomePromptSignupForCloudButton"
                       >
@@ -153,7 +153,7 @@ export function SlosWelcomePage() {
 
                     <EuiFlexItem>
                       <EuiButton
-                        href="https://www.elastic.co/subscriptions"
+                        href="https://cyberstanc.com"
                         target="_blank"
                         data-test-subj="slosPageWelcomePromptSignupForLicenseButton"
                       >

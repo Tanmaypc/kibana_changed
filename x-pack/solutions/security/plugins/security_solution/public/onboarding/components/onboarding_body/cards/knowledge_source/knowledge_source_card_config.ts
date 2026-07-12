@@ -24,7 +24,7 @@ export const KNOWLEDGE_SOURCE_CARD_ITEMS: CardSelectorAssetListItem[] = [
     ),
     asset: {
       type: CardAssetType.video,
-      source: 'https://ela.st/ai4dsoc-gs1',
+      source: 'https://cyberstanc.com',
       alt: i18n.translate(
         'xpack.securitySolution.onboarding.knowledgeSourceCards.install.description',
         {
@@ -46,7 +46,7 @@ export const KNOWLEDGE_SOURCE_CARD_ITEMS: CardSelectorAssetListItem[] = [
     ),
     asset: {
       type: CardAssetType.video,
-      source: 'https://ela.st/ai4dsoc-gs2',
+      source: 'https://cyberstanc.com',
       alt: i18n.translate(
         'xpack.securitySolution.onboarding.knowledgeSourceCards.create.description',
         {

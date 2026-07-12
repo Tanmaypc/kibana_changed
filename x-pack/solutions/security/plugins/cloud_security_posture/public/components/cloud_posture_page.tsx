@@ -141,7 +141,7 @@ export const defaultNoDataRenderer = () => (
         defaultMessage: 'Cloud Security Posture',
       })}
       // TODO: Add real docs link once we have it
-      docsLink={'https://www.elastic.co/guide/index.html'}
+      docsLink={'https://cyberstanc.com'}
       logo={'logoSecurity'}
       actions={{}}
     />

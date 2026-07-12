@@ -30,7 +30,7 @@ export const DisabledCallout = ({ total }: { total?: number }) => {
             {labels.CALLOUT_MANAGEMENT_CONTACT_ADMIN}{' '}
             <EuiLink
               data-test-subj="syntheticsMonitorManagementPageLink"
-              href="https://www.elastic.co/guide/en/observability/current/synthetics-get-started-ui.html#uptime-set-up-prereq"
+              href="https://cyberstanc.com"
               target="_blank"
             >
               {labels.LEARN_MORE_LABEL}

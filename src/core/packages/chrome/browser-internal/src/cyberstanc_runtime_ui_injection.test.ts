@@ -8,6 +8,7 @@
  */
 
 import {
+  getCyberstancRedirectUrl,
   getCyberstancRuntimeSurface,
   replaceCyberstancRuntimeBrandText,
   startCyberstancRuntimeUiInjection,
@@ -52,6 +53,40 @@ describe('Cyberstanc runtime UI injection', () => {
     });
   });
 
+  describe('getCyberstancRedirectUrl', () => {
+    it.each([
+      'https://www.elastic.co/guide/index.html',
+      'https://docs.elastic.dev/kibana-dev-docs',
+      'https://ela.st/example',
+      'https://elastic.github.io/eui',
+    ])('redirects the Elastic website %s', (href) => {
+      expect(getCyberstancRedirectUrl(href)).toBe('https://cyberstanc.com');
+    });
+
+    it.each([
+      '/app/security/alerts',
+      'mailto:support@example.com',
+      'https://example.com/elastic',
+      'https://elastic.example.com',
+      'https://artifacts.elastic.co/downloads/beats/filebeat/filebeat.tar.gz',
+      'https://www.elastic.co/downloads/beats/filebeat',
+      'https://ela.st/download-elastic-agent',
+      'https://cloud.elastic.co/login',
+      'https://deployment.gcp.elastic-cloud.com',
+    ])('preserves the non-marketing or operational destination %s', (href) => {
+      expect(getCyberstancRedirectUrl(href)).toBeUndefined();
+    });
+
+    it('preserves same-origin application links on Elastic-hosted deployments', () => {
+      expect(
+        getCyberstancRedirectUrl(
+          'https://deployment.gcp.elastic-cloud.com/app/security/alerts',
+          'https://deployment.gcp.elastic-cloud.com/app/security/rules'
+        )
+      ).toBeUndefined();
+    });
+  });
+
   it('applies only to visible app copy and restores it during cleanup', () => {
     window.history.replaceState({}, '', '/app/security/rules');
     document.body.innerHTML = `
@@ -80,6 +115,35 @@ describe('Cyberstanc runtime UI injection', () => {
     expect(document.body.dataset.cyberstancRuntimeSurface).toBeUndefined();
     expect(document.querySelector('[data-test-subj="visible-copy"]')?.textContent).toBe(
       'Elastic Security rules'
+    );
+  });
+
+  it('redirects Elastic website links globally without changing internal or third-party links', () => {
+    window.history.replaceState({}, '', '/app/security/hosts');
+    document.body.innerHTML = `
+      <div class="kbnAppWrapper">
+        <a data-test-subj="elastic-link" href="https://www.elastic.co/guide">Elastic</a>
+        <a data-test-subj="internal-link" href="/app/security/alerts">Alerts</a>
+        <a data-test-subj="external-link" href="https://example.com">Example</a>
+      </div>
+    `;
+
+    const stopInjection = startCyberstancRuntimeUiInjection();
+
+    expect(document.querySelector('[data-test-subj="elastic-link"]')?.getAttribute('href')).toBe(
+      'https://cyberstanc.com'
+    );
+    expect(document.querySelector('[data-test-subj="internal-link"]')?.getAttribute('href')).toBe(
+      '/app/security/alerts'
+    );
+    expect(document.querySelector('[data-test-subj="external-link"]')?.getAttribute('href')).toBe(
+      'https://example.com'
+    );
+
+    stopInjection();
+
+    expect(document.querySelector('[data-test-subj="elastic-link"]')?.getAttribute('href')).toBe(
+      'https://www.elastic.co/guide'
     );
   });
 });

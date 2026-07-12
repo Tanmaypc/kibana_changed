@@ -14,7 +14,7 @@ import { FeatureFeedbackButton } from '@kbn/observability-shared-plugin/public';
 import { useKibanaEnvironmentContext } from '../../../../hooks/use_kibana';
 
 const KUBERNETES_TOAST_STORAGE_KEY = 'kubernetesToastKey';
-const KUBERNETES_FEEDBACK_LINK = 'https://ela.st/k8s-feedback';
+const KUBERNETES_FEEDBACK_LINK = 'https://cyberstanc.com';
 const FEEDBACK_BUTTON_KUBERNETES_TEXT = i18n.translate(
   'xpack.infra.featureFeedbackButton.kubernetesText',
   {

@@ -87,7 +87,7 @@ export const EmptyLocations = ({
 export const PrivateLocationDocsLink = ({ label }: { label?: string }) => (
   <EuiLink
     data-test-subj="syntheticsPrivateLocationDocsLinkLink"
-    href="https://www.elastic.co/guide/en/observability/current/synthetics-private-location.html"
+    href="https://cyberstanc.com"
     target="_blank"
   >
     {label ?? READ_DOCS}

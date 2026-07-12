@@ -19,7 +19,7 @@ import * as i18n from './translations';
 import theGif from './overview.gif';
 
 const VIDEO_CONTENT_WIDTH = 330;
-export const VIDEO_PAGE = `https://ela.st/seckb`;
+export const VIDEO_PAGE = `https://cyberstanc.com`;
 
 const VideoComponent: React.FC<{ onClose: () => void }> = ({ onClose }) => {
   const openVideoInNewTab = useCallback(() => {

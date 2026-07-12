@@ -49,7 +49,7 @@ const PROMO_ITEMS = {
       defaultMessage:
         'A fully managed service providing the easiest way to start and scale. With Serverless, Elastic handles all the behind-the-scenes operations like version upgrades, sharding, and scaling.',
     }),
-    externalLink: 'https://www.elastic.co/cloud/serverless',
+    externalLink: 'https://cyberstanc.com',
   },
   hosted: {
     logoPath: (assetBasePath: string) => `${assetBasePath}/search_hosted_promo_logo.svg`,
@@ -63,7 +63,7 @@ const PROMO_ITEMS = {
       defaultMessage:
         'Spin up, scale, upgrade, and delete your Elastic Stack products on the cloud provider and regions of your choice without having to manage each one separately. In an Elasatic Cloud Hosted deployment, everything works together.',
     }),
-    externalLink: 'https://www.elastic.co/cloud',
+    externalLink: 'https://cyberstanc.com',
   },
 };
 

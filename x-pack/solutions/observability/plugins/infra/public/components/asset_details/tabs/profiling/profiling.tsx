@@ -81,7 +81,7 @@ export function Profiling() {
                 learnMoreLink: (
                   <EuiLink
                     data-test-subj="infraProfilingFlamegraphTabLearnMoreLink"
-                    href="https://www.elastic.co/guide/en/observability/current/universal-profiling.html#profiling-flamegraphs-intro"
+                    href="https://cyberstanc.com"
                     external
                     target="_blank"
                   >
@@ -117,7 +117,7 @@ export function Profiling() {
                 learnMoreLink: (
                   <EuiLink
                     data-test-subj="infraProfilingFunctionsTabLearnMoreLink"
-                    href="https://www.elastic.co/guide/en/observability/current/universal-profiling.html#profiling-functions-intro"
+                    href="https://cyberstanc.com"
                     external
                     target="_blank"
                   >

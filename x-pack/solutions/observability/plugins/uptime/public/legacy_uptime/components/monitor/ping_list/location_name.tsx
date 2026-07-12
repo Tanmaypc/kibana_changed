@@ -18,7 +18,7 @@ export const LocationName = ({ location }: LocationNameProps) =>
   ) : (
     <EuiLink
       data-test-subj="syntheticsLocationNameAddLocationLink"
-      href="https://www.elastic.co/guide/en/beats/heartbeat/current/configuration-observer-options.html"
+      href="https://cyberstanc.com"
       target="_blank"
     >
       {i18n.translate('xpack.uptime.locationName.helpLinkAnnotation', {

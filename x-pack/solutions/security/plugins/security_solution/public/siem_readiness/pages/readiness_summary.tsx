@@ -222,7 +222,7 @@ const AboutSiemReadiness = () => {
             values={{
               docsLink: (
                 // TODO siem-readiness: update link to point to siem readiness docs when available
-                <EuiLink href="https://www.elastic.co/guide/index.html" target="_blank" external>
+                <EuiLink href="https://cyberstanc.com" target="_blank" external>
                   {'docs'}
                 </EuiLink>
               ),

@@ -131,7 +131,7 @@ export const LicensingCallout: React.FC<{ feature: LICENSING_FEATURE }> = ({ fea
           </EuiLink>
         </EuiFlexItem>
         <EuiFlexItem>
-          <EuiLink href="https://www.elastic.co/subscriptions/cloud" external>
+          <EuiLink href="https://cyberstanc.com" external>
             {i18n.translate('xpack.enterpriseSearch.content.licensingCallout.contentCloudTrial', {
               defaultMessage: 'Explore Enterprise Search on Elastic Cloud ',
             })}

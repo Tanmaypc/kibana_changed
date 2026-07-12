@@ -349,7 +349,7 @@ export const KnowledgeBaseSettingsManagement: React.FC<Params> = React.memo(({ d
               learnMore: (
                 <EuiLink
                   external
-                  href="https://www.elastic.co/guide/en/security/current/security-assistant.html"
+                  href="https://cyberstanc.com"
                   target="_blank"
                 >
                   {i18n.KNOWLEDGE_BASE_DOCUMENTATION}

@@ -65,7 +65,7 @@ export default function Header() {
             dsNamingSchemeLink: (
               <EuiLink
                 data-test-subj="datasetQualityAppDescriptionDsNamingSchemeLink"
-                href="https://ela.st/data-stream-naming-scheme"
+                href="https://cyberstanc.com"
                 target="_blank"
                 rel="noopener"
               >

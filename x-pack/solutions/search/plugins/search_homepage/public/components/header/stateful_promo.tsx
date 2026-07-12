@@ -25,7 +25,7 @@ export const StatefulHeaderPromo = () => {
           data-test-subj="searchHomepageSearchHomepageHeaderCTA"
           // "search-promo-homepage-" is prepended to the telemetry id in HeaderCTALink
           data-telemetry-id="10-elser-on-eis"
-          href="https://www.elastic.co/docs/explore-analyze/elastic-inference/eis#elser-on-eis"
+          href="https://cyberstanc.com"
         >
           {i18n.translate('xpack.searchHomepage.statefulPromo.content', {
             defaultMessage: 'View docs',

@@ -9,4 +9,4 @@
  * Workflow Insights
  */
 
-export const WORKFLOW_INSIGHTS_SURVEY_URL = 'https://ela.st/automatic-troubleshooting-feedback';
+export const WORKFLOW_INSIGHTS_SURVEY_URL = 'https://cyberstanc.com';

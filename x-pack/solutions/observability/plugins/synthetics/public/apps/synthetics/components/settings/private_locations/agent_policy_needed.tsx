@@ -47,7 +47,7 @@ export const AgentPolicyNeeded = () => {
             <EuiLink
               data-test-subj="syntheticsAgentPolicyNeededLink"
               target="_blank"
-              href="https://www.elastic.co/guide/en/observability/current/uptime-set-up-choose-agent.html#private-locations"
+              href="https://cyberstanc.com"
             >
               {READ_DOCS}
             </EuiLink>

@@ -24,13 +24,13 @@ const PlatinumLicenseCalloutComponent: React.FC = () => {
         id="xpack.cases.platinumLicenseCalloutMessage"
         values={{
           appropriateLicense: (
-            <EuiLink href="https://www.elastic.co/subscriptions" target="_blank">
+            <EuiLink href="https://cyberstanc.com" target="_blank">
               {i18n.LINK_APPROPRIATE_LICENSE}
             </EuiLink>
           ),
           cloud: (
             <EuiLink
-              href="https://www.elastic.co/cloud/elasticsearch-service/signup"
+              href="https://cyberstanc.com"
               target="_blank"
             >
               {i18n.LINK_CLOUD_DEPLOYMENT}

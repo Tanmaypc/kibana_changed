@@ -132,7 +132,7 @@ plugins: [
               values={{
                 link: (
                   <EuiLink
-                    href="https://docs.elastic.co/search-ui/api/core/plugins/analytics-plugin"
+                    href="https://cyberstanc.com"
                     target="_blank"
                     data-telemetry-id={
                       'entSearch-analytics-integrate-javascriptEmbed-analyticsPluginDocumentationLink'

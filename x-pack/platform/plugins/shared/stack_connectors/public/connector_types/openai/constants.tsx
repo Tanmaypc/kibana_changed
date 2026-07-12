@@ -178,7 +178,7 @@ export const otherOpenAiConfig: ConfigFieldSchema[] = [
           genAiAPIUrlDocs: (
             <EuiLink
               data-test-subj="other-ai-api-doc"
-              href="https://www.elastic.co/guide/en/security/current/connect-to-byo-llm.html"
+              href="https://cyberstanc.com"
               target="_blank"
             >
               {`${i18n.OTHER_OPENAI} ${i18n.DOCUMENTATION}`}
@@ -265,7 +265,7 @@ export const getOtherOpenAiSecrets = (isRequired = true): SecretsFieldSchema[] =
           genAiAPIKeyDocs: (
             <EuiLink
               data-test-subj="other-ai-api-keys-doc"
-              href="https://www.elastic.co/guide/en/security/current/connect-to-byo-llm.html"
+              href="https://cyberstanc.com"
               target="_blank"
             >
               {`${i18n.OTHER_OPENAI} ${i18n.DOCUMENTATION}`}

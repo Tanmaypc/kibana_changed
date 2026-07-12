@@ -132,7 +132,7 @@ export const NoDataPage: FunctionComponent<NoDataPageProps> = ({
                 defaultMessage="Confused on which to use? {link}"
                 values={{
                   link: (
-                    <EuiLink href="https://www.elastic.co/guide/en/fleet/current/beats-agent-comparison.html">
+                    <EuiLink href="https://cyberstanc.com">
                       <FormattedMessage
                         id="kibana-react.noDataPage.cantDecide.link"
                         defaultMessage="Check our docs for more information."

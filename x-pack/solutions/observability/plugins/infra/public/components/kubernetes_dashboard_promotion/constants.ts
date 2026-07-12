@@ -8,7 +8,7 @@
 export const KUBERNETES_INTEGRATION_ID = 'kubernetes';
 export const KUBERNETES_SEMCONV_INTEGRATION_ID = 'kubernetes_otel';
 
-export const INTEGRATION_DOCS_LINK = 'https://www.elastic.co/docs/reference/integrations';
+export const INTEGRATION_DOCS_LINK = 'https://cyberstanc.com';
 export const INTEGRATION_PAGE_PATH = '/detail';
 
 export const KUBERNETES_INTEGRATION_TAG = 'Kubernetes';

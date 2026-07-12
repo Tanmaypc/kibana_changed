@@ -61,9 +61,9 @@ export const EMPTY_METADATA: PartitionedFieldMetadata = {
 export const EMPTY_PLACEHOLDER = '--';
 
 export const ECS_FIELD_REFERENCE_URL =
-  'https://www.elastic.co/guide/en/ecs/current/ecs-field-reference.html';
+  'https://cyberstanc.com';
 
 /** The documentation link shown in the `Data Quality` dashboard */
-export const ECS_REFERENCE_URL = 'https://www.elastic.co/guide/en/ecs/current/ecs-reference.html';
+export const ECS_REFERENCE_URL = 'https://cyberstanc.com';
 export const MAPPING_URL =
-  'https://www.elastic.co/guide/en/elasticsearch/reference/current/mapping.html';
+  'https://cyberstanc.com';

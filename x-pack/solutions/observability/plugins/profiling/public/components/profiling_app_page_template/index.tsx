@@ -23,7 +23,7 @@ import { PrimaryProfilingSearchBar } from './primary_profiling_search_bar';
 import { useLocalStorage } from '../../hooks/use_local_storage';
 import { useProfilingSetupStatus } from '../contexts/profiling_setup_status/use_profiling_setup_status';
 
-export const PROFILING_FEEDBACK_LINK = 'https://ela.st/profiling-feedback';
+export const PROFILING_FEEDBACK_LINK = 'https://cyberstanc.com';
 
 export function ProfilingAppPageTemplate({
   children,

@@ -214,7 +214,7 @@ export function InstallElasticAgentSteps<PlatformId extends string>({
                         <EuiLink
                           data-test-subj="observabilityOnboardingInstallElasticAgentStepsHostRequirementsAndOtherInstallationOptionsLink"
                           external
-                          href="https://www.elastic.co/guide/en/fleet/8.7/elastic-agent-installation.html"
+                          href="https://cyberstanc.com"
                         >
                           {i18n.translate(
                             'xpack.observability_onboarding.installElasticAgent.installStep.hostRequirements',

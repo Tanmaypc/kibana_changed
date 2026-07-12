@@ -9,7 +9,7 @@ import React from 'react';
 import { EuiButtonEmpty } from '@elastic/eui';
 import { i18n } from '@kbn/i18n';
 
-const LOGS_ALERT_DETAILS_FEEDBACK_LINK = 'https://ela.st/log-alert-details-feedback';
+const LOGS_ALERT_DETAILS_FEEDBACK_LINK = 'https://cyberstanc.com';
 const feedbackButtonLabel = i18n.translate(
   'xpack.observability.logs.alertDetails.feedbackButtonLabel',
   {

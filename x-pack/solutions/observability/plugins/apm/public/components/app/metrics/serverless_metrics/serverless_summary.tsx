@@ -94,7 +94,7 @@ export function ServerlessSummary({ serverlessId }: Props) {
         <EuiFlexItem grow={false}>
           <EuiLink
             data-test-subj="apmServerlessSummaryGiveFeedbackLink"
-            href="https://ela.st/feedback-aws-lambda"
+            href="https://cyberstanc.com"
             target="_blank"
           >
             {i18n.translate('xpack.apm.serverlessMetrics.summary.feedback', {

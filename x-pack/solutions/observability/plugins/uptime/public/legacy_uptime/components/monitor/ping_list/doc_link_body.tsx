@@ -11,7 +11,7 @@ import { i18n } from '@kbn/i18n';
 import { EuiLink, EuiText } from '@elastic/eui';
 
 const bodyDocsLink =
-  'https://www.elastic.co/guide/en/beats/heartbeat/current/configuration-heartbeat-options.html#monitor-http-response';
+  'https://cyberstanc.com';
 
 export const DocLinkForBody = () => {
   const docsLink = (

@@ -102,7 +102,7 @@ export function DataIngestStatus({ onboardingId }: Props) {
                 troubleshootingLink: (
                   <EuiLink
                     data-test-subj="observabilityOnboardingDataIngestStatusTroubleshootingLink"
-                    href="https://www.elastic.co/guide/en/fleet/current/fleet-troubleshooting.html"
+                    href="https://cyberstanc.com"
                     external
                     target="_blank"
                   >

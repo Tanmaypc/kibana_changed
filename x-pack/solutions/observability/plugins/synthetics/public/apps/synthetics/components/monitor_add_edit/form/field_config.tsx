@@ -162,7 +162,7 @@ export const MONITOR_TYPE_CONFIG = {
           'Navigate through multiple steps or pages to test key user flows from a real browser.',
       }
     ),
-    link: 'https://www.elastic.co/guide/en/observability/current/synthetics-journeys.html',
+    link: 'https://cyberstanc.com',
     icon: 'videoPlayer',
     beta: false,
   },
@@ -186,7 +186,7 @@ export const MONITOR_TYPE_CONFIG = {
           'Test a single page load including all objects on the page from a real web browser.',
       }
     ),
-    link: 'https://www.elastic.co/guide/en/observability/current/synthetics-journeys.html',
+    link: 'https://cyberstanc.com',
     icon: 'videoPlayer',
     beta: false,
   },
@@ -222,7 +222,7 @@ export const MONITOR_TYPE_CONFIG = {
       defaultMessage:
         'A lightweight API check to validate the availability of a web service or endpoint.',
     }),
-    link: 'https://www.elastic.co/guide/en/observability/current/synthetics-lightweight.html',
+    link: 'https://cyberstanc.com',
     icon: 'online',
     beta: false,
   },
@@ -240,7 +240,7 @@ export const MONITOR_TYPE_CONFIG = {
       defaultMessage:
         'A lightweight API check to validate the availability of a web service or endpoint.',
     }),
-    link: 'https://www.elastic.co/guide/en/observability/current/synthetics-lightweight.html',
+    link: 'https://cyberstanc.com',
     icon: 'online',
     beta: false,
   },
@@ -672,7 +672,7 @@ export const FIELD = (readOnly?: boolean): FieldMap => ({
         })}
         <EuiLink
           data-test-subj="syntheticsFIELDLearnMoreLink"
-          href="https://www.elastic.co/guide/en/fleet/current/data-streams.html"
+          href="https://cyberstanc.com"
           target="_blank"
         >
           {i18n.translate('xpack.synthetics.monitorConfig.namespace.learnMore', {
