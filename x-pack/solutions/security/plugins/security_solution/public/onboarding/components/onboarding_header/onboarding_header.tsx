@@ -20,6 +20,7 @@ import { DemoCard } from './cards/demo_card';
 import { defaultHeaderConfig, headerConfig } from './onboarding_header_configs';
 import { hasCapabilities } from '../../../common/lib/capabilities';
 import { useKibana } from '../../../common/lib/kibana';
+import { SHOW_ONBOARDING_VIDEOS } from '../../constants';
 
 export const OnboardingHeader = React.memo(() => {
   const currentUser = useCurrentUser();
@@ -71,9 +72,11 @@ export const OnboardingHeader = React.memo(() => {
       </EuiFlexGroup>
       <EuiSpacer size="xxl" />
       <EuiFlexGroup justifyContent="center" alignItems="center" wrap>
-        <EuiFlexItem>
-          <VideoCard isDarkMode={isDarkMode} />
-        </EuiFlexItem>
+        {SHOW_ONBOARDING_VIDEOS && (
+          <EuiFlexItem>
+            <VideoCard isDarkMode={isDarkMode} />
+          </EuiFlexItem>
+        )}
         <EuiFlexItem>
           <TeammatesCard isDarkMode={isDarkMode} />
         </EuiFlexItem>

@@ -35,6 +35,18 @@ describe('Investigation guide view', () => {
     expect(queryByTestId('investigation-guide-clamped')).not.toBeInTheDocument();
   });
 
+  it('should display Scrutiny EDR branding without changing the rule note', () => {
+    const ruleNote = 'Investigating Endpoint Security (Elastic Defend)';
+    const { getByTestId } = render(
+      <InvestigationGuideView {...defaultProps} ruleNote={ruleNote} showFullView={true} />
+    );
+
+    expect(getByTestId('investigation-guide-full-view')).toHaveTextContent(
+      'Investigating Endpoint Security (Scrutiny EDR)'
+    );
+    expect(ruleNote).toBe('Investigating Endpoint Security (Elastic Defend)');
+  });
+
   it('should not render investigation guide title when showTitle is false', () => {
     const { queryByTestId } = render(
       <InvestigationGuideView {...defaultProps} showTitle={false} />

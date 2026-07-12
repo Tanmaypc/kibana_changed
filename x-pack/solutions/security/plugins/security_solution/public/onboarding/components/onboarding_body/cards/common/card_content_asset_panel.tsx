@@ -9,6 +9,7 @@ import { EuiFlexGroup, EuiFlexItem, EuiSpacer } from '@elastic/eui';
 import { OnboardingCardContentPanel } from './card_content_panel';
 import { useCardContentAssetPanelStyles } from './card_content_asset_panel.styles';
 import { CardAssetType, type CardAsset } from '../types';
+import { SHOW_ONBOARDING_VIDEOS } from '../../../../constants';
 
 export const OnboardingCardContentAssetPanel = React.memo<
   PropsWithChildren<{
@@ -16,6 +17,7 @@ export const OnboardingCardContentAssetPanel = React.memo<
   }>
 >(({ children, asset: { type, source, alt } }) => {
   const styles = useCardContentAssetPanelStyles();
+  const isAssetVisible = type !== CardAssetType.video || SHOW_ONBOARDING_VIDEOS;
 
   const renderAssetContent = useMemo(() => {
     if (type === CardAssetType.video)
@@ -38,12 +40,16 @@ export const OnboardingCardContentAssetPanel = React.memo<
     <OnboardingCardContentPanel className={styles}>
       <EuiFlexGroup direction="row" justifyContent="spaceBetween" gutterSize="none">
         <EuiFlexItem>{children}</EuiFlexItem>
-        <EuiFlexItem className="cardSpacer" grow={false}>
-          <EuiSpacer size="xl" />
-        </EuiFlexItem>
-        <EuiFlexItem className="cardImage" grow={false}>
-          {renderAssetContent}
-        </EuiFlexItem>
+        {isAssetVisible && (
+          <>
+            <EuiFlexItem className="cardSpacer" grow={false}>
+              <EuiSpacer size="xl" />
+            </EuiFlexItem>
+            <EuiFlexItem className="cardImage" grow={false}>
+              {renderAssetContent}
+            </EuiFlexItem>
+          </>
+        )}
       </EuiFlexGroup>
     </OnboardingCardContentPanel>
   );

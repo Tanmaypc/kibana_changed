@@ -28,7 +28,7 @@ describe('OnboardingCardContentAssetPanel', () => {
     expect(image).toHaveAttribute('src', 'https://example.com/image.jpg');
   });
 
-  it('renders a video when asset type is video', () => {
+  it('hides a video when asset type is video while preserving the card content', () => {
     const videoProps = {
       asset: {
         type: CardAssetType.video,
@@ -38,14 +38,11 @@ describe('OnboardingCardContentAssetPanel', () => {
       children: <div data-test-subj="childContent">{'Mock child'}</div>,
     };
 
-    const { getByTitle } = render(<OnboardingCardContentAssetPanel {...videoProps} />);
+    const { getByTestId, queryByTitle } = render(
+      <OnboardingCardContentAssetPanel {...videoProps} />
+    );
 
-    const video = getByTitle('title');
-    expect(video).toBeInTheDocument();
-    expect(video).toHaveAttribute('src', 'https://example.com/video.mp4');
-    expect(video).toHaveAttribute('allowFullScreen');
-    expect(video).toHaveAttribute('sandbox', 'allow-scripts allow-same-origin');
-    expect(video).toHaveAttribute('height', '275px');
-    expect(video).toHaveAttribute('width', '488px');
+    expect(queryByTitle('title')).not.toBeInTheDocument();
+    expect(getByTestId('childContent')).toBeInTheDocument();
   });
 });

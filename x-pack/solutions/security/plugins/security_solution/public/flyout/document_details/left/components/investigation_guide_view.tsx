@@ -12,6 +12,7 @@ import { i18n } from '@kbn/i18n';
 import type { UseBasicDataFromDetailsDataResult } from '../../shared/hooks/use_basic_data_from_details_data';
 import { LineClamp } from '../../../../common/components/line_clamp';
 import { MarkdownRenderer } from '../../../../common/components/markdown_editor';
+import { rebrandInvestigationGuide } from './rebrand_investigation_guide';
 
 const INVESTIGATION_GUIDE = i18n.translate(
   'xpack.securitySolution.flyout.left.investigationGuide',
@@ -56,6 +57,8 @@ const InvestigationGuideViewComponent: React.FC<InvestigationGuideViewProps> = (
   showFullView = false,
   showTitle = true,
 }) => {
+  const rebrandedRuleNote = rebrandInvestigationGuide(ruleNote);
+
   return (
     <BasicAlertDataContext.Provider value={basicData}>
       {showTitle && (
@@ -70,12 +73,12 @@ const InvestigationGuideViewComponent: React.FC<InvestigationGuideViewProps> = (
       <Indent>
         {showFullView ? (
           <EuiText size="xs" data-test-subj="investigation-guide-full-view">
-            <MarkdownRenderer>{ruleNote}</MarkdownRenderer>
+            <MarkdownRenderer>{rebrandedRuleNote}</MarkdownRenderer>
           </EuiText>
         ) : (
           <EuiText size="xs" data-test-subj="investigation-guide-clamped">
             <LineClamp lineClampHeight="4.5em">
-              <MarkdownRenderer>{ruleNote}</MarkdownRenderer>
+              <MarkdownRenderer>{rebrandedRuleNote}</MarkdownRenderer>
             </LineClamp>
           </EuiText>
         )}

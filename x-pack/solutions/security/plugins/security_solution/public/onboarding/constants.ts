@@ -6,6 +6,9 @@
  */
 export const PAGE_CONTENT_WIDTH = '1150px';
 
+// Keep onboarding video definitions available while hiding them from the Cyberstanc UI.
+export const SHOW_ONBOARDING_VIDEOS = false;
+
 export enum OnboardingTopicId {
   default = 'default',
   siemMigrations = 'siem_migrations',
