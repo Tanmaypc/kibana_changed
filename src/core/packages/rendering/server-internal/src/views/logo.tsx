@@ -1,0 +1,45 @@
+/*
+ * Copyright Elasticsearch B.V. and/or licensed to Elasticsearch B.V. under one
+ * or more contributor license agreements. Licensed under the "Elastic License
+ * 2.0", the "GNU Affero General Public License v3.0 only", and the "Server Side
+ * Public License v 1"; you may not use this file except in compliance with, at
+ * your election, the "Elastic License 2.0", the "GNU Affero General Public
+ * License v3.0 only", or the "Server Side Public License, v 1".
+ */
+
+import type { FC } from 'react';
+import React from 'react';
+
+export const Logo: FC = () => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="32"
+    height="32"
+    viewBox="0 0 48 48"
+    role="img"
+    aria-label="Cyberstanc"
+  >
+    <rect width="48" height="48" rx="14" fill="#0F213B" />
+    <path
+      d="M24 7L38 13V22.5C38 31.6 32.1 39.7 24 42C15.9 39.7 10 31.6 10 22.5V13L24 7Z"
+      fill="#22D3EE"
+      fillOpacity="0.16"
+      stroke="#22D3EE"
+      strokeWidth="2"
+    />
+    <path
+      d="M29.7 18.3C28.2 16.8 26.3 16 24 16C19.6 16 16 19.6 16 24C16 28.4 19.6 32 24 32C26.3 32 28.2 31.2 29.7 29.7"
+      fill="none"
+      stroke="#F8FAFC"
+      strokeWidth="3.5"
+      strokeLinecap="round"
+    />
+    <path
+      d="M29 24H36"
+      fill="none"
+      stroke="#818CF8"
+      strokeWidth="3.5"
+      strokeLinecap="round"
+    />
+  </svg>
+);

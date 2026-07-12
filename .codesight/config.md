@@ -1,0 +1,150 @@
+# Config
+
+## Environment Variables
+
+- `ALERTING_PROXY_PORT` **required** — x-pack/platform/test/alerting_api_integration/common/config.ts
+- `ALLOW_PERFORMANCE_HOOKS_IN_TASK_MANAGER` **required** — x-pack/scripts/functional_tests_server.js
+- `APM_TEST_GREP_FILES` **required** — x-pack/solutions/observability/test/apm_api_integration/tests/index.ts
+- `ARTIFACTS_FOLDER` **required** — x-pack/solutions/observability/plugins/observability_onboarding/e2e/playwright/playwright.config.ts
+- `AZURE_OPENAI_API_KEY` **required** — x-pack/platform/packages/shared/kbn-sample-parser/src/create_openai_client.ts
+- `AZURE_OPENAI_API_VERSION` **required** — x-pack/platform/packages/shared/kbn-sample-parser/src/create_openai_client.ts
+- `AZURE_OPENAI_DEPLOYMENT` **required** — x-pack/platform/packages/shared/kbn-sample-parser/src/create_openai_client.ts
+- `AZURE_OPENAI_ENDPOINT` **required** — x-pack/platform/packages/shared/kbn-sample-parser/src/create_openai_client.ts
+- `AZURE_OPENAI_MODEL` **required** — x-pack/platform/packages/shared/kbn-sample-parser/src/create_openai_client.ts
+- `BASE_URL` **required** — x-pack/solutions/security/test/security_solution_playwright/api_utils/api_key.ts
+- `BEATS` **required** — x-pack/platform/test/stack_functional_integration/apps/monitoring/_monitoring_metricbeat.js
+- `BUILD_ID` **required** — x-pack/platform/test/load/config.ts
+- `BUILDKITE_BRANCH` **required** — x-pack/platform/test/scalability/config.ts
+- `BUILDKITE_BUILD_ID` **required** — x-pack/platform/test/scalability/config.ts
+- `BUILDKITE_BUILD_NUMBER` **required** — x-pack/platform/test/scalability/runner.ts
+- `BUILDKITE_COMMIT` **required** — x-pack/platform/test/scalability/config.ts
+- `BUILDKITE_JOB_ID` **required** — x-pack/platform/test/scalability/config.ts
+- `BUILDKITE_PARALLEL_JOB` **required** — x-pack/solutions/security/plugins/security_solution/scripts/run_cypress/utils.ts
+- `BUILDKITE_PARALLEL_JOB_COUNT` **required** — x-pack/solutions/security/plugins/security_solution/scripts/run_cypress/utils.ts
+- `BUILDKITE_PIPELINE_SLUG` **required** — x-pack/platform/test/scalability/config.ts
+- `BUILDKITE_PULL_REQUEST` **required** — x-pack/solutions/security/test/security_solution_api_integration/test_suites/genai/evaluations/trial_license_complete_tier/evaluations.ts
+- `CI` **required** — x-pack/platform/packages/shared/kbn-kibana-api-cli/src/discover_kibana_url.ts
+- `CLOUD_ENV` **required** — x-pack/solutions/security/plugins/security_solution/scripts/run_cypress/parallel_serverless.ts
+- `CLOUD_KIBANA_CAPACITY` **required** — x-pack/platform/plugins/shared/cloud/server/env.ts
+- `CLOUD_QA_API_KEY` **required** — x-pack/solutions/security/plugins/security_solution/scripts/run_cypress/parallel_serverless.ts
+- `CLOUD_SERVERLESS` **required** — x-pack/solutions/security/test/security_solution_playwright/api_utils/api_key.ts
+- `CLUSTER_ENVIRONMENT` **required** — x-pack/solutions/observability/plugins/observability_onboarding/e2e/playwright/stateful/auth.ts
+- `CYPRESS_INTERNAL_ENV` **required** — x-pack/solutions/security/plugins/security_solution/scripts/run_cypress/print_run.ts
+- `CYPRESS_SENTINELONE_TOKEN` **required** — x-pack/solutions/security/plugins/security_solution/public/management/cypress/e2e/sentinelone/isolate.cy.ts
+- `CYPRESS_SENTINELONE_URL` **required** — x-pack/solutions/security/plugins/security_solution/public/management/cypress/e2e/sentinelone/isolate.cy.ts
+- `CYPRESS_TOOLING_LOG_LEVEL` **required** — x-pack/solutions/security/plugins/security_solution/scripts/run_cypress/utils.ts
+- `DATASET_QUALITY_TEST_GREP_FILES` **required** — x-pack/solutions/observability/test/dataset_quality_api_integration/tests/index.ts
+- `DEBUG` **required** — x-pack/solutions/security/plugins/security_solution/scripts/run_cypress/parallel_serverless.ts
+- `DOTENV_PATH` **required** — x-pack/solutions/observability/plugins/observability_onboarding/e2e/playwright/playwright.config.ts
+- `ELASTIC_APM_ACTIVE` **required** — x-pack/platform/test/load/config.ts
+- `ELASTICSEARCH_HOST` **required** — x-pack/platform/plugins/shared/inference/scripts/util/read_kibana_config.ts
+- `ELASTICSEARCH_PASSWORD` **required** — x-pack/platform/plugins/shared/inference/scripts/util/read_kibana_config.ts
+- `ELASTICSEARCH_URL` **required** — x-pack/solutions/security/test/security_solution_playwright/api_utils/documents.ts
+- `ELASTICSEARCH_USERNAME` **required** — x-pack/platform/plugins/shared/inference/scripts/util/read_kibana_config.ts
+- `ES_API_KEY` **required** — x-pack/solutions/search/plugins/search_playground/public/components/view_code/view_code_flyout.tsx
+- `ES_URL` **required** — x-pack/platform/plugins/shared/task_manager/server/saved_objects/migrations_helpers/get_rule_task_state.js
+- `EVALUATION_CONNECTOR_ID` **required** — x-pack/platform/packages/shared/kbn-evals/src/config/create_playwright_eval_config.ts
+- `EVALUATION_REPETITIONS` **required** — x-pack/platform/packages/shared/kbn-evals/src/config/create_playwright_eval_config.ts
+- `EVALUATION_RUN_ID` **required** — x-pack/platform/packages/shared/onechat/kbn-evals-suite-onechat/reports/comparison.spec.ts
+- `FAKE_CWD_PATH` **required** — x-pack/solutions/security/plugins/security_solution/scripts/run_cypress/print_run.ts
+- `FILE_PATH` **required** — x-pack/solutions/security/test/security_solution_playwright/playwright.config.ts
+- `FLEET_PACKAGE_REGISTRY_DOCKER_IMAGE` **required** — x-pack/platform/plugins/shared/fleet/server/integration_tests/helpers/docker_registry_helper.ts
+- `FLEET_PACKAGE_REGISTRY_PORT` **required** — x-pack/platform/plugins/shared/fleet/server/integration_tests/helpers/docker_registry_helper.ts
+- `FLEET_SKIP_RUNNING_PACKAGE_REGISTRY` **required** — x-pack/platform/test/fleet_api_integration/config.base.ts
+- `FULLSTORY_API_KEY` **required** — x-pack/platform/test/cloud_integration/config.ts
+- `FULLSTORY_ORG_ID` **required** — x-pack/platform/test/cloud_integration/config.ts
+- `GATLING_PROJECT_PATH` **required** — x-pack/platform/test/load/runner.ts
+- `GATLING_SIMULATIONS` **required** — x-pack/platform/test/load/config.ts
+- `GITHUB_PR_LABELS` **required** — x-pack/platform/test/functional_execution_context/tests/log_correlation.ts
+- `HUGGING_FACE_ACCESS_TOKEN` **required** — x-pack/platform/packages/shared/kbn-ai-tools-cli/scripts/hf_dataset_loader.ts
+- `IS_SECURITY_AI_PROMPT_TEST` **required** — x-pack/solutions/security/test/security_solution_api_integration/test_suites/genai/evaluations/trial_license_complete_tier/evaluations.ts
+- `IS_SERVERLESS` **required** — x-pack/solutions/security/test/security_solution_playwright/api_utils/headers.ts
+- `KB_URL` **required** — x-pack/platform/plugins/shared/task_manager/server/saved_objects/migrations_helpers/get_rule_task_state.js
+- `KBN_OPTIMIZER_THEMES` **required** — src/core/packages/rendering/server-internal/src/theme.test.ts
+- `KBN_URL` **required** — x-pack/platform/plugins/shared/task_manager/server/saved_objects/migrations_helpers/get_rule_task_state.js
+- `KBN_URLBASE` **required** — x-pack/platform/test/alerting_api_integration/security_and_spaces/group2/tests/actions/manual/pr_40694.js
+- `KIBANA_BASE_URL` **required** — x-pack/solutions/observability/plugins/observability_onboarding/e2e/playwright/playwright.config.ts
+- `KIBANA_BRANCH` **required** — x-pack/platform/test/load/config.ts
+- `KIBANA_EMBEDDING_CLUSTER_PASSWORD` **required** — x-pack/packages/ai-infra/product-doc-artifact-builder/src/command.ts
+- `KIBANA_EMBEDDING_CLUSTER_URL` **required** — x-pack/packages/ai-infra/product-doc-artifact-builder/src/command.ts
+- `KIBANA_EMBEDDING_CLUSTER_USERNAME` **required** — x-pack/packages/ai-infra/product-doc-artifact-builder/src/command.ts
+- `KIBANA_HOST` **required** — x-pack/platform/plugins/shared/inference/scripts/util/cli_options.ts
+- `KIBANA_INSTALL_DIR` **required** — x-pack/solutions/security/plugins/security_solution/scripts/run_cypress/parallel.ts
+- `KIBANA_MKI_IMAGE_COMMIT` **required** — x-pack/solutions/security/plugins/security_solution/scripts/run_cypress/project_handler/cloud_project_handler.ts
+- `KIBANA_MKI_QUALITY_GATE` **required** — x-pack/solutions/security/plugins/security_solution/scripts/run_cypress/parallel_serverless.ts
+- `KIBANA_MKI_QUALITY_GATE_MONITORING` **required** — x-pack/solutions/security/plugins/security_solution/scripts/run_cypress/project_handler/cloud_project_handler.ts
+- `KIBANA_PASSWORD` **required** — x-pack/solutions/observability/plugins/observability_onboarding/e2e/playwright/stateful/auth.ts
+- `KIBANA_SOURCE_CLUSTER_PASSWORD` **required** — x-pack/packages/ai-infra/product-doc-artifact-builder/src/command.ts
+- `KIBANA_SOURCE_CLUSTER_URL` **required** — x-pack/packages/ai-infra/product-doc-artifact-builder/src/command.ts
+- `KIBANA_SOURCE_CLUSTER_USERNAME` **required** — x-pack/packages/ai-infra/product-doc-artifact-builder/src/command.ts
+- `KIBANA_URL` **required** — x-pack/solutions/security/test/security_solution_playwright/api_utils/api_key.ts
+- `KIBANA_USERNAME` **required** — x-pack/solutions/observability/plugins/observability_onboarding/e2e/playwright/stateful/auth.ts
+- `KIBANAIP` **required** — x-pack/platform/test/stack_functional_integration/apps/reporting/reporting_watcher.js
+- `LOAD_TESTING_DISABLE_PLUGINS` **required** — x-pack/platform/test/load/config.ts
+- `LOAD_TESTING_SHARD_DELAY` **required** — x-pack/platform/test/load/config.ts
+- `LOG_LEVEL` **required** — x-pack/platform/packages/shared/kbn-evals/src/config/create_playwright_eval_config.ts
+- `LOGS_ESSENTIALS_MODE` **required** — x-pack/solutions/observability/plugins/observability_onboarding/e2e/playwright/stateful/auto_detect.spec.ts
+- `NO_OF_RUNS` **required** — x-pack/solutions/observability/packages/synthetics-test-data/src/e2e/helpers/synthetics_runner.ts
+- `NODE_ENV` **required** — src/core/packages/chrome/browser-internal/src/ui/project/sidenav_v2/navigation/to_navigation_items.tsx
+- `NODE_OPTIONS` **required** — x-pack/platform/packages/shared/kbn-evals/src/config/setup.js
+- `NODE_TLS_REJECT_UNAUTHORIZED` **required** — x-pack/dev-tools/api_debug/request_from_api.js
+- `OBSERVABILITY_ONBOARDING_TEST_GREP_FILES` **required** — x-pack/solutions/observability/test/observability_onboarding_api_integration/tests/index.ts
+- `OPENAI_API_KEY` **required** — x-pack/solutions/search/plugins/search_playground/public/components/view_code/examples/py_lang_client.tsx
+- `ORIGINAL_VERSION` **required** — x-pack/platform/test/upgrade/apps/dashboard/dashboard_smoke_tests.ts
+- `PACKAGE_REGISTRY_URL_OVERRIDE` **required** — x-pack/solutions/security/test/security_solution_api_integration/config/services/common/endpoint_registry_helpers.ts
+- `PARALLEL_COUNT` **required** — x-pack/solutions/security/plugins/security_solution/scripts/run_cypress/parallel_serverless.ts
+- `PATH` **required** — x-pack/build_chromium/build.py
+- `PLATFORM` **required** — x-pack/solutions/observability/plugins/observability_onboarding/e2e/playwright/stateful/fleet_ea_enrollment.spec.ts
+- `PROXY_CLIENT_ID` **required** — x-pack/solutions/security/plugins/security_solution/scripts/run_cypress/parallel_serverless.ts
+- `PROXY_ORG` **required** — x-pack/solutions/security/test/security_solution_playwright/api_utils/api_key.ts
+- `PROXY_SECRET` **required** — x-pack/solutions/security/plugins/security_solution/scripts/run_cypress/parallel_serverless.ts
+- `PROXY_URL` **required** — x-pack/solutions/security/plugins/security_solution/scripts/run_cypress/parallel_serverless.ts
+- `QA_CONSOLE_URL` **required** — x-pack/solutions/security/plugins/security_solution/scripts/run_cypress/parallel_serverless.ts
+- `REFERENCE_EVALUATION_RUN_ID` **required** — x-pack/platform/packages/shared/onechat/kbn-evals-suite-onechat/reports/comparison.spec.ts
+- `REMOTE_CLUSTER_URL` **required** — x-pack/platform/test/fleet_multi_cluster/config.ts
+- `REPORTING_TEST_EMAILS` **required** — x-pack/platform/test/stack_functional_integration/apps/alerts/alerts_encryption_keys.js
+- `RUN_ALL_TESTS` **required** — x-pack/solutions/security/plugins/security_solution/scripts/run_cypress/utils.ts
+- `SCALABILITY_JOURNEY_PATH` **required** — x-pack/platform/test/scalability/config.ts
+- `SECURITY` **required** — x-pack/platform/test/stack_functional_integration/apps/ccs/ccs_discover.js
+- `STARTEDBY` **required** — x-pack/platform/test/stack_functional_integration/apps/reporting/reporting_watcher.js
+- `SYNTHETICS_REMOTE_ENABLED` **required** — x-pack/solutions/observability/plugins/synthetics/e2e/config.ts
+- `SYNTHETICS_REMOTE_KIBANA_PASSWORD` **required** — x-pack/solutions/observability/plugins/synthetics/e2e/synthetics/page_objects/synthetics_app.tsx
+- `SYNTHETICS_REMOTE_KIBANA_URL` **required** — x-pack/solutions/observability/plugins/synthetics/e2e/synthetics/page_objects/synthetics_app.tsx
+- `SYNTHETICS_REMOTE_KIBANA_USERNAME` **required** — x-pack/solutions/observability/plugins/synthetics/e2e/synthetics/page_objects/synthetics_app.tsx
+- `SYNTHETICS_SERVICE_MANIFEST` **required** — x-pack/solutions/observability/plugins/synthetics/e2e/config.ts
+- `SYNTHETICS_SERVICE_PASSWORD` **required** — x-pack/solutions/observability/plugins/synthetics/e2e/config.ts
+- `SYNTHETICS_SERVICE_USERNAME` **required** — x-pack/solutions/observability/plugins/synthetics/e2e/config.ts
+- `SYNTHETICS_TEST_LOCATION` **required** — x-pack/solutions/observability/plugins/synthetics/e2e/synthetics/journeys/add_monitor.journey.ts
+- `TARGET_SCRIPT` **required** — x-pack/solutions/security/test/security_solution_api_integration/scripts/mki_api_ftr_execution.ts
+- `TEST_CLOUD` **required** — x-pack/platform/test/api_integration_deployment_agnostic/default_configs/feature_flag.stateful.config.base.ts
+- `TEST_CLOUD_HOST_NAME` **required** — x-pack/solutions/security/plugins/security_solution/scripts/run_cypress/parallel_serverless.ts
+- `TEST_CORS_SERVER_PORT` **required** — x-pack/platform/test/functional_cors/config.ts
+- `TEST_ES_TRANSPORT_PORT` **required** — x-pack/platform/test/api_integration/apis/management/cross_cluster_replication/remote_clusters.helpers.js
+- `TEST_KIBANA_PASS` **required** — x-pack/platform/test/reporting_api_integration/services/scenarios.ts
+- `TEST_RULE_WORKAROUND` **required** — x-pack/platform/test/upgrade/apps/rules/rules_smoke_tests.ts
+- `TEST_RUN_ID` **required** — x-pack/platform/packages/shared/kbn-evals/src/evaluate.ts
+- `TOOLING_LOG_LEVEL` **required** — x-pack/solutions/security/plugins/security_solution/scripts/run_cypress/utils.ts
+- `TZ` **required** — x-pack/platform/plugins/shared/alerting/server/lib/is_rule_snoozed.test.ts
+- `UPDATE_UPTIME_FIXTURES` **required** — x-pack/solutions/observability/test/api_integration/apis/uptime/rest/helper/expect_fixture_eql.ts
+- `USE_CHROME_BETA` **required** — x-pack/solutions/security/plugins/security_solution/scripts/run_cypress/parallel.ts
+- `VAULT_ADDR` **required** — x-pack/platform/packages/shared/kbn-inference-cli/src/eis/get_eis_credentials.ts
+- `VAULT_SECRET_PATH` **required** — x-pack/platform/packages/shared/kbn-inference-cli/src/eis/get_eis_credentials.ts
+- `VERSION_BUILD_HASH` **required** — x-pack/platform/test/stack_functional_integration/apps/reporting/reporting_watcher.js
+- `VERSION_NUMBER` **required** — x-pack/platform/test/stack_functional_integration/apps/reporting/reporting_watcher.js
+- `VM` **required** — x-pack/platform/test/stack_functional_integration/apps/monitoring/_monitoring.js
+- `WATCH_ENABLED` **required** — x-pack/solutions/observability/plugins/synthetics/e2e/config.ts
+- `WORKSPACE` **required** — x-pack/platform/test/stack_functional_integration/apps/alerts/alerts_encryption_keys.js
+
+## Config Files
+
+- `tsconfig.json`
+
+## Key Dependencies
+
+- @google/generative-ai: ^0.21.0
+- ai: ^5.0.102
+- langchain: ^0.3.15
+- openai: ^4.72.0
+- puppeteer: 24.32.0
+- react: ~18.2.0
+- zod: ^3.25.76

@@ -1,0 +1,38 @@
+# ======================================================
+# Kibana dev build & test image (single-stage)
+# ======================================================
+FROM node:18-bullseye
+
+# System dependencies required by Kibana build & runtime
+RUN apt-get update && apt-get install -y \
+  python3 \
+  make \
+  g++ \
+  git \
+  ca-certificates \
+  curl \
+  fontconfig \
+  tzdata \
+  && rm -rf /var/lib/apt/lists/*
+
+# Prevent Node OOM during build
+ENV NODE_OPTIONS="--max_old_space_size=4096"
+
+WORKDIR /usr/src/kibana
+
+# Copy full source tree
+COPY . .
+
+# Enable corepack / yarn
+RUN corepack enable
+
+# Install deps (this will take time)
+RUN yarn install --frozen-lockfile
+
+# Build production distributable (Linux only)
+RUN yarn build --skip-os-packages --linux
+
+EXPOSE 5601
+
+# Quick runtime test
+CMD ["bash", "-c", "cd target/kibana-*-linux-x86_64 && ./bin/kibana"]
