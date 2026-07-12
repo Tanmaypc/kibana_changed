@@ -38,32 +38,26 @@ import { css } from '@emotion/react';
 import { HeaderExtension } from './header_extension';
 import { isModifiedOrPrevented } from './nav_link';
 
-const buildDefaultContentLinks = ({
-  kibanaDocLink,
-  docLinks,
-  helpSupportUrl,
-}: {
-  kibanaDocLink: string;
-  docLinks: DocLinksStart;
-  helpSupportUrl: string;
-}): ChromeHelpMenuLink[] => [
+const CYBERSTANC_URL = 'https://cyberstanc.com';
+
+const buildDefaultContentLinks = (): ChromeHelpMenuLink[] => [
   {
     title: i18n.translate('core.ui.chrome.headerGlobalNav.helpMenuKibanaDocumentationTitle', {
       defaultMessage: 'Cyberstanc documentation',
     }),
-    href: kibanaDocLink,
+    href: CYBERSTANC_URL,
   },
   {
-    title: i18n.translate('core.ui.chrome.headerGlobalNav.helpMenuAskElasticTitle', {
+    title: i18n.translate('core.ui.chrome.headerGlobalNav.helpMenuAskCyberstancTitle', {
       defaultMessage: 'Ask Cyberstanc',
     }),
-    href: helpSupportUrl,
+    href: CYBERSTANC_URL,
   },
   {
     title: i18n.translate('core.ui.chrome.headerGlobalNav.helpMenuGiveFeedbackTitle', {
       defaultMessage: 'Give feedback',
     }),
-    href: docLinks.links.kibana.feedback,
+    href: CYBERSTANC_URL,
   },
 ];
 
@@ -115,9 +109,7 @@ class HelpMenu extends Component<Props & WithEuiThemeProps, State> {
           helpSupportUrl,
           globalHelpExtensionMenuLinks,
           defaultContentLinks:
-            defaultContentLinks.length === 0
-              ? buildDefaultContentLinks({ ...this.props, helpSupportUrl })
-              : defaultContentLinks,
+            defaultContentLinks.length === 0 ? buildDefaultContentLinks() : defaultContentLinks,
         });
       }
     );
@@ -298,8 +290,8 @@ class HelpMenu extends Component<Props & WithEuiThemeProps, State> {
           case 'github': {
             const { linkType, labels, title, ...rest } = link;
             return createCustomLink(index, getFeedbackText(), addSpacer, {
-              iconType: 'logoGithub',
-              href: createGithubUrl(labels, title),
+              iconType: 'link',
+              href: createCyberstancSupportUrl(labels, title),
               target: '_blank',
               rel: 'noopener',
               ...rest,
@@ -368,19 +360,7 @@ class HelpMenu extends Component<Props & WithEuiThemeProps, State> {
   }
 }
 
-const createGithubUrl = (labels: string[], title?: string) => {
-  const url = new URL('https://github.com/elastic/kibana/issues/new?');
-
-  if (labels.length) {
-    url.searchParams.set('labels', labels.join(','));
-  }
-
-  if (title) {
-    url.searchParams.set('title', title);
-  }
-
-  return url.toString();
-};
+const createCyberstancSupportUrl = (_labels: string[], _title?: string) => CYBERSTANC_URL;
 
 const createCustomLink = (
   index: number,

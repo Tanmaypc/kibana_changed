@@ -34,6 +34,9 @@ interface PromptGroup {
   prompt: string;
 }
 
+export const rebrandStarterPromptDescription = (description: string): string =>
+  description.replace(/\bElastic Security Labs\b/g, 'Cyberstanc Security Labs');
+
 // these are the promptIds (Security AI Prompts integration) for each of the starter prompts fields
 export const promptGroups = [
   {
@@ -129,7 +132,7 @@ export const StarterPrompts: React.FC<Props> = ({
             <EuiSpacer size="s" />
             <EuiText size={compressed ? 'xs' : 's'}>
               <h3>{title}</h3>
-              <p>{description}</p>
+              <p>{rebrandStarterPromptDescription(description)}</p>
             </EuiText>
           </EuiPanel>
         </EuiFlexItem>

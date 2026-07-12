@@ -12,7 +12,7 @@ export const getActionDetails = (actionTypeId: string) => {
     case ResponseActionTypesEnum['.osquery']:
       return { logo: 'logoOsquery', name: 'Osquery' };
     case ResponseActionTypesEnum['.endpoint']:
-      return { logo: 'logoSecurity', name: 'Elastic Defend' };
+      return { logo: 'logoSecurity', name: 'Scrutiny EDR' };
     // update when new responseActions are provided
     default:
       return { logo: 'logoOsquery', name: 'Osquery' };

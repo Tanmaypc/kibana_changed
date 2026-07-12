@@ -9,6 +9,7 @@ import {
   formatPromptGroups,
   getAllPromptIds,
   promptGroups,
+  rebrandStarterPromptDescription,
   StarterPrompts,
 } from './starter_prompts';
 import { fireEvent, render } from '@testing-library/react';
@@ -120,6 +121,11 @@ describe('StarterPrompts', () => {
       'starterPromptIcon4',
       'starterPromptPrompt4',
     ]);
+  });
+  it('rebrands the Security Labs research description for display', () => {
+    expect(rebrandStarterPromptDescription('Latest Elastic Security Labs research')).toBe(
+      'Latest Cyberstanc Security Labs research'
+    );
   });
   it('should return the correct prompt groups with fetched prompts', () => {
     const response = formatPromptGroups(mockResponse);

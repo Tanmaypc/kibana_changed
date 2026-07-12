@@ -51,6 +51,9 @@ describe('HeaderHelpMenu', () => {
     const buttonTexts = buttons.map((button) => button.text()).filter((text) => text.trim() !== '');
 
     expect(buttonTexts).toEqual(['Cyberstanc documentation', 'Ask Cyberstanc', 'Give feedback']);
+    buttons.slice(1).forEach((button) => {
+      expect(button.prop('href')).toBe('https://cyberstanc.com');
+    });
   });
 
   test("it doesn't render the version details when the prop isServerless is true", () => {
