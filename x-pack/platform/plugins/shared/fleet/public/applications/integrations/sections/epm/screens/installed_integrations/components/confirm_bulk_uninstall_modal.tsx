@@ -81,12 +81,12 @@ export const ConfirmBulkUninstallModal: React.FunctionComponent<{
         {isSingleItem ? (
           <FormattedMessage
             id="xpack.fleet.installedIntegrations.bulkUninstallModal.calloutContentSingleItem"
-            defaultMessage="All Cyberstanc and Elasticsearch assets created by this integration will also be removed."
+            defaultMessage="All Cyberstanc and Cyberstanc Search assets created by this integration will also be removed."
           />
         ) : (
           <FormattedMessage
             id="xpack.fleet.installedIntegrations.bulkUninstallModal.calloutContent"
-            defaultMessage="All Cyberstanc and Elasticsearch assets created by these integrations will also be removed. Review and edit your selection if needed."
+            defaultMessage="All Cyberstanc and Cyberstanc Search assets created by these integrations will also be removed. Review and edit your selection if needed."
           />
         )}
       </EuiCallOut>

@@ -46,7 +46,7 @@ export const FleetServerCloudUnhealthyCallout: React.FunctionComponent<
             <EuiLink href={docLinks.links.fleet.fleetServerAddFleetServer} target="_blank" external>
               <FormattedMessage
                 id="xpack.fleet.fleetServerCloudRequiredCallout.guideLink"
-                defaultMessage="Fleet and Elastic Agent Guide"
+                defaultMessage="Fleet and Cyberstanc Agent Guide"
               />
             </EuiLink>
           ),

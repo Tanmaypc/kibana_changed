@@ -95,7 +95,7 @@ export const SSLFormSection: React.FunctionComponent<Props> = (props) => {
                 'xpack.fleet.editOutputFlyout.downloadSource.sslWarningCallout',
                 {
                   defaultMessage:
-                    'Invalid settings can prevent Elastic Agent from being able to upgrade. If this happens, you will need to provide valid credentials.',
+                    'Invalid settings can prevent Cyberstanc Agent from being able to upgrade. If this happens, you will need to provide valid credentials.',
                 }
               )}
               color="warning"
@@ -105,7 +105,7 @@ export const SSLFormSection: React.FunctionComponent<Props> = (props) => {
             <EuiCallOut
               title={i18n.translate('xpack.fleet.editOutputFlyout.sslWarningCallout', {
                 defaultMessage:
-                  'Invalid settings can break the connection between Elastic Agent and the configured output. If this happens, you will need to provide valid credentials.',
+                  'Invalid settings can break the connection between Cyberstanc Agent and the configured output. If this happens, you will need to provide valid credentials.',
               })}
               color="warning"
               iconType="warning"

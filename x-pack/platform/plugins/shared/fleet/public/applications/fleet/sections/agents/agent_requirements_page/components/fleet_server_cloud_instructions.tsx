@@ -60,7 +60,7 @@ export const CloudInstructions: React.FC<{ deploymentUrl: string }> = ({ deploym
                 >
                   <FormattedMessage
                     id="xpack.fleet.settings.userGuideLink"
-                    defaultMessage="Fleet and Elastic Agent Guide"
+                    defaultMessage="Fleet and Cyberstanc Agent Guide"
                   />
                 </EuiLink>
               ),

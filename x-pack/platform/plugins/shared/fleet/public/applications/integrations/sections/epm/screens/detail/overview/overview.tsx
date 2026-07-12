@@ -34,6 +34,7 @@ import {
 import { isPackageUnverified } from '../../../../../../../services';
 import type { PackageInfo, RegistryPolicyTemplate } from '../../../../../types';
 import { SideBarColumn } from '../../../components/side_bar_column';
+import { rebrandIntegrationMarkdown } from '../../../components/utils/rebrand_integration_content';
 
 import {
   CloudPostureThirdPartySupportCallout,
@@ -146,6 +147,7 @@ export const OverviewPage: React.FC<Props> = memo(
     const { packageVerificationKeyId } = useGetPackageVerificationKeyId();
     const isUnverified = isPackageUnverified(packageInfo, packageVerificationKeyId);
     const [markdown, setMarkdown] = useState<string | undefined>(undefined);
+    const displayMarkdown = useMemo(() => rebrandIntegrationMarkdown(markdown), [markdown]);
     const [selectedItemId, setSelectedItem] = useState<string | undefined>(undefined);
     const [isSideNavOpenOnMobile, setIsSideNavOpenOnMobile] = useState(false);
     const anchorsRefs = useRef(new Map<string, HTMLDivElement | null>());
@@ -239,7 +241,10 @@ export const OverviewPage: React.FC<Props> = memo(
       },
       [createItem]
     );
-    const headingsWithIndices = useMemo(() => extractHeadingsWithIndices(markdown), [markdown]);
+    const headingsWithIndices = useMemo(
+      () => extractHeadingsWithIndices(displayMarkdown),
+      [displayMarkdown]
+    );
 
     const navItems = useMemo(
       () => headingsToNavItems(headingsWithIndices),
@@ -294,7 +299,7 @@ export const OverviewPage: React.FC<Props> = memo(
 
           {packageInfo.readme ? (
             <Readme
-              markdown={markdown}
+              markdown={displayMarkdown}
               packageName={packageInfo.name}
               version={packageInfo.version}
               refs={anchorsRefs}

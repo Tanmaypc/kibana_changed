@@ -209,7 +209,7 @@ export const AgentUpgradeAgentModal: React.FunctionComponent<AgentUpgradeAgentMo
       value: option,
       toolTipContent: isIndependentAgentReleaseVersion(option)
         ? i18n.translate('xpack.fleet.upgradeAgents.iarVersionOptionTooltip', {
-            defaultMessage: 'Independent Elastic Agent release version',
+            defaultMessage: 'Independent Cyberstanc Agent release version',
           })
         : undefined,
     }));
@@ -568,7 +568,7 @@ export const AgentUpgradeAgentModal: React.FunctionComponent<AgentUpgradeAgentMo
             title={
               <FormattedMessage
                 id="xpack.fleet.settings.editOutputFlyout.iarVersionSelectedCalloutTitle"
-                defaultMessage="Independent Elastic Agent release version selected"
+                defaultMessage="Independent Cyberstanc Agent release version selected"
               />
             }
             data-test-subj="iarVersionSelectedCallout"
@@ -581,7 +581,7 @@ export const AgentUpgradeAgentModal: React.FunctionComponent<AgentUpgradeAgentMo
                   <EuiLink external={true} href={docLinks.links.fleet.agentReleaseProcess}>
                     <FormattedMessage
                       id="xpack.fleet.settings.iarVersionSelected.documentationLink"
-                      defaultMessage="Elastic Agent release process"
+                      defaultMessage="Cyberstanc Agent release process"
                     />
                   </EuiLink>
                 ),
@@ -658,7 +658,7 @@ export const AgentUpgradeAgentModal: React.FunctionComponent<AgentUpgradeAgentMo
             title={
               <FormattedMessage
                 id="xpack.fleet.upgradeAgents.warningCallout"
-                defaultMessage="Rolling upgrades are only available for Elastic Agent versions {version} and higher"
+                defaultMessage="Rolling upgrades are only available for Cyberstanc Agent versions {version} and higher"
                 values={{ version: <strong>{ROLLING_UPGRADE_MINIMUM_SUPPORTED_VERSION}</strong> }}
               />
             }
@@ -705,7 +705,7 @@ export const AgentUpgradeAgentModal: React.FunctionComponent<AgentUpgradeAgentMo
                   position="top"
                   content={i18n.translate('xpack.fleet.upgradeAgents.rolloutPeriodTooltip', {
                     defaultMessage:
-                      'Define the rollout period for upgrades to your Elastic Agents. Any agents that are offline during this period will be upgraded when they come back online.',
+                      'Define the rollout period for upgrades to your Cyberstanc Agents. Any agents that are offline during this period will be upgraded when they come back online.',
                   })}
                 />
               </EuiFlexItem>

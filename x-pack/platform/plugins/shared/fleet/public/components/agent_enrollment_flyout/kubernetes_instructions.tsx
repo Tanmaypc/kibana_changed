@@ -108,7 +108,7 @@ export const KubernetesInstructions: React.FunctionComponent<Props> = ({
           >
             <FormattedMessage
               id="xpack.fleet.fleet.agentEnrollment.k8ScalingGuideLinkText"
-              defaultMessage="Scaling Elastic Agent on Kubernetes"
+              defaultMessage="Scaling Cyberstanc Agent on Kubernetes"
             />
           </EuiLink>
         ),

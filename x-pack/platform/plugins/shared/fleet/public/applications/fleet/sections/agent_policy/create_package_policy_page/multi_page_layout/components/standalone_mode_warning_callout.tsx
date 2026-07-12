@@ -15,14 +15,14 @@ export const StandaloneModeWarningCallout: React.FC<{
 }> = ({ setIsManaged }) => {
   return (
     <EuiCallOut
-      title="Setting up to run Elastic Agent in standalone mode"
+      title="Setting up to run Cyberstanc Agent in standalone mode"
       color="primary"
       iconType="info"
     >
       <EuiText>
         <FormattedMessage
           id="xpack.fleet.addIntegration.standaloneWarning"
-          defaultMessage="Setting up integrations by running Elastic Agent in standalone mode is advanced. When possible, we recommend using {link} instead. "
+          defaultMessage="Setting up integrations by running Cyberstanc Agent in standalone mode is advanced. When possible, we recommend using {link} instead. "
           values={{ link: <EuiLink href="#">Fleet-managed agents</EuiLink> }}
         />
       </EuiText>

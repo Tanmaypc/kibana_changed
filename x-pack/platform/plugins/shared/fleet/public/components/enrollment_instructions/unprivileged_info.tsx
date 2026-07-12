@@ -19,7 +19,7 @@ export const UnprivilegedInfo: React.FC = () => {
         <p>
           <FormattedMessage
             id="xpack.fleet.agentEnrollmentFlyout.unprivilegedMessage"
-            defaultMessage="To install Elastic Agent without root privileges, add the {flag} flag to the {command} command below. For more information, see the {guideLink}"
+            defaultMessage="To install Cyberstanc Agent without root privileges, add the {flag} flag to the {command} command below. For more information, see the {guideLink}"
             values={{
               flag: <EuiCode>--unprivileged</EuiCode>,
               command: <EuiCode>elastic-agent install</EuiCode>,
@@ -27,7 +27,7 @@ export const UnprivilegedInfo: React.FC = () => {
                 <EuiLink href={docLinks.links.fleet.unprivilegedMode} target="_blank" external>
                   <FormattedMessage
                     id="xpack.fleet.agentEnrollmentFlyout.unprivilegedMessage.guideLink"
-                    defaultMessage="Fleet and Elastic Agent Guide"
+                    defaultMessage="Fleet and Cyberstanc Agent Guide"
                   />
                 </EuiLink>
               ),

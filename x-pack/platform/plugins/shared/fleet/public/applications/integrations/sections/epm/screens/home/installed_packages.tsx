@@ -59,14 +59,14 @@ const AnnouncementLink = () => {
 const InstalledIntegrationsInfoCallout: React.FC = () => (
   <EuiCallOut
     title={i18n.translate('xpack.fleet.epmList.availableCalloutTitle', {
-      defaultMessage: 'Only installed Elastic Agent Integrations are displayed.',
+      defaultMessage: 'Only installed Cyberstanc Agent Integrations are displayed.',
     })}
     iconType="info"
   >
     <p>
       <FormattedMessage
         id="xpack.fleet.epmList.availableCalloutIntroText"
-        defaultMessage="To learn more about integrations and the Elastic Agent, read our {link}"
+        defaultMessage="To learn more about integrations and the Cyberstanc Agent, read our {link}"
         values={{
           link: <AnnouncementLink />,
         }}

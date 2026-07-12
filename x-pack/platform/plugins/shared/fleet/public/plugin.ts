@@ -280,10 +280,10 @@ export class FleetPlugin implements Plugin<FleetSetup, FleetStart, FleetSetupDep
       deps.home.featureCatalogue.register({
         id: 'fleet',
         title: i18n.translate('xpack.fleet.featureCatalogueTitle', {
-          defaultMessage: 'Add Elastic Agent integrations',
+          defaultMessage: 'Add Cyberstanc Agent integrations',
         }),
         description: i18n.translate('xpack.fleet.featureCatalogueDescription', {
-          defaultMessage: 'Add and manage integrations with Elastic Agent',
+          defaultMessage: 'Add and manage integrations with Cyberstanc Agent',
         }),
         icon: 'indexManagementApp',
         showOnHomePage: true,

@@ -47,7 +47,7 @@ export const FleetServerHostsSection: React.FunctionComponent<FleetServerHostsSe
               <EuiLink href={docLinks.links.fleet.guide} target="_blank" external>
                 <FormattedMessage
                   id="xpack.fleet.settings.fleetUserGuideLink"
-                  defaultMessage="Fleet and Elastic Agent Guide"
+                  defaultMessage="Fleet and Cyberstanc Agent Guide"
                 />
               </EuiLink>
             ),

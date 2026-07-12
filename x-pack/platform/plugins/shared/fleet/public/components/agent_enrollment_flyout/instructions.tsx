@@ -80,7 +80,7 @@ export const Instructions = (props: InstructionProps) => {
               <EuiText>
                 <FormattedMessage
                   id="xpack.fleet.agentEnrollment.managedDescription"
-                  defaultMessage="Enroll an Elastic Agent in Fleet to automatically deploy updates and centrally manage the agent."
+                  defaultMessage="Enroll an Cyberstanc Agent in Fleet to automatically deploy updates and centrally manage the agent."
                 />
               </EuiText>
               <EuiSpacer size="l" />
@@ -106,7 +106,7 @@ const StandaloneInstructions = (props: InstructionProps) => {
       <EuiText>
         <FormattedMessage
           id="xpack.fleet.agentEnrollment.standaloneDescription"
-          defaultMessage="Run an Elastic Agent standalone to configure and update the agent manually on the host where the agent is installed."
+          defaultMessage="Run an Cyberstanc Agent standalone to configure and update the agent manually on the host where the agent is installed."
         />
       </EuiText>
       <EuiSpacer size="l" />

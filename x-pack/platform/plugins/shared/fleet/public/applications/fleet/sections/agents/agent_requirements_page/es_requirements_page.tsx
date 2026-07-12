@@ -76,7 +76,7 @@ export const MissingESRequirementsPage: React.FunctionComponent<{
           >
             <FormattedMessage
               id="xpack.fleet.setupPage.missingRequirementsCalloutDescription"
-              defaultMessage="To use central management for Elastic Agents, enable the following Elasticsearch security features."
+              defaultMessage="To use central management for Cyberstanc Agents, enable the following Elasticsearch security features."
             />
           </EuiCallOut>
           <EuiSpacer size="m" />

@@ -55,7 +55,7 @@ describe('Configs', () => {
     title: 'Nginx',
     version: '1.3.0',
     release: 'ga',
-    description: 'Collect logs and metrics from Nginx HTTP servers with Elastic Agent.',
+    description: 'Collect logs and metrics from Nginx HTTP servers with Cyberstanc Agent.',
     format_version: '',
     owner: { github: '' },
     assets: {} as any,

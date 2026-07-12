@@ -40,7 +40,7 @@ export const AgentBinarySection: React.FunctionComponent<AgentBinarySectionProps
       <EuiText color="subdued" size="m">
         <FormattedMessage
           id="xpack.fleet.settings.downloadSourcesSection.Subtitle"
-          defaultMessage="List of sources used by Elastic Agents to download their binaries. The default source applies to all agent policies that don't have a specific binary source specified."
+          defaultMessage="List of sources used by Cyberstanc Agents to download their binaries. The default source applies to all agent policies that don't have a specific binary source specified."
         />
       </EuiText>
       <EuiSpacer size="m" />

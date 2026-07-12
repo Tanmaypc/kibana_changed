@@ -30,7 +30,7 @@ import {
 
 const installAgentStep = {
   title: i18n.translate('xpack.fleet.createFirstPackagePolicy.installAgentStepTitle', {
-    defaultMessage: 'Install Elastic Agent',
+    defaultMessage: 'Install Cyberstanc Agent',
   }),
   component: InstallElasticAgentPageStep,
 };

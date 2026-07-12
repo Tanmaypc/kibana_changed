@@ -31,7 +31,7 @@ export const FleetServerOnPremRequiredCallout = () => {
             <EuiLink href={docLinks.links.fleet.fleetServerAddFleetServer} target="_blank" external>
               <FormattedMessage
                 id="xpack.fleet.fleetServerOnPremRequiredCallout.guideLink"
-                defaultMessage="Fleet and Elastic Agent Guide"
+                defaultMessage="Fleet and Cyberstanc Agent Guide"
               />
             </EuiLink>
           ),

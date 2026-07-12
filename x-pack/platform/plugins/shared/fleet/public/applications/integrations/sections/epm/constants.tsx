@@ -133,6 +133,6 @@ export const AssetTitleMap: Record<
 };
 
 export const ServiceTitleMap: Record<ServiceName, string> = {
-  kibana: 'Kibana',
-  elasticsearch: 'Elasticsearch',
+  kibana: 'Cyberstanc',
+  elasticsearch: 'Cyberstanc Search',
 };

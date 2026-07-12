@@ -67,7 +67,7 @@ export const ConfigureStandaloneAgentStep = ({
             >
               <FormattedMessage
                 id="xpack.fleet.fleet.agentEnrollment.k8ScalingGuideLinkText"
-                defaultMessage="Scaling Elastic Agent on Kubernetes"
+                defaultMessage="Scaling Cyberstanc Agent on Kubernetes"
               />
             </EuiLink>
           ),
@@ -76,7 +76,7 @@ export const ConfigureStandaloneAgentStep = ({
     ) : (
       <FormattedMessage
         id="xpack.fleet.agentEnrollment.stepConfigureAgentDescription"
-        defaultMessage="Copy this policy to the {fileName} on the host where the Elastic Agent is installed. Either use an existing API key and modify {apiKeyVariable} in the {outputSection} section of {fileName} or click the button below to generate a new one. Refer to {guideLink} for details."
+        defaultMessage="Copy this policy to the {fileName} on the host where the Cyberstanc Agent is installed. Either use an existing API key and modify {apiKeyVariable} in the {outputSection} section of {fileName} or click the button below to generate a new one. Refer to {guideLink} for details."
         values={{
           fileName: <EuiCode>elastic-agent.yml</EuiCode>,
           apiKeyVariable: <EuiCode>API_KEY</EuiCode>,
@@ -89,7 +89,7 @@ export const ConfigureStandaloneAgentStep = ({
             >
               <FormattedMessage
                 id="xpack.fleet.fleet.agentEnrollment.standaloneAgentAccessLinkText"
-                defaultMessage="Grant standalone Elastic Agents access to Elasticsearch"
+                defaultMessage="Grant standalone Cyberstanc Agents access to Elasticsearch"
               />
             </EuiLink>
           ),

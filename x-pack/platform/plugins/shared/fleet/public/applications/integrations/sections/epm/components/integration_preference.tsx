@@ -41,7 +41,7 @@ export interface Props {
 const recommendedTooltip = (
   <FormattedMessage
     id="xpack.fleet.epm.integrationPreference.recommendedTooltip"
-    defaultMessage="We recommend Elastic Agent integrations when they are generally available."
+    defaultMessage="We recommend Cyberstanc Agent integrations when they are generally available."
   />
 );
 
@@ -72,7 +72,7 @@ const options: Option[] = [
   {
     type: 'agent',
     label: i18n.translate('xpack.fleet.epm.integrationPreference.elasticAgentLabel', {
-      defaultMessage: 'Elastic Agent only',
+      defaultMessage: 'Cyberstanc Agent only',
     }),
   },
   {
@@ -124,7 +124,7 @@ export const IntegrationPreference = ({
     <EuiLink href={docLinks.links.fleet.beatsAgentComparison}>
       <FormattedMessage
         id="xpack.fleet.epm.integrationPreference.titleLink"
-        defaultMessage="Elastic Agent and Beats"
+        defaultMessage="Cyberstanc Agent and Beats"
       />
     </EuiLink>
   );

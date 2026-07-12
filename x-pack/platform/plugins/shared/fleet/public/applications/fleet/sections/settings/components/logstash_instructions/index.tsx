@@ -47,7 +47,7 @@ export const LogstashInstructions = ({ isSSLEnabled }: LogstashInstructionsProps
       <>
         <FormattedMessage
           id="xpack.fleet.settings.logstashInstructions.description"
-          defaultMessage="Add an Elastic Agent pipeline configuration to Logstash to receive events from the Elastic Agent framework.
+          defaultMessage="Add an Cyberstanc Agent pipeline configuration to Logstash to receive events from the Cyberstanc Agent framework.
           {documentationLink}."
           values={{
             documentationLink: (
@@ -120,7 +120,7 @@ const LogstashInstructionSteps = ({ isSSLEnabled }: LogstashInstructionStepsProp
           <>
             <FormattedMessage
               id="xpack.fleet.settings.logstashInstructions.apiKeyStepDescription"
-              defaultMessage="We recommend authorizing Logstash to output to Elasticsearch with minimal privileges for Elastic Agent."
+              defaultMessage="We recommend authorizing Logstash to output to Elasticsearch with minimal privileges for Cyberstanc Agent."
             />
             <EuiSpacer size="m" />
             {logstashApiKey.apiKey ? (

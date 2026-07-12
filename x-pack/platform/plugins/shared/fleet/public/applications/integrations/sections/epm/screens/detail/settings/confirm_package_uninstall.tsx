@@ -61,7 +61,7 @@ export const ConfirmPackageUninstall = (props: ConfirmPackageUninstallProps) => 
         <p>
           <FormattedMessage
             id="xpack.fleet.integrations.settings.confirmUninstallModal.uninstallCallout.description"
-            defaultMessage="Cyberstanc and Elasticsearch assets created by this integration will be removed. Agent policies and any data sent by your agents will not be affected."
+            defaultMessage="Cyberstanc and Cyberstanc Search assets created by this integration will be removed. Agent policies and any data sent by your agents will not be affected."
           />
         </p>
       </EuiCallOut>

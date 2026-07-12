@@ -166,7 +166,7 @@ export const PackagePoliciesTable: React.FunctionComponent<Props> = ({
                   content={
                     <FormattedMessage
                       id="xpack.fleet.policyDetails.packagePoliciesTable.containsOtelPackages"
-                      defaultMessage="The {integrationTitle} integration collects OpenTelemetry data adhering to semantic conventions and is available in technical preview. To collect OTel data, Elastic Agents must be on version {minVersion} or later."
+                      defaultMessage="The {integrationTitle} integration collects OpenTelemetry data adhering to semantic conventions and is available in technical preview. To collect OTel data, Cyberstanc Agents must be on version {minVersion} or later."
                       values={{
                         integrationTitle: packagePolicy.packageTitle,
                         minVersion: OTEL_INPUTS_MINIMUM_VERSION,
@@ -445,12 +445,12 @@ export const PackagePoliciesTable: React.FunctionComponent<Props> = ({
                             content: missingSecurityConfiguration ? (
                               <FormattedMessage
                                 id="xpack.fleet.epm.addPackagePolicyButtonSecurityRequiredTooltip"
-                                defaultMessage="To add Elastic Agent Integrations, you must have security enabled and have the All privilege for Fleet. Contact your administrator."
+                                defaultMessage="To add Cyberstanc Agent Integrations, you must have security enabled and have the All privilege for Fleet. Contact your administrator."
                               />
                             ) : (
                               <FormattedMessage
                                 id="xpack.fleet.epm.addPackagePolicyButtonPrivilegesRequiredTooltip"
-                                defaultMessage="Elastic Agent Integrations require the All privilege for Agent policies and All privilege for Integrations. Contact your administrator."
+                                defaultMessage="Cyberstanc Agent Integrations require the All privilege for Agent policies and All privilege for Integrations. Contact your administrator."
                               />
                             ),
                           }

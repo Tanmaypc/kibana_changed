@@ -84,7 +84,7 @@ export const AgentPolicyAdvancedMonitoringOptions: React.FunctionComponent<{
         description={
           <FormattedMessage
             id="xpack.fleet.agentPolicyForm.monitoringHttpDescription"
-            defaultMessage="Enable a liveness HTTP endpoint that returns the overall health of Elastic Agent. This can be used by Kubernetes to restart the container, for example. {learnMoreLink}."
+            defaultMessage="Enable a liveness HTTP endpoint that returns the overall health of Cyberstanc Agent. This can be used by Kubernetes to restart the container, for example. {learnMoreLink}."
             values={{
               learnMoreLink: (
                 <EuiLink href={docLinks.links.fleet.httpMonitoring} target="_blank">

@@ -30,7 +30,7 @@ export const DefaultPageTitle: FunctionComponent = () => {
           <p>
             <FormattedMessage
               id="xpack.fleet.overviewPageSubtitle"
-              defaultMessage="Centralized management for Elastic Agents."
+              defaultMessage="Centralized management for Cyberstanc Agents."
             />
           </p>
         </EuiText>

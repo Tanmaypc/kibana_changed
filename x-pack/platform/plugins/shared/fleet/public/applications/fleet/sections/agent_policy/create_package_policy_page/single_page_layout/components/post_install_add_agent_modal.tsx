@@ -55,7 +55,7 @@ export const PostInstallAddAgentModal: React.FunctionComponent<{
               id="xpack.fleet.agentPolicy.postInstallAddAgentModalDescription"
               defaultMessage="To complete this integration, add {elasticAgent} to your hosts to collect data and send it to Cyberstanc."
               values={{
-                elasticAgent: <strong>Elastic Agent</strong>,
+                elasticAgent: <strong>Cyberstanc Agent</strong>,
               }}
             />
           </p>
@@ -66,7 +66,7 @@ export const PostInstallAddAgentModal: React.FunctionComponent<{
         <EuiButtonEmpty data-test-subj="confirmModalCancelButton" onClick={onCancel}>
           <FormattedMessage
             id="xpack.fleet.agentPolicy.postInstallAddAgentModalCancelButtonLabel"
-            defaultMessage="Add Elastic Agent later"
+            defaultMessage="Add Cyberstanc Agent later"
           />
         </EuiButtonEmpty>
 
@@ -78,7 +78,7 @@ export const PostInstallAddAgentModal: React.FunctionComponent<{
         >
           <FormattedMessage
             id="xpack.fleet.agentPolicy.postInstallAddAgentModalConfirmButtonLabel"
-            defaultMessage="Add Elastic Agent to your hosts"
+            defaultMessage="Add Cyberstanc Agent to your hosts"
           />
         </EuiButton>
       </EuiModalFooter>

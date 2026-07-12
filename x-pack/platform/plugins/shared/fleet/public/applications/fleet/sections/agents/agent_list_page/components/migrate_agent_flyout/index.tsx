@@ -382,7 +382,7 @@ export const AgentMigrateFlyout: React.FC<Props> = ({
                       label={
                         <FormattedMessage
                           id="xpack.fleet.agentList.migrateAgentFlyout.elasticAgentCertLabel"
-                          defaultMessage="Elastic Agent Certificate"
+                          defaultMessage="Cyberstanc Agent Certificate"
                         />
                       }
                       fullWidth
@@ -404,7 +404,7 @@ export const AgentMigrateFlyout: React.FC<Props> = ({
                       label={
                         <FormattedMessage
                           id="xpack.fleet.agentList.migrateAgentFlyout.elasticAgentCertKeyLabel"
-                          defaultMessage="Elastic Agent Certificate Key"
+                          defaultMessage="Cyberstanc Agent Certificate Key"
                         />
                       }
                       fullWidth

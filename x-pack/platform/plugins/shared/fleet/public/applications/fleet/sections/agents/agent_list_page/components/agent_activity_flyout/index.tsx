@@ -153,7 +153,7 @@ export const AgentActivityFlyout: React.FunctionComponent<{
                   <p>
                     <FormattedMessage
                       id="xpack.fleet.agentActivityFlyout.activityLogText"
-                      defaultMessage="Activity log of Elastic Agent operations will appear here."
+                      defaultMessage="Activity log of Cyberstanc Agent operations will appear here."
                     />
                   </p>
                 </EuiText>

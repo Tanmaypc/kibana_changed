@@ -45,19 +45,19 @@ const UninstallAgentDescription = () => {
       <p>
         <FormattedMessage
           id="xpack.fleet.agentUninstallCommandFlyout.firstParagraph"
-          defaultMessage="Uninstall Elastic Agent and unenroll in Fleet to stop communicating with the host."
+          defaultMessage="Uninstall Cyberstanc Agent and unenroll in Fleet to stop communicating with the host."
         />
       </p>
       <h3>
         <FormattedMessage
           id="xpack.fleet.agentUninstallCommandFlyout.subtitle"
-          defaultMessage="Uninstall Elastic Agent on your host"
+          defaultMessage="Uninstall Cyberstanc Agent on your host"
         />
       </h3>
       <p>
         <FormattedMessage
           id="xpack.fleet.agentUninstallCommandFlyout.description"
-          defaultMessage="Select the appropriate platform and run the command to uninstall Elastic Agent. Reuse the command to uninstall agents on more than one host. {learnMoreLink}"
+          defaultMessage="Select the appropriate platform and run the command to uninstall Cyberstanc Agent. Reuse the command to uninstall agents on more than one host. {learnMoreLink}"
           values={{
             learnMoreLink: (
               <EuiLink href={docLinks.links.fleet.uninstallAgent} target="_blank">

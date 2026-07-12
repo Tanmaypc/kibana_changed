@@ -67,7 +67,7 @@ export const AgentDetailsJsonFlyout = memo<{ agent: Agent; onClose: () => void }
             <p>
               <FormattedMessage
                 id="xpack.fleet.agentDetails.jsonFlyoutDescription"
-                defaultMessage="The JSON below is the raw agent data tracked by Fleet. This data can be useful for debugging or troubleshooting Elastic Agent. For more information, see the {doc}."
+                defaultMessage="The JSON below is the raw agent data tracked by Fleet. This data can be useful for debugging or troubleshooting Cyberstanc Agent. For more information, see the {doc}."
                 values={{
                   doc: (
                     <EuiLink href={docLinks.links.fleet.troubleshooting}>

@@ -39,7 +39,7 @@ export const InstallationMessage: React.FunctionComponent<Props> = ({
         <EuiText>
           <FormattedMessage
             id="xpack.fleet.enrollmentInstructions.installationMessage"
-            defaultMessage="Select the appropriate platform and run commands to install, enroll, and start Elastic Agent. Reuse commands to set up agents on more than one host. All builds can be found on our {downloadLink}. For additional guidance, see our {installationLink}."
+            defaultMessage="Select the appropriate platform and run commands to install, enroll, and start Cyberstanc Agent. Reuse commands to set up agents on more than one host. All builds can be found on our {downloadLink}. For additional guidance, see our {installationLink}."
             values={{
               downloadLink: (
                 <EuiLink
@@ -77,7 +77,7 @@ export const InstallationMessage: React.FunctionComponent<Props> = ({
         <EuiText>
           <FormattedMessage
             id="xpack.fleet.enrollmentInstructions.k8sInstallationMessage"
-            defaultMessage="The below manifest has been automatically generated and includes credentials for this instance of Elastic Agent to be centrally managed using Fleet once it gets running in your Kubernetes cluster."
+            defaultMessage="The below manifest has been automatically generated and includes credentials for this instance of Cyberstanc Agent to be centrally managed using Fleet once it gets running in your Kubernetes cluster."
           />
         </EuiText>
       )}

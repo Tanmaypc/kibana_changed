@@ -70,7 +70,7 @@ export const InstallationModeSelectionStep = ({
             label: (
               <FormattedMessage
                 id="xpack.fleet.agentFlyout.managedRadioOption"
-                defaultMessage="{managed} – Enroll in Elastic Agent in Fleet to automatically deploy updates and centrally manage the agent."
+                defaultMessage="{managed} – Enroll in Cyberstanc Agent in Fleet to automatically deploy updates and centrally manage the agent."
                 values={{
                   managed: (
                     <strong>
@@ -93,7 +93,7 @@ export const InstallationModeSelectionStep = ({
                 <FormattedMessage
                   data-test-subj="agentFlyoutStandaloneRadioButtons"
                   id="xpack.fleet.agentFlyout.standaloneRadioOption"
-                  defaultMessage="{standaloneMessage} – Run an Elastic Agent standalone to configure and update the agent manually on the host where the agent is installed."
+                  defaultMessage="{standaloneMessage} – Run an Cyberstanc Agent standalone to configure and update the agent manually on the host where the agent is installed."
                   values={{
                     standaloneMessage: (
                       <strong>

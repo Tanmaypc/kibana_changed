@@ -358,7 +358,7 @@ export const SettingsPage: React.FC<Props> = memo(
                       <p>
                         <FormattedMessage
                           id="xpack.fleet.integrations.settings.packageInstallDescription"
-                          defaultMessage="Install this integration to set up Cyberstanc and Elasticsearch assets designed for {title} data."
+                          defaultMessage="Install this integration to set up Cyberstanc and Cyberstanc Search assets designed for {title} data."
                           values={{
                             title,
                           }}
@@ -391,7 +391,7 @@ export const SettingsPage: React.FC<Props> = memo(
                         <EuiFlexItem>
                           <FormattedMessage
                             id="xpack.fleet.integrations.settings.packageUninstallDescription"
-                            defaultMessage="Remove Cyberstanc and Elasticsearch assets that were installed by this integration."
+                            defaultMessage="Remove Cyberstanc and Cyberstanc Search assets that were installed by this integration."
                           />
                         </EuiFlexItem>
                         <EuiFlexItem>
@@ -433,7 +433,7 @@ export const SettingsPage: React.FC<Props> = memo(
                         <EuiFlexItem>
                           <FormattedMessage
                             id="xpack.fleet.integrations.settings.packageReinstallDescription"
-                            defaultMessage="Reinstall Cyberstanc and Elasticsearch assets for this integration."
+                            defaultMessage="Reinstall Cyberstanc and Cyberstanc Search assets for this integration."
                           />
                         </EuiFlexItem>
                         <EuiFlexItem grow={false}>

@@ -431,7 +431,7 @@ export const AgentPolicyAdvancedOptionsContent: React.FunctionComponent<Props> =
             defaultMessage="Collecting monitoring logs and metrics will also create an {agent} integration. Monitoring data will be written to the default namespace specified above."
             values={{
               agent: (
-                <AgentPolicyPackageBadge pkgName={'elastic_agent'} pkgTitle={'Elastic Agent'} />
+                <AgentPolicyPackageBadge pkgName={'elastic_agent'} pkgTitle={'Cyberstanc Agent'} />
               ),
             }}
           />
@@ -454,7 +454,7 @@ export const AgentPolicyAdvancedOptionsContent: React.FunctionComponent<Props> =
                     content={i18n.translate(
                       'xpack.fleet.agentPolicyForm.monitoringLogsTooltipText',
                       {
-                        defaultMessage: 'Collect logs from Elastic Agents that use this policy.',
+                        defaultMessage: 'Collect logs from Cyberstanc Agents that use this policy.',
                       }
                     )}
                     position="right"
@@ -477,7 +477,7 @@ export const AgentPolicyAdvancedOptionsContent: React.FunctionComponent<Props> =
                     content={i18n.translate(
                       'xpack.fleet.agentPolicyForm.monitoringMetricsTooltipText',
                       {
-                        defaultMessage: 'Collect metrics from Elastic Agents that use this policy.',
+                        defaultMessage: 'Collect metrics from Cyberstanc Agents that use this policy.',
                       }
                     )}
                     position="right"

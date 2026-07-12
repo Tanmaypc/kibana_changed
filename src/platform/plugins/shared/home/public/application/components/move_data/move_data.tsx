@@ -31,7 +31,7 @@ export const MoveData: FC<Props> = ({ addBasePath }) => {
   const buttonLabel = (
     <FormattedMessage
       id="home.addData.moveYourDataButtonLabel"
-      defaultMessage="Move to Elastic Cloud"
+      defaultMessage="Move to Cyberstanc Cloud"
     />
   );
 
@@ -51,7 +51,7 @@ export const MoveData: FC<Props> = ({ addBasePath }) => {
             <h4>
               <FormattedMessage
                 id="home.addData.moveYourDataTitle"
-                defaultMessage="Try managed Elastic"
+                defaultMessage="Try managed Cyberstanc"
               />
             </h4>
           </EuiTitle>
@@ -59,7 +59,7 @@ export const MoveData: FC<Props> = ({ addBasePath }) => {
           <EuiText size="s">
             <FormattedMessage
               id="home.addData.moveYourDataToElasticCloud"
-              defaultMessage="Deploy, scale, and upgrade your stack faster with Elastic Cloud. We’ll help you quickly move your data."
+              defaultMessage="Deploy, scale, and upgrade your stack faster with Cyberstanc Cloud. We’ll help you quickly move your data."
             />
           </EuiText>
           <EuiSpacer size="m" />

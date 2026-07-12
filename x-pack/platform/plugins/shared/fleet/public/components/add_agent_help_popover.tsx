@@ -49,12 +49,12 @@ export const AddAgentHelpPopover = ({
             id="xpack.fleet.addAgentHelpPopover.popoverBody"
             defaultMessage="For integrations to work successfully, add {elasticAgent} to your host to collect data and send it to Cyberstanc. {learnMoreLink}"
             values={{
-              elasticAgent: <strong>Elastic Agent</strong>,
+              elasticAgent: <strong>Cyberstanc Agent</strong>,
               learnMoreLink: (
                 <EuiLink target="_blank" external href={docLinks.links.fleet.elasticAgent}>
                   <FormattedMessage
                     id="xpack.fleet.addAgentHelpPopover.documentationLink"
-                    defaultMessage="Learn more about Elastic Agent."
+                    defaultMessage="Learn more about Cyberstanc Agent."
                   />
                 </EuiLink>
               ),

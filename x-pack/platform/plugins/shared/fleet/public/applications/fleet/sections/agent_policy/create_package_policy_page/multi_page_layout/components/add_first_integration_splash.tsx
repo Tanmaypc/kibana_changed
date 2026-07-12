@@ -101,7 +101,7 @@ const AddIntegrationStepsIllustrations = () => {
               <h2>
                 <FormattedMessage
                   id="xpack.fleet.addFirstIntegrationSplash.installAgentStepTitle"
-                  defaultMessage="Install Elastic Agent"
+                  defaultMessage="Install Cyberstanc Agent"
                 />
               </h2>
             </EuiText>
@@ -202,7 +202,7 @@ const CenteredLearnMoreLink = () => {
         <EuiLink href={docLinks.links.fleet.elasticAgent} target="_blank">
           <FormattedMessage
             id="xpack.fleet.addFirstIntegrationSplash.learnMoreLink"
-            defaultMessage="Learn more about installing Elastic Agent"
+            defaultMessage="Learn more about installing Cyberstanc Agent"
           />
         </EuiLink>
       </EuiFlexItem>
@@ -276,7 +276,7 @@ export const AddFirstIntegrationSplashScreen: React.FC<{
           actionMessage={
             <FormattedMessage
               id="xpack.fleet.addFirstIntegrationSplash.installAgentButton"
-              defaultMessage="Install Elastic Agent"
+              defaultMessage="Install Cyberstanc Agent"
             />
           }
         />

@@ -58,7 +58,7 @@ jest.mock('../../../hooks', () => {
             title: 'Nginx',
             version,
             release: 'ga',
-            description: 'Collect logs and metrics from Nginx HTTP servers with Elastic Agent.',
+            description: 'Collect logs and metrics from Nginx HTTP servers with Cyberstanc Agent.',
             policy_templates: [
               {
                 name: 'nginx',

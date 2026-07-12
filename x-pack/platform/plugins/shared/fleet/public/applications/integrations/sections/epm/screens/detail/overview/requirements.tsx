@@ -59,7 +59,7 @@ export const Requirements = memo(() => {
                       'xpack.fleet.epm.requirements.permissionRequireRootTooltip',
                       {
                         defaultMessage:
-                          'Elastic Agent must run with root or administrator privileges',
+                          'Cyberstanc Agent must run with root or administrator privileges',
                       }
                     )}
                   >

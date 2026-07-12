@@ -94,13 +94,13 @@ export const SSLFormSection: React.FunctionComponent<Props> = (props) => {
               'xpack.fleet.settings.fleetServerHosts.sslCertificateAuthoritiesInputPlaceholder',
               {
                 defaultMessage:
-                  'Specify the CA certificate(s) that signed the Elastic Agent client certificates connecting to this Fleet Server. Fleet Server trusts these CAs when verifying incoming connections.',
+                  'Specify the CA certificate(s) that signed the Cyberstanc Agent client certificates connecting to this Fleet Server. Fleet Server trusts these CAs when verifying incoming connections.',
               }
             )}
             label={i18n.translate(
               'xpack.fleet.settings.fleetServerHosts.sslCertificateAuthoritiesInputLabel',
               {
-                defaultMessage: 'Fleet Server > Elastic Agents certificate authorities',
+                defaultMessage: 'Fleet Server > Cyberstanc Agents certificate authorities',
               }
             )}
             multiline={true}
@@ -125,7 +125,7 @@ export const SSLFormSection: React.FunctionComponent<Props> = (props) => {
                 'xpack.fleet.settings.fleetServerHosts.sslCertificateInputPlaceholder',
                 {
                   defaultMessage:
-                    'Specify the Fleet Server SSL certificate used to secure communication with incoming Elastic Agent connections.',
+                    'Specify the Fleet Server SSL certificate used to secure communication with incoming Cyberstanc Agent connections.',
                 }
               )}
             />
@@ -152,7 +152,7 @@ export const SSLFormSection: React.FunctionComponent<Props> = (props) => {
                   'xpack.fleet.settings.fleetServerHosts.sslKeyInputPlaceholder',
                   {
                     defaultMessage:
-                      'Specify the Fleet Server SSL key used to secure communication with incoming Elastic Agent connections.',
+                      'Specify the Fleet Server SSL key used to secure communication with incoming Cyberstanc Agent connections.',
                   }
                 )}
               />
@@ -181,7 +181,7 @@ export const SSLFormSection: React.FunctionComponent<Props> = (props) => {
                   'xpack.fleet.settings.fleetServerHosts.sslKeySecretInputPlaceholder',
                   {
                     defaultMessage:
-                      'Specify the Fleet Server SSL key used to secure communication with incoming Elastic Agent connections.',
+                      'Specify the Fleet Server SSL key used to secure communication with incoming Cyberstanc Agent connections.',
                   }
                 )}
               />

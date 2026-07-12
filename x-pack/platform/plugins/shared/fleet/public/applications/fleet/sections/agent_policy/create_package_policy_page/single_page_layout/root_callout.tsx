@@ -33,19 +33,19 @@ export const RootPrivilegesCallout: React.FC<Props> = ({ dataStreams }) => {
       {dataStreams.length === 0 ? (
         <FormattedMessage
           id="xpack.fleet.createPackagePolicy.requireRootCalloutDescription"
-          defaultMessage="Elastic Agent needs to be run with root/administrator privileges for this integration."
+          defaultMessage="Cyberstanc Agent needs to be run with root/administrator privileges for this integration."
         />
       ) : (
         <>
           <FormattedMessage
             id="xpack.fleet.addIntegration.confirmModal.unprivilegedAgentsDataStreamsMessage"
-            defaultMessage="This integration has the following data streams that require Elastic Agents to have root privileges. To ensure that all data required by the integration can be collected, enroll agents using an account with root privileges.  For more information, see the {guideLink}"
+            defaultMessage="This integration has the following data streams that require Cyberstanc Agents to have root privileges. To ensure that all data required by the integration can be collected, enroll agents using an account with root privileges.  For more information, see the {guideLink}"
             values={{
               guideLink: (
                 <EuiLink href={docLinks.links.fleet.unprivilegedMode} target="_blank" external>
                   <FormattedMessage
                     id="xpack.fleet.addIntegration.confirmModal.unprivilegedAgentsDataStreamsMessage.guideLink"
-                    defaultMessage="Fleet and Elastic Agent Guide"
+                    defaultMessage="Fleet and Cyberstanc Agent Guide"
                   />
                 </EuiLink>
               ),

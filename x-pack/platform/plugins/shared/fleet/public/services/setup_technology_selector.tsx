@@ -127,7 +127,7 @@ export const SetupTechnologySelector = ({
                 <p>
                   <FormattedMessage
                     id="xpack.fleet.setupTechnology.agentbasedInputDescription"
-                    defaultMessage="Deploy an Elastic Agent into your cloud environment"
+                    defaultMessage="Deploy an Cyberstanc Agent into your cloud environment"
                   />
                 </p>
               </EuiText>

@@ -31,7 +31,7 @@ export const AgentlessFilter: React.FC<AgentlessFilterProps> = ({
             content={
               <FormattedMessage
                 id="xpack.fleet.epm.agentlessFilter.tooltip"
-                defaultMessage="Agentless integrations run in Elastic Cloud without requiring you to deploy Elastic Agents"
+                defaultMessage="Agentless integrations run in Cyberstanc Cloud without requiring you to deploy Cyberstanc Agents"
               />
             }
             position="right"

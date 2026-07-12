@@ -40,7 +40,7 @@ export const AgentsApp: React.FunctionComponent = () => {
           title={
             <FormattedMessage
               id="xpack.fleet.agentsInitializationErrorMessageTitle"
-              defaultMessage="Unable to initialize central management for Elastic Agents"
+              defaultMessage="Unable to initialize central management for Cyberstanc Agents"
             />
           }
           error={fleetStatus.error}

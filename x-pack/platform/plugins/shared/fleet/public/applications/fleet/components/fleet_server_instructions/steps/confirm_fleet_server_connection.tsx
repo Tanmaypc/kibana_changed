@@ -69,7 +69,7 @@ const ConfirmFleetServerConnectionStepContent: React.FunctionComponent<{
       >
         <FormattedMessage
           id="xpack.fleet.fleetServerFlyout.continueEnrollingButton"
-          defaultMessage="Continue enrolling Elastic Agent"
+          defaultMessage="Continue enrolling Cyberstanc Agent"
         />
       </EuiButton>
     </>

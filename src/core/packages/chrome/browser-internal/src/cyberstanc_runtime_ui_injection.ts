@@ -263,7 +263,7 @@ export const startCyberstancRuntimeUiInjection = ({
   windowRef = window,
 }: {
   documentRef?: Document;
-  windowRef?: Window;
+  windowRef?: Window & typeof globalThis;
 } = {}): (() => void) => {
   const replacedTextNodes = new Map<Text, ReplacedText>();
   const replacedLinks = new Map<HTMLAnchorElement, string>();
@@ -420,7 +420,14 @@ export const startCyberstancRuntimeUiInjection = ({
 
     documentRef.body.setAttribute(SURFACE_ATTRIBUTE, activeSurface);
     addRuntimeStyles(documentRef);
-    replaceVisibleBrandText();
+    // Integration copy is rebranded in Fleet's source/render pipeline so package
+    // content, headings, and cards do not depend on DOM text replacement.
+    if (activeSurface === 'integrations') {
+      pendingTextRoots.clear();
+      needsFullTextScan = true;
+    } else {
+      replaceVisibleBrandText();
+    }
   };
 
   const scheduleRuntimeUi = () => {

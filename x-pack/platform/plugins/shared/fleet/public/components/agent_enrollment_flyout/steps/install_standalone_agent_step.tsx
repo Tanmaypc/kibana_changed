@@ -37,7 +37,7 @@ export const InstallStandaloneAgentStep = ({
 }): EuiContainedStepProps => {
   return {
     title: i18n.translate('xpack.fleet.agentEnrollment.stepEnrollAndRunAgentTitle', {
-      defaultMessage: 'Install Elastic Agent on your host',
+      defaultMessage: 'Install Cyberstanc Agent on your host',
     }),
     children: (
       <InstallSection

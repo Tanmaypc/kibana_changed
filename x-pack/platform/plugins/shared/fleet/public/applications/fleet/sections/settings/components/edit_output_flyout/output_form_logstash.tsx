@@ -98,7 +98,7 @@ export const OutputFormLogstashSection: React.FunctionComponent<Props> = (props)
                 'xpack.fleet.settings.editOutputFlyout.logstashSSLSwitchCalloutMessage',
                 {
                   defaultMessage:
-                    'Using SSL/TLS ensures that your Elastic Agents send encrypted data to trusted Logstash servers, and that your Logstash servers receive data from trusted Elastic Agent clients.',
+                    'Using SSL/TLS ensures that your Cyberstanc Agents send encrypted data to trusted Logstash servers, and that your Logstash servers receive data from trusted Cyberstanc Agent clients.',
                 }
               )}
             </p>

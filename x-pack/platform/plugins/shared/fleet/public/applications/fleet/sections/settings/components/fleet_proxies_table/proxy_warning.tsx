@@ -17,7 +17,7 @@ export const ProxyWarning: React.FunctionComponent<{}> = () => (
     title={
       <FormattedMessage
         id="xpack.fleet.settings.proxyWarning.warningTitle"
-        defaultMessage="Be aware that changing the proxy settings may cause Elastic Agents to lose connectivity. Please ensure that agents have reachability to the proxy in the context that it is being used for."
+        defaultMessage="Be aware that changing the proxy settings may cause Cyberstanc Agents to lose connectivity. Please ensure that agents have reachability to the proxy in the context that it is being used for."
       />
     }
   />

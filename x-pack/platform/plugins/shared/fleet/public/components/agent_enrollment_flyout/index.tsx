@@ -154,7 +154,7 @@ export const AgentEnrollmentFlyout: React.FunctionComponent<FlyOutProps> = ({
                   >
                     <FormattedMessage
                       id="xpack.fleet.agentEnrollment.setupGuideLink"
-                      defaultMessage="Fleet and Elastic Agent Guide"
+                      defaultMessage="Fleet and Cyberstanc Agent Guide"
                     />
                   </EuiLink>
                 ),
@@ -165,7 +165,7 @@ export const AgentEnrollmentFlyout: React.FunctionComponent<FlyOutProps> = ({
           <EuiText>
             <FormattedMessage
               id="xpack.fleet.agentEnrollment.agentDescription"
-              defaultMessage="Add Elastic Agents to your hosts to collect data and send it to the Elastic Stack."
+              defaultMessage="Add Cyberstanc Agents to your hosts to collect data and send it to the Cyberstanc Stack."
             />
           </EuiText>
         )}

@@ -66,7 +66,7 @@ export const EnrollmentRecommendation: React.FunctionComponent<{
                   <EuiLink href={docLinks.links.fleet.guide} target="_blank" external>
                     <FormattedMessage
                       id="xpack.fleet.enrollment.fleetUserGuideLink"
-                      defaultMessage="Fleet and Elastic Agent Guide"
+                      defaultMessage="Fleet and Cyberstanc Agent Guide"
                     />
                   </EuiLink>
                 ),

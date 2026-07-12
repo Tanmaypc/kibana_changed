@@ -27,12 +27,12 @@ export function AddIntegrationButton(props: AddIntegrationButtonProps) {
         content: missingSecurityConfiguration ? (
           <FormattedMessage
             id="xpack.fleet.epm.addPackagePolicyButtonSecurityRequiredTooltip"
-            defaultMessage="To add Elastic Agent Integrations, you must have security enabled and have the All privilege for Fleet. Contact your administrator."
+            defaultMessage="To add Cyberstanc Agent Integrations, you must have security enabled and have the All privilege for Fleet. Contact your administrator."
           />
         ) : (
           <FormattedMessage
             id="xpack.fleet.epm.addPackagePolicyButtonPrivilegesRequiredTooltip"
-            defaultMessage="Elastic Agent Integrations require the All privilege for Agent policies and All privilege for Integrations. Contact your administrator."
+            defaultMessage="Cyberstanc Agent Integrations require the All privilege for Agent policies and All privilege for Integrations. Contact your administrator."
           />
         ),
       }

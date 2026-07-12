@@ -37,6 +37,7 @@ import type { DynamicPage, DynamicPagePathValues, StaticPage } from '../../../..
 import { isPackageUnverified, isPackageUpdatable } from '../../../../services';
 
 import type { PackageListItem } from '../../../../types';
+import { rebrandIntegrationDisplayText } from '../../components/utils/rebrand_integration_content';
 
 export interface IntegrationCardItem {
   categories: string[];
@@ -128,9 +129,9 @@ export const mapToCard = ({
 
   const cardResult: IntegrationCardItem = {
     id: `${item.type === 'ui_link' ? 'ui_link' : 'epr'}:${item.id}`,
-    description: item.description || '',
+    description: rebrandIntegrationDisplayText(item.description || ''),
     icons: !item.icons || !item.icons.length ? [] : item.icons,
-    title: item.title,
+    title: rebrandIntegrationDisplayText(item.title),
     url: uiInternalPathUrl,
     fromIntegrations: selectedCategory,
     integration: 'integration' in item ? item.integration || '' : '',

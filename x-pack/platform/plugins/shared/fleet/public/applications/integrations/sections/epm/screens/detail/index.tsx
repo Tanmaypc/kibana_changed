@@ -58,6 +58,7 @@ import { Error, Loading, HeaderReleaseBadge } from '../../../../components';
 import type { WithHeaderLayoutProps } from '../../../../layouts';
 import { WithHeaderLayout } from '../../../../layouts';
 import { SideBarColumn } from '../../components/side_bar_column';
+import { rebrandIntegrationDisplayText } from '../../components/utils/rebrand_integration_content';
 import { PermissionsError } from '../../../../layouts';
 
 import { DeferredAssetsWarning } from './assets/deferred_assets_warning';
@@ -318,6 +319,9 @@ export function Detail() {
         : undefined,
     [integration, packageInfo]
   );
+  const displayPackageTitle = rebrandIntegrationDisplayText(
+    integrationInfo?.title || packageInfo?.title || ''
+  );
 
   const fromIntegrations = getFromIntegrations();
 
@@ -364,7 +368,7 @@ export function Detail() {
                   <EuiFlexItem grow={false}>
                     <EuiText>
                       {/* Render space in place of package name while package info loads to prevent layout from jumping around */}
-                      <h1>{integrationInfo?.title || packageInfo?.title || '\u00A0'}</h1>
+                      <h1>{displayPackageTitle || '\u00A0'}</h1>
                     </EuiText>
                   </EuiFlexItem>
                   <EuiFlexItem>
@@ -381,7 +385,7 @@ export function Detail() {
                         <EuiFlexItem grow={false}>
                           <EuiBadge color="default">
                             {i18n.translate('xpack.fleet.epm.elasticAgentBadgeLabel', {
-                              defaultMessage: 'Elastic Agent',
+                              defaultMessage: 'Cyberstanc Agent',
                             })}
                           </EuiBadge>
                         </EuiFlexItem>
@@ -402,7 +406,15 @@ export function Detail() {
         </EuiFlexItem>
       </EuiFlexGroup>
     ),
-    [integrationInfo, isLoading, packageInfo, fromIntegrationsPath, queryParams, packageInfoError]
+    [
+      integrationInfo,
+      isLoading,
+      packageInfo,
+      fromIntegrationsPath,
+      queryParams,
+      packageInfoError,
+      displayPackageTitle,
+    ]
   );
 
   const handleEditIntegrationClick = useCallback<ReactEventHandler>((ev) => {
@@ -586,7 +598,7 @@ export function Detail() {
                                   : {}),
                               })}
                               missingSecurityConfiguration={missingSecurityConfiguration}
-                              packageName={integrationInfo?.title || packageInfo.title}
+                              packageName={displayPackageTitle}
                               onClick={handleAddIntegrationPolicyClick}
                             />
                           </EuiFlexItem>
@@ -621,7 +633,7 @@ export function Detail() {
       integration,
       agentPolicyIdFromContext,
       missingSecurityConfiguration,
-      integrationInfo?.title,
+      displayPackageTitle,
       handleAddIntegrationPolicyClick,
       onVersionChange,
       showVersionSelect,
@@ -781,13 +793,13 @@ export function Detail() {
         title={
           <FormattedMessage
             id="xpack.fleet.epm.packageDetailsSecurityRequiredCalloutTitle"
-            defaultMessage="Security needs to be enabled in order to add Elastic Agent integrations"
+            defaultMessage="Security needs to be enabled in order to add Cyberstanc Agent integrations"
           />
         }
       >
         <FormattedMessage
           id="xpack.fleet.epm.packageDetailsSecurityRequiredCalloutDescription"
-          defaultMessage="In order to fully use Fleet, you must enable Elasticsearch and Cyberstanc security features.
+          defaultMessage="In order to fully use Fleet, you must enable Cyberstanc platform security features.
         Follow the {guideLink} to enable security."
           values={{
             guideLink: (
@@ -818,7 +830,7 @@ export function Detail() {
       `}
     >
       {integrationInfo || packageInfo ? (
-        <Breadcrumbs packageTitle={integrationInfo?.title || packageInfo?.title || ''} />
+        <Breadcrumbs packageTitle={displayPackageTitle} />
       ) : null}
       {packageInfoError ? (
         <EuiFlexGroup alignItems="flexStart">

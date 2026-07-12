@@ -185,7 +185,7 @@ describe('When on the package policy create page', () => {
           name: 'nginx',
           title: 'Nginx',
           version: '1.3.0',
-          description: 'Collect logs and metrics from Nginx HTTP servers with Elastic Agent.',
+          description: 'Collect logs and metrics from Nginx HTTP servers with Cyberstanc Agent.',
           policy_templates: [
             {
               name: 'nginx',
@@ -363,7 +363,7 @@ describe('When on the package policy create page', () => {
       await waitFor(() => {
         expect(renderResult.getByText('Requires root privileges')).toBeInTheDocument();
         expect(renderResult.getByTestId('rootPrivilegesCallout').textContent).toContain(
-          'Elastic Agent needs to be run with root/administrator privileges for this integration.'
+          'Cyberstanc Agent needs to be run with root/administrator privileges for this integration.'
         );
       });
     });
@@ -379,7 +379,7 @@ describe('When on the package policy create page', () => {
       await waitFor(() => {
         expect(renderResult.getByText('Requires root privileges')).toBeInTheDocument();
         expect(renderResult.getByTestId('rootPrivilegesCallout').textContent).toContain(
-          'This integration has the following data streams that require Elastic Agents to have root privileges. To ensure that all data required by the integration can be collected, enroll agents using an account with root privileges.'
+          'This integration has the following data streams that require Cyberstanc Agents to have root privileges. To ensure that all data required by the integration can be collected, enroll agents using an account with root privileges.'
         );
         expect(renderResult.getByTestId('rootPrivilegesCallout').textContent).toContain(
           'Nginx access logs'
@@ -431,7 +431,7 @@ describe('When on the package policy create page', () => {
         await waitFor(
           async () => {
             expect(
-              await renderResult.findByText(/Add Elastic Agent to your hosts/)
+              await renderResult.findByText(/Add Cyberstanc Agent to your hosts/)
             ).toBeInTheDocument();
           },
           { timeout: 10000 }
@@ -439,7 +439,7 @@ describe('When on the package policy create page', () => {
 
         await act(async () => {
           fireEvent.click(
-            renderResult.getByText(/Add Elastic Agent to your hosts/).closest('button')!
+            renderResult.getByText(/Add Cyberstanc Agent to your hosts/).closest('button')!
           );
         });
       }

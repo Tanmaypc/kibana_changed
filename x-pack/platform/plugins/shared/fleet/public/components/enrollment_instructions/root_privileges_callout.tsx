@@ -28,14 +28,14 @@ export const RootPrivilegesCallout: React.FC<{
       >
         <FormattedMessage
           id="xpack.fleet.agentEnrollmentCallout.rootPrivilegesMessage"
-          defaultMessage="This agent policy contains the following integrations that require Elastic Agents to have root privileges.
+          defaultMessage="This agent policy contains the following integrations that require Cyberstanc Agents to have root privileges.
             To ensure that all data required by the integrations can be collected, enroll the agents using an account with root privileges. For more information, see the {guideLink}"
           values={{
             guideLink: (
               <EuiLink href={docLinks.links.fleet.unprivilegedMode} target="_blank" external>
                 <FormattedMessage
                   id="xpack.fleet.agentEnrollmentCallout.rootPrivilegesMessage.guideLink"
-                  defaultMessage="Fleet and Elastic Agent Guide"
+                  defaultMessage="Fleet and Cyberstanc Agent Guide"
                 />
               </EuiLink>
             ),

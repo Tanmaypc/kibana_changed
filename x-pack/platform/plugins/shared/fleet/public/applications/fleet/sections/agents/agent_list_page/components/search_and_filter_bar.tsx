@@ -133,7 +133,7 @@ export const SearchAndFilterBar: React.FunctionComponent<SearchAndFilterBarProps
                   content={
                     <FormattedMessage
                       id="xpack.fleet.agentList.addFleetServerButton.tooltip"
-                      defaultMessage="Fleet Server is a component of the Elastic Stack used to centrally manage Elastic Agents"
+                      defaultMessage="Fleet Server is a component of the Cyberstanc Stack used to centrally manage Cyberstanc Agents"
                     />
                   }
                 >
@@ -152,7 +152,7 @@ export const SearchAndFilterBar: React.FunctionComponent<SearchAndFilterBarProps
                   content={
                     <FormattedMessage
                       id="xpack.fleet.agentList.addAgentButton.tooltip"
-                      defaultMessage="Add Elastic Agents to your hosts to collect data and send it to the Elastic Stack"
+                      defaultMessage="Add Cyberstanc Agents to your hosts to collect data and send it to the Cyberstanc Stack"
                     />
                   }
                 >

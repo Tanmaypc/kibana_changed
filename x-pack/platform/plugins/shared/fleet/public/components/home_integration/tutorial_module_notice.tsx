@@ -35,7 +35,7 @@ const TutorialModuleNotice: TutorialModuleNoticeComponent = memo(({ moduleName }
             <FormattedMessage
               id="xpack.fleet.homeIntegration.tutorialModule.noticeText"
               defaultMessage="{notePrefix} A newer version of this module is {availableAsIntegrationLink}.
-              To learn more about integrations and the new Elastic Agent, read our {blogPostLink}."
+              To learn more about integrations and the new Cyberstanc Agent, read our {blogPostLink}."
               values={{
                 notePrefix: (
                   <EuiIcon
@@ -57,7 +57,7 @@ const TutorialModuleNotice: TutorialModuleNoticeComponent = memo(({ moduleName }
                   >
                     <FormattedMessage
                       id="xpack.fleet.homeIntegration.tutorialModule.noticeText.integrationLink"
-                      defaultMessage="available as an Elastic Agent integration"
+                      defaultMessage="available as an Cyberstanc Agent integration"
                     />
                   </EuiLink>
                 ),

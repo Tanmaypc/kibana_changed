@@ -129,7 +129,7 @@ jest.mock('../../../../../../hooks/use_request', () => ({
           title: 'Nginx',
           version,
           release: 'ga',
-          description: 'Collect logs and metrics from Nginx HTTP servers with Elastic Agent.',
+          description: 'Collect logs and metrics from Nginx HTTP servers with Cyberstanc Agent.',
           policy_templates: [
             {
               name: 'nginx',
@@ -435,7 +435,7 @@ describe('usePackagePolicy', () => {
           title: 'Nginx',
           version: '1.4.0',
           release: 'ga',
-          description: 'Collect logs and metrics from Nginx HTTP servers with Elastic Agent.',
+          description: 'Collect logs and metrics from Nginx HTTP servers with Cyberstanc Agent.',
           policy_templates: [
             {
               name: 'nginx',

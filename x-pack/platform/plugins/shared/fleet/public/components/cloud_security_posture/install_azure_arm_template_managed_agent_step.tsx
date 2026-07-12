@@ -41,7 +41,7 @@ export const InstallAzureArmTemplateManagedAgentStep = ({
     status,
     title: i18n.translate(
       'xpack.fleet.agentEnrollment.azureArmTemplate.stepEnrollAndRunAgentTitle',
-      { defaultMessage: 'Install Elastic Agent on your cloud' }
+      { defaultMessage: 'Install Cyberstanc Agent on your cloud' }
     ),
     children:
       selectedApiKeyId && apiKeyData && cloudSecurityIntegration ? (

@@ -38,7 +38,7 @@ const NoEprCallout: FunctionComponent<{ statusCode?: number }> = ({
   if (statusCode === 502) {
     titleMessage = i18n.translate('xpack.fleet.epmList.eprUnavailableBadGatewayCalloutTitle', {
       defaultMessage:
-        'Cyberstanc cannot reach the Elastic Package Registry, which provides Elastic Agent integrations.\n',
+        'Cyberstanc cannot reach the Cyberstanc Package Registry, which provides Cyberstanc Agent integrations.\n',
     });
     descriptionMessage = (
       <FormattedMessage
@@ -53,7 +53,7 @@ const NoEprCallout: FunctionComponent<{ statusCode?: number }> = ({
   } else {
     titleMessage = i18n.translate('xpack.fleet.epmList.eprUnavailable400500CalloutTitle', {
       defaultMessage:
-        'Cyberstanc cannot connect to the Elastic Package Registry, which provides Elastic Agent integrations.\n',
+        'Cyberstanc cannot connect to the Cyberstanc Package Registry, which provides Cyberstanc Agent integrations.\n',
     });
     descriptionMessage = (
       <FormattedMessage

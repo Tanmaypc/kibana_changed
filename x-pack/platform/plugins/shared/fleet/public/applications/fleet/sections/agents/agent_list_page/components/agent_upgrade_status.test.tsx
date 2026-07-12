@@ -395,7 +395,7 @@ describe('AgentUpgradeStatus', () => {
 
       await expectTooltip(
         results,
-        'Detailed upgrade status is available for Elastic Agents on version 8.12 and higher.'
+        'Detailed upgrade status is available for Cyberstanc Agents on version 8.12 and higher.'
       );
     });
 

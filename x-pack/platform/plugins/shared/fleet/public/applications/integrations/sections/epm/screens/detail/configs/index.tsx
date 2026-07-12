@@ -101,7 +101,7 @@ export const Configs: React.FC<ConfigsProps> = ({ packageInfo }) => {
                         >
                           <FormattedMessage
                             id="xpack.fleet.epm.InputTemplates.guideLink"
-                            defaultMessage="Fleet and Elastic Agent Guide"
+                            defaultMessage="Fleet and Cyberstanc Agent Guide"
                           />
                         </EuiLink>
                       ),

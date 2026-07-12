@@ -86,6 +86,26 @@ describe('Card utils', () => {
       });
     });
 
+    it('rebrands registry-provided card titles and descriptions', () => {
+      const cardItem = mapToCard({
+        item: {
+          id: 'elastic-integration',
+          name: 'elastic-integration',
+          title: 'Elastic integration for Elasticsearch',
+          description: 'Collect data with Elastic Agent and view it in Kibana.',
+          type: 'integration',
+          version: '1.0.0',
+        },
+        addBasePath,
+        getHref,
+      } as any);
+
+      expect(cardItem).toMatchObject({
+        title: 'Cyberstanc integration for Cyberstanc Search',
+        description: 'Collect data with Cyberstanc Agent and view it in Cyberstanc.',
+      });
+    });
+
     it('should return installStatus if the item is an integration', () => {
       const cardItem = mapToCard({
         item: {

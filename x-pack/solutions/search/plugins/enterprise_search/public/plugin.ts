@@ -42,7 +42,6 @@ import {
   APPLICATIONS_PLUGIN,
   ENTERPRISE_SEARCH_DATA_PLUGIN,
   ENTERPRISE_SEARCH_HOME_PLUGIN,
-  SEARCH_PRODUCT_NAME,
   SEARCH_HOMEPAGE,
   SEARCH_APPS_TITLE,
 } from '../common/constants';
@@ -251,11 +250,13 @@ export class EnterpriseSearchPlugin implements Plugin {
     if (plugins.home) {
       plugins.home.featureCatalogue.registerSolution({
         description: ENTERPRISE_SEARCH_HOME_PLUGIN.DESCRIPTION,
-        icon: 'logoElasticsearch',
+        icon: 'search',
         id: ENTERPRISE_SEARCH_HOME_PLUGIN.ID,
         order: 100,
         path: ENTERPRISE_SEARCH_HOME_PLUGIN.URL,
-        title: SEARCH_PRODUCT_NAME,
+        title: i18n.translate('xpack.enterpriseSearch.home.featureCatalogueTitle', {
+          defaultMessage: 'Cyberstanc Search',
+        }),
       });
 
       plugins.home.featureCatalogue.register({
